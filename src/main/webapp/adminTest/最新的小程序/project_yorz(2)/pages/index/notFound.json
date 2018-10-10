@@ -1,0 +1,13 @@
+{
+  "_navigationBarBackgroundColor": "导航栏背景颜色",
+  "navigationBarBackgroundColor": "#ffffff",
+
+  "_navigationBarTextStyle": "导航栏标题颜色 black|white",
+  "navigationBarTextStyle": "black",
+
+  "_navigationBarTitleText": "导航栏标题文字内容",
+  "navigationBarTitleText": "页面不存在",
+
+  "_backgroundColor": "窗口的背景色",
+  "backgroundColor": "#ffffff"
+}

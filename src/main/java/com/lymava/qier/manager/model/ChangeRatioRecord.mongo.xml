@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.manager.model.ChangeRatioRecord"
+		extends="com.lymava.trade.base.model.BusinessRecord" >
+		 <indexs>
+			 <index column="userV2Id"  />
+        </indexs>
+		
+		<property column="userV2_submit_id" name="userV2_submit_id"  />
+		<property column="userV2_shenghe_id" name="userV2_shenghe_id"  />
+		<property column="merchant72_id" name="merchant72_id"  />
+		<property column="pinzheng" name="pinzheng"  />
+		<property column="transter_memo" name="transter_memo"  />
+		<property column="discount_ratio" name="discount_ratio"  />
+		<property column="red_pack_ratio_max" name="red_pack_ratio_max"  />
+		<property column="red_pack_ratio_min" name="red_pack_ratio_min"  />
+		<property column="merchant_red_pack_ratio" name="merchant_red_pack_ratio"  />
+		<property column="merchant_redenvelope_arrive_fen" name="merchant_redenvelope_arrive_fen"  />
+	</class>
+</dbObject>

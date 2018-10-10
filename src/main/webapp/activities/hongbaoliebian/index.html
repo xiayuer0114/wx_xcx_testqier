@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>特卖活动</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="telephone=no,email=no" name="format-detection">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /><!-- 屏蔽双击缩放 -->
+		<link rel="stylesheet" type="text/css" href="css/sale.css"/>
+	    <script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				var window_width = $(window).width();
+				var rem_font_size = window_width*10/75;
+				$("html").css("font-size",rem_font_size+"px");
+			});
+		</script>
+	</head>
+	<body>
+		<div class="sale1">
+			<img src="img/cai.png"/>
+		</div>
+		<div class="sale2">
+			<div class="sale2_01">
+				<img src="img/zhong.png"/>
+			</div>
+			<div class="sale2_02">
+				<div class="sale2_02L">
+					<div class="sale02_1">
+						<div class="sale2a_02">
+							<s>
+							原价:98
+							</s>
+						</div>
+						<div class="sale2b_02" >
+							超低价:
+						</div>
+					</div>
+					<div class="sale02_2">
+						<div class="" style="float: left;font-size: 0.3rem;margin-top: 0.33rem;">
+							￥
+						</div>
+						<div class="" style="float: left;">
+							5
+						</div>
+					</div>
+				</div>
+				<div class="sale2_02M">
+					<img src="img/ph2.png"/>
+				</div>
+				<div class="sale2_02R">
+					好吃没上限,价格还实惠
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="sale3">
+			埠口精酿:波士顿龙虾
+		</div>
+		<div class="sale4">
+			秒杀商品
+		</div>
+		<div class="sale5"></div>
+		<div class="sale6">
+			<div class="sale6_01">
+				活动规则：
+			</div>
+			<div class="sale6_02">
+				1.本次活动由悠择YORZ用户专享。<br />
+				2.活动周期：9月1日-9月10日。<br />
+				3.购买后可产生3个名额赠送给朋友，朋友购买后，你将免费得到已付费购买的菜品，买单金额将以通用红包形式到账，到公众号【悠择YORZ】-会员中心-我的钱包查看。<br />
+				4.活动特卖商品数量有限，抢完为止，抢购成功与否与实际结果为准。<br />
+				5.活动周期内，每名用户只可持有一次特卖商品，在使用完毕后可再次购买。<br />
+				6.每份特卖商品自购买后半个月后到期，如未使用，到期作废，付费金额不退还。<br />
+			</div>
+		</div>
+		<div class="sale7" onclick="pay();">
+			5.00元抢购
+		</div>
+	</body>
+
+	<script type="text/javascript">
+        function pay(){
+          	alert("调用支付 \n 支付成功");
+			window.location.href = "/activities/hongbaoliebian/share.html";
+        };
+	</script>
+
+
+</html>

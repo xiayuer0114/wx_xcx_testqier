@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.model.SettlementBank" collection="SettlementBank">
+		<indexs>
+		</indexs>
+		<id name="id"  />
+		<property column="bankName" name="bankName" /> 
+		<property column="depositary_bank" name="depositary_bank"  />
+		<property column="account" name="account" /> 
+		<property column="name" name="name"  />
+		<property column="state" name="state"  />
+		<property column="memo" name="memo"  />
+		<property column="merchant72_id" name="merchant72_id"  />
+		<property column="bank_type" name="bank_type"  />
+		<property column="bank_addr" name="bank_addr"  />
+	</class>
+</dbObject>

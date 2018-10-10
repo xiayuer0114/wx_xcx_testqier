@@ -1,0 +1,133 @@
+<!--pages/index/index.wxml-->
+<!--搜索栏  -->
+<search-bar/>
+
+<!--轮播  -->
+<view class="banner_view">
+  <swiper class="swiper" autoplay='auto' indicator-dots="true" indicator-color="rgba(255,208,0, .3)" indicator-active-color="#fff5c9" interval='3000' duration='1000'>
+    <block wx:for="{{swiper}}">
+      <swiper-item>
+        <image data-id="{{item.pubId}}" data-mark="{{item.mark}}" bindtap='lunboBtn' class="swiper_img" src='{{imgUrl+item.pubPic}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!--产品列表  -->
+<view class="product_view">
+  <video  id="{{videoId}}" poster='{{imgUrl+poster}}' class="my_video" src='{{videoLink}}'>
+     <!-- <cover-view bindtap='videoPlay' data-id="{{videoId}}" hidden='{{!show_poster}}' bindended='theEnd'  class='c_view'>
+       <cover-image    class='c_img' src='{{imgUrl+banner}}'></cover-image>
+    </cover-view>   -->
+  </video>
+</view>
+
+<!--banner  -->
+<view class="banner_view" bindtap='liveHome'>
+    <image class="banner_img" src='{{imgUrl+banner}}'></image>
+</view>
+
+
+
+<!--蒙版  -->
+<view class="mask" bindtap='cancleBtn' hidden='{{!hide_mask}}'></view>
+<view class="set_view_box" hidden='{{!hide_mask}}' >
+
+  <view class="set_title">
+    <view class="reset_btn">重置</view>
+    <view bindtap='finishBtn' class="finish_btn">完成</view>
+  </view>
+
+
+  <view class="select_type_view">
+    <view class="select_item_view">
+      <text>节假日可用</text>
+      <switch ></switch>
+    </view>
+    <view class="select_item_view">
+      <text>只看免预约</text>
+      <switch ></switch>
+    </view>
+    <view class="select_item_view">
+      <text>只看免预约</text>
+      <switch ></switch>
+    </view>
+  </view>
+
+  
+  <view class="underline">
+    <view class="tabs">用餐时段</view>
+    <view class="tabs_view">
+        <view class="tabs_item" wx:for="{{tabs_item}}">
+        {{item}}
+        </view>
+    </view>
+
+    <view class="tabs">消费类型</view>
+    <view class="tabs_view">
+        <view class="tabs_item" wx:for="{{tabs_item1}}">
+        {{item}}
+        </view>
+    </view>
+  </view>
+
+  <view class="tabs">人均消费</view>
+
+    <view class="mo_view" >
+       <movable-area class="slider_line">
+        <movable-view  bindchange="onChange" class="circle_point" direction="horizontal">
+        </movable-view>
+        <movable-view  bindchange="onChange2" class="circle_point2" direction="horizontal">
+        </movable-view>
+      </movable-area>  
+      
+      <!-- <movable-area class="slider_line2">
+        <movable-view  bindchange="onChange2" class="circle_point2" direction="horizontal">
+        </movable-view>
+      </movable-area>   -->
+      <view class="{{turn_price?' max_fee ':'min_fee' }} ">￥{{x1}}</view>
+      <view class="{{turn_price?' min_fee ':'max_fee' }} ">￥{{x2}}</view>
+    </view>
+</view>
+
+
+<view class='getInfo-container' hidden='{{getinfo_model}}'>
+  <view class='getinfo-view'>
+    <view style='font-size:30rpx;font-weight:bold;'>提示</view>
+    <view style='margin-top:20rpx;'>小程序需要获取您的用户资料，用于登录</view>
+    <view class='info-view'>
+      <button size='mini'  bindgetuserinfo="getUserInfoBind" open-type="getUserInfo">确认获取</button>
+    </view> 
+  </view>
+</view>
+
+<view class="wenzhang_view_box">
+  <block wx:for="{{detail}}">
+      <view bindtap='watchMore' class="artcle_view_box" data-id="{{item.pubId}}" data-mark="{{item.mark}}"  hidden="{{item.isVideo==200}}">
+        <view class="artcle_view">
+            <image class="artcle_img" src='{{imgUrl+item.pubPic}}'></image>
+            <view class='artcle_desc'>
+              <view class="artcle_title"><text class='artcle_title_text'>{{item.pubName}}</text> </view>
+
+              <!-- <view class="artcle_info"><text class='artcle_info_desc'>{{item.pubIntro}}</text> </view> -->
+            </view>
+        </view>
+      </view>
+
+      <!-- <view  class="video_box" hidden="{{item.isVideo==300}}">
+        <view data-id="{{item.pubId}}" class="video_title">{{item.pubName}}</view>
+        <view class="video_view">
+            
+            <video class="my_video" src="{{item.link}}"></video>
+        </view>
+      </view> -->
+    </block>
+</view>
+
+<view class="title_view">
+  <image class="title_img" src="../../images/pic3.jpg"></image>
+</view>
+
+
+<!--占位框  -->
+<view class="table"></view>

@@ -1,0 +1,3 @@
+@import "../../templates/article.wxss";
+@import "../../utils/wxParse/wxParse.wxss";
+/* pages/recommend/detail.wxss */

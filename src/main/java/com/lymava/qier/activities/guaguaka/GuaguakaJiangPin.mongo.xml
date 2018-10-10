@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.guaguaka.GuaguakaJiangPin" collection="GuaguakaJiangPin">
+		 <indexs>
+            <index column="openid"  />
+            <index column="type_jiangpin"  />
+        </indexs>
+		<id name="id"  />
+		<property column="openid" name="openid" /> 
+		<property column="type_jiangpin" name="type_jiangpin"  />
+		<property column="state" name="state"  />
+		<property column="rand_number" name="rand_number"  />
+		<property column="lingqu_day" name="lingqu_day"  />
+		<property column="merchantRedEnvelope_id" name="merchantRedEnvelope_id"  />
+		<property column="price_fen" name="price_fen"  />
+		<property column="userId_huiyuan" name="userId_huiyuan"  />
+	</class>
+</dbObject>

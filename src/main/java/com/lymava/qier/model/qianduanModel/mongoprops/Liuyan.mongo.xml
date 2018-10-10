@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.qianduanModel.Liuyan" collection="Liuyan">
+
+        <indexs>
+            <index column="id"  />
+            <index column="state"  />
+        </indexs>
+
+        <id name="id" />
+
+        <property column="a" name="ipAddr" />
+        <property column="b" name="subTimeDay" />
+        <property column="c" name="name" />
+        <property column="d" name="email" />
+        <property column="e" name="leaveMessage" />
+        <property column="f" name="state" />
+        <property column="g" name="memo" />
+
+
+    </class>
+</dbObject>

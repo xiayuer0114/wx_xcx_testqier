@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.MarketingActivitiesConfig" collection="MarketingActivitiesConfig" >
+		<indexs>
+            <index column="name"  />
+        </indexs>
+		<id name="id"  />
+		<property column="name" name="name"  />
+		<property column="key" name="key"  />
+		<property column="value" name="value"  />
+	</class>
+</dbObject>

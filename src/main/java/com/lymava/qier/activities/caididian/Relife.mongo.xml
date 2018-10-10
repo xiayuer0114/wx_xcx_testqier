@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.caididian.Relife" collection="Relife">
+		 <indexs>
+            <index column="openid"  />
+        </indexs>
+		<id name="id"  />
+		<property column="friend_openid" name="friend_openid" />
+		<property column="openid" name="openid" />
+		<property column="relife_day" name="relife_day" />
+	</class>
+</dbObject>

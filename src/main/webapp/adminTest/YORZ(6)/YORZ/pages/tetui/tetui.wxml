@@ -1,0 +1,125 @@
+<!--pages/tetui/tetui.wxml-->
+<!--推荐栏  -->
+<search-bar/>
+
+<!--黄色框  -->
+<view class="yellow_view">
+  <view class="ad">
+    <block wx:for="{{imgs}}">
+        <view class="adlist" bindtap="handletap" bindtouchstart="handletouchtart" bindtouchmove="handletouchmove" bindtouchend="handletouchend" animation="{{animationDataNew[item.index]}}" data-index="{{index}}"  data-mark="{{item.mark}}"  data-id="{{item.pubId}}">
+            <!-- <image src='{{item.url}}' ></image> -->
+
+          <!--里图片  -->
+          <view class="img_view">
+            <image class="inside_img" src="{{imgUrl+item.headBackground}}"></image>
+            <view class="head_view">
+              <view class="circle_view">
+                <image class="circle" src='{{imgUrl+item.headPortrait}}'></image>
+              </view>
+              <view class="name">{{item.name}}</view>
+              <!-- <view class="circle_desc">{{item.title}}</view> -->
+            </view>
+          </view>
+          <!--里图片  --> 
+          <!--about  -->
+          <view class="inside_title_view">
+            <text class="inside_title_view_text">关于{{item.name}}</text>
+          </view>
+          <!--about  -->
+
+          <!--描述  -->
+          <view class="desc_view">
+            <text class='desc_text'>{{item.pubIntro}}</text>
+          </view>
+          <!--描述  -->
+
+          <!--图片列表  -->
+          <view class="flex_view">
+            <image class="flex_img" src="{{imgUrl+obj_pic}}" wx:for="{{item.showPic}}" wx:for-item="obj_pic"></image>
+            <!-- <image class="flex_img" src="../../images/t3.png"></image>
+          <image class="flex_img" src="../../images/t4.png"></image> -->
+          </view>
+          <!--图片列表  -->                     
+      </view>
+ 
+
+    </block>
+  </view>
+  <view class="icon_view">
+
+    <image class="page_img" hidden='{{be_collect==0}}' src='../../images/f3.png' data-id="{{artcle_id}}" bindtap='collectBtn'></image>
+    <image class="page_img" hidden='{{be_collect==1}}' src='../../images/f31.png' data-id="{{artcle_id}}" bindtap='collectBtn'></image>
+    <image bindtap='toShareBtn' class="zhuanfa" src='../../images/f4.png'></image>
+    <button class='share_btn' open-type='share'></button>
+  </view>
+
+  <swiper class="shuye" data-id="{{product_list[artcle_id].pubId}}" data-collect="{{product_list[artcle_id].beCollected}}" bindchange="listenSwiper" data-desc="{{product_list[artcle_id].title}}">
+    <block wx:for="{{product_list}}">
+      <swiper-item>
+        <view animation='{{animationData}}' class="inside_viewx_box" data-id="{{item.pubId}}" data-mark="{{item.mark}}" bindtap='toDetailPage'>
+          <!--里图片  -->
+          <view class="img_view">
+            <image class="inside_img" src="{{imgUrl+item.headBackground}}"></image>
+            <view class="head_view">
+              <view class="circle_view">
+                <image class="circle" src='{{imgUrl+item.headPortrait}}'></image>
+              </view>
+              <view class="name">{{item.name}}</view>
+              <!-- <view class="circle_desc">{{item.title}}</view> -->
+            </view>
+          </view>
+          <!--里图片  -->
+
+          <!--about  -->
+          <view class="inside_title_view">
+            <text class="inside_title_view_text">关于{{item.name}}</text>
+          </view>
+          <!--about  -->
+
+          <!--描述  -->
+          <view class="desc_view">
+            <text class='desc_text'>{{item.pubIntro}}</text>
+          </view>
+          <!--描述  -->
+
+          <!--图片列表  -->
+          <view class="flex_view">
+            <image class="flex_img" src="{{imgUrl+obj_pic}}" wx:for="{{item.showPic}}" wx:for-item="obj_pic"></image>
+            <!-- <image class="flex_img" src="../../images/t3.png"></image>
+          <image class="flex_img" src="../../images/t4.png"></image> -->
+          </view>
+          <!--图片列表  -->
+
+          <!--收藏和转发  -->
+          <!-- <view class="icon_view">
+          <image class="collect" src='../../images/t5.png'></image>
+          <image bindtap='toShareBtn' class="zhuanfa" src='../../images/t6.png'></image>
+        </view> -->
+          <!--收藏和转发  -->
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--黄色框  -->
+
+<!--蒙版  -->
+<!-- <view bindtap='clickMask' class="mask" hidden='{{!to_share}}'>
+    
+</view> -->
+<!-- <view class="share_view" hidden='{{!to_share}}'>
+      <view class="share-title">分享</view>
+      <view class="share_list_view" >
+          <view class="share_item_view" wx:for="{{share_list}}">
+              <image class="share_img" src='{{item.img}}'></image>
+              <view class="share_name">{{item.name}}</view>
+          </view>
+      </view>
+    </view> -->
+
+<!--title_img  -->
+<view class="title_view">
+  <image class="title_img" src="../../images/pic3.jpg"></image>
+</view>
+
+<!-- <view class="table"></view> -->

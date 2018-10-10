@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"  
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+
+	<!-- 留言管理操作记录Action -->
+	<package name="/v2/Liuyan" extends="struts-default" namespace="/v2/Liuyan">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.action.LiuyanAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+	<!-- 性格测试活动管理Action -->
+	<package name="/v2/XingGeTest" extends="struts-default" namespace="/v2/XingGeTest">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.activities.action.XingGeTestAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+	<!-- 集卡活动管理Action -->
+	<package name="/v2/JiKaHuoDong" extends="struts-default" namespace="/v2/JiKaHuoDong">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.activities.action.JiKaHuoDongAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+	<package name="/v2/MeiRiJiKa" extends="struts-default" namespace="/v2/MeiRiJiKa">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.activities.action.MeiRiJiKaAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+
+</struts>

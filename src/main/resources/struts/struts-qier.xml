@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"  
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+
+    <package name="/qier/cashier" extends="struts-default" namespace="/qier/cashier">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.CashierAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="/qier/order" extends="struts-default" namespace="/qier/order">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.OrderAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="/qier/merchantshow" extends="struts-default" namespace="/qier/merchantshow">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.MerchantShowAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+	<package name="/merChantFront" extends="struts-default" namespace="/merChantFront">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="MerChantFrontAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+    <package name="/qier/voucher" extends="struts-default" namespace="/qier/voucher">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.VoucherAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="/qier/orderReportContent" extends="struts-default" namespace="/qier/orderReportContent">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.OrderReportContentAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+    <package name="/v2/voucherManage" extends="struts-default" namespace="/v2/voucherManage">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.VoucherManageAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/qierFront" extends="struts-default" namespace="/qierFront">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="QierFrontAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package> 
+    <package name="/face/merchant" extends="struts-default" namespace="/face/merchant">
+    	<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.front.MerchantFrontAction" method="{1}">
+			<result>${successResultValue}</result>   
+		</action>
+	</package>
+    <package name="/v2/UserVoucher" extends="struts-default" namespace="/v2/UserVoucher">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.UserVoucherAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/Merchant72" extends="struts-default" namespace="/v2/Merchant72">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.Merchant72Action" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/face/cashOutSystem" extends="struts-default" namespace="/face/cashOutSystem">
+    	<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="CashOutSystemAction" method="{1}">
+			<result>${successResultValue}</result>   
+		</action>
+	</package>
+
+
+    <!-- 孙M  7.2  更改访问路径 -->
+    <package name="/v2/merchant72user" extends="struts-default" namespace="/v2/merchant72user">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.Merchant72UserAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+
+
+     <package name="/v2/tradeRecord72" extends="struts-default" namespace="/v2/tradeRecord72">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.manager.action.TradeRecord72ManagerAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+	<package name="/v2/MerchantRedEnvelope" extends="struts-default" namespace="/v2/MerchantRedEnvelope">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.MerchantRedEnvelopeAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/MerchantRedEnvelopeConfig" extends="struts-default" namespace="/v2/MerchantRedEnvelopeConfig">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.action.MerchantRedEnvelopeConfigAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/TransferToMerchantRecord" extends="struts-default" namespace="/v2/TransferToMerchantRecord">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.cmbpay.action.TransferToMerchantRecordAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,118 @@
+*{	
+			/*去掉默认的外边距和内边距*/
+			margin: 0;
+			padding: 0;
+			/*把背景铺满整个页面*/
+			width: 100%;
+			/*background: #fffbe0;*/
+			}
+
+.logo_1 img{
+	width: 2.41rem;float: left;position: relative;left: 0.35rem;top: 0.34rem;
+}
+.logo_2 img{
+	width: 1.16rem;float: right;position: relative;top: 0.33rem;
+}
+.zhuti img{
+	width: 6.05rem;margin-left: 0.62rem;margin-top: 0.48rem;
+}
+.shneghuo img{
+	display: block;width: 1.78rem;margin-left: 2.93rem;
+}
+.riqi img{
+	display: block;width: 0.95rem;margin-left: 3.27rem;margin-top: 0.11rem;
+}
+.leirong{
+	width: 6.8rem;height: 7.36rem;background: #ebb59a;border-radius:0.08rem;margin: auto;margin-top: 0.25rem;
+}
+.leirong10{
+	padding: 0.24rem;padding-bottom: 0;
+}
+.leirong_1 img{
+	width: 1.56rem;height: 2.18rem;display: block;
+}
+.leirong_2 img{
+	width: 1.56rem;height: 2.18rem;display: block;
+}
+.leirong_3 img{
+	width: 1.56rem;height: 2.18rem;display: block;
+}
+.leirong_4 img{
+	width: 1.56rem;height: 2.18rem;display: block;
+}
+.leirong19{
+	padding: 0.24rem;padding-top: 0.02rem;
+}
+.leirong_5 img{
+	width: 1.56rem;height: 2.18rem;display: block;
+}
+.leirong_6 img{
+	width: 1.56rem;height: 2.18rem;display: block;
+}
+.leirong_7 img{
+	width: 1.56rem;height: 2.18rem;display: block;
+}
+.leirong_8 img{
+	width: 1.56rem;height: 2.18rem;display: block;
+}
+.leirong9{
+	font-family: "微软雅黑";font-size: 0.34rem;color: #3b1a09;=;padding-left: 0.25rem;
+}
+.leirong11{
+	padding-left: 0.25rem;padding-top: 0.2rem;
+}
+.leirong11_1 img{
+	width: 6.32rem;
+}
+.leirong11_2 img{
+	width: 6.32rem;padding-top: 0.08rem;
+}
+.leirong13{
+	width: 6.47rem;margin-left: 0.52rem;margin-top: 0.4rem;
+}
+.tanchang{
+	position:absolute;
+	z-index:999;
+	top:0;
+	left:0;
+	width: 6.12rem;
+	left: 0.69rem;
+	top: 2.39rem;
+}
+
+.tixing{
+	position:absolute;
+	z-index:999;
+	top:0;
+	left:0;
+	width: 6.31rem;
+	height: 7.54rem;
+	left: 0.6rem;
+	top: 2.95rem;
+}
+.tixing_2{
+	position: relative;text-align:right;bottom: 3.7rem;
+}
+.tixing_2_1{
+	font-family: "微软雅黑";font-size: 0.38rem;color: #ff3327;padding-right: 0.46rem;font-weight:bold
+}
+.tixing_2_2{
+	font-family: "微软雅黑";font-size: 0.38rem;color: #ff3327;padding-right: 0.46rem;font-weight:bold
+}
+.tixing_2_3{
+	font-family: "微软雅黑";font-size: 0.38rem;color: #ff3327;padding-right: 0.46rem;font-weight:bold
+}
+
+
+.sale_rule{
+	position:absolute;
+	z-index:999;
+	background: url(../img/bg1.png);
+	background-size: 100% 100%;
+	height: 100vh;
+	width: 7.5rem;
+	margin: 0 auto;
+	top: 0rem;
+	text-align: center;
+}
+.sale_rule img{width: 7.5rem;}

@@ -1,0 +1,66 @@
+*{margin: 0;padding: 0;font-family: "黑体";}
+.clear{clear: both;}
+.container{background-color: white;}
+
+
+
+/*顶部*/
+.top{height: 50px;background-color: black;}
+.top_left{padding-left: 2%;}
+.top_left div{float: left;}
+.top_left img{width: 1.2em;padding-top: 14px;}
+.top_left1{font-size: 1.3em;color:white;padding-top: 14px;}
+.top_middle{font-size: 1.3em;padding-top: 14px;text-align: center;color: white;}
+.top_right{padding-right: 2%;}
+.top_right img{float: right;padding-top: 8px;width: 2em;}
+
+/*早餐红包图片*/
+.ph_bg img{width: 100%;}
+.ph_d{background-color: #007AFF;height: 4rem;}
+
+
+/*早餐点击*/
+.ph1_bg{}
+.ph1_bg img{width: 100%;}
+.ph_dian{height: 4rem;}
+.ph_d_bg{text-align: center;}
+.ph_d_bg img{width: 20rem;padding-left: 2rem;}
+.ph_d_bg{}
+.ph_d_font{text-align: center;}
+.ph_d_font1 img{width: 1.5rem;}
+.ph_d_font1{font-size: 3rem;color: #ffcf45;}
+.ph_d_font2{font-size: 0.6rem;}
+
+
+/*商家支付成功*/
+.h_bg img{width: 100%;}
+.h_dian{ }
+.h_d_bg{text-align: center;}
+.h_d_bg img{width: 18rem;}
+.h_d_bg{} 
+.h_d_font{text-align: center;}
+.h_d_font1 img{width: 2rem;padding-left: 6%;}
+.h_d_font2 img{width: 6rem;height: 6rem;}
+.h_d_font3{font-size: 1.5rem;color: #dac39a;padding-top: 0.5rem;}
+.h_d_font4{font-size: 0.9rem;color: #dac39a;padding-top: 0.1rem;}
+.h_d_font5{font-size:1.5rem;color: #dac39a;padding-top: 0.7rem;}
+.h_d_font6 img{width: 5rem;padding-top: 1rem;}
+ 
+/*商家支付成功后点击页面*/
+.top1{height: 50px;background-color:#cd533c;}
+.top1_left{padding-left: 2%;}
+.top1_left div{float: left;}
+.top1_left img{width: 0.8em;padding-top: 14px;}
+.top1_left1{font-size: 1.3em;color:#dcbc83;padding-top: 14px;}
+.top1_middle{font-size: 1.3em;padding-top: 14px;text-align: center;color: #dcbc83;}
+.top1_right{padding-right: 2%;padding-top: 14px;text-align: right;font-size: 1.3em;color: #dcbc83;}
+
+ 
+.r_d_font3{font-size: 0.7rem;color: #000000;padding-top: 0.5rem;}
+.r_d_font4{font-size: 2rem;color: #000000;padding-top: 0.7rem;;font-weight: bold;line-height: 1.1rem;}
+.r_d_font5{font-size:0.8rem;color: #285790;padding-top: 0.7rem;}
+.r_d_font6 {padding-top: 0.5rem;text-align: center;}  
+.r_d_f1 img{width: 12rem;height: 8.2rem;} 
+.r_d_f2 img{width: 4rem;padding-top: 1.5rem;} 
+.r_d_font7{font-size: 1.2rem;color: #000000;padding-top: 0.5rem;text-align: center;padding-bottom: 1rem;}
+.h_d_font11{text-align: center;}

@@ -1,0 +1,37 @@
+*{margin: 0;padding: 0;font-family: "微软雅黑";}
+body{}
+
+/*摁si情侣主界面*/
+.en1_15{height:100vh;width:100%;background:url(../img/bg1.jpg) no-repeat;background-size:100% 100%;}
+.en1-1_15{width: 100%;margin: 0 auto;text-align: center;}
+.en1-1_15 img{width: 15rem;padding-top: 3rem;}
+.en1-2_15{width: 100%;margin: 0 auto;text-align: center;}
+.en1-2_15 img{width: 15rem;padding-top: 2.5rem;}
+.en1-3_15{width: 100%;margin: 0 auto;text-align: center;}
+.en1-3_15 img{width: 10rem;padding-top: 3rem;}
+
+
+/*摁si情侣答题界面1*/
+.en2_15{width: 100%;margin: 0 auto;text-align: center;position: absolute;}
+.en2_15 img{width: 100%;}
+.en2-1_15{width: 100%;margin: 0 auto;text-align: center;position: relative;}
+.en2-11_15{width: 100%;margin: 0 auto;text-align: center;}
+.en2-11_15 img{width: 100%;}
+.en2-12_15{width: 100%;margin: 0 auto;text-align: center;}
+.en2-12_15 img{width: 16.5rem;}
+.en2-13_15{width: 100%;margin: 0 auto;text-align: center;padding-top: 0.5rem;}
+.en2-13_15 img{width: 9rem;} 
+
+.en2-15_15{width: 100%;margin: 0 auto;text-align: center;padding-top: 1rem;} 
+.en2-15_15 img{width: 9rem;}
+
+/*摁si情侣答案*/
+.en3_15{width: 100%;margin: 0 auto;text-align: center;}
+.en3_15 img{width: 100%;}
+.en3-1_15{width: 100%;margin: 0 auto;text-align: center;margin-top: -0.3rem;position: absolute;}
+.en3-1_15 img{width: 100%;}
+.en3-2_15{width: 100%;margin: 0 auto;text-align: center;position: relative;}
+
+
+
+

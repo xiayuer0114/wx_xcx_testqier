@@ -1,0 +1,5 @@
+<!--components/menu_side.wxml-->
+<view class="menu_class">
+  <text>components/menu_side.wxml</text>
+  <slot></slot>
+</view>

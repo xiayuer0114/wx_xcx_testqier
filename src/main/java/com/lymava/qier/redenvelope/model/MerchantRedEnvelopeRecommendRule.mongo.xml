@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.redenvelope.model.MerchantRedEnvelopeRecommendRule" collection="MerchantRedEnvelopeRecommendRule">
+		<indexs>
+        	<index column="user_merchant_xiaofei_id"  />
+        	<index column="user_merchant_hongbao_id"  />
+        	<index column="sort_id"  />
+        </indexs>
+		<id name="id"  />
+		
+		<property column="b" name="user_merchant_xiaofei_id" />
+		
+		<property column="d" name="user_merchant_hongbao_id" />
+		
+		<property column="e" name="state" />
+		
+		<property column="f" name="start_time_shengxiao" />
+		<property column="g" name="end_time_shengxiao" />
+		<property column="h" name="sort_id" />
+		<property column="i" name="rule_weight" />
+		
+	</class>
+</dbObject>

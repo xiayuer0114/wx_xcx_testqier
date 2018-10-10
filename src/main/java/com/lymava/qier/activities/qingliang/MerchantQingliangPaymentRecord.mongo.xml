@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.qingliang.MerchantQingliangPaymentRecord"
+		extends="com.lymava.trade.pay.model.PaymentRecord" >
+	</class>
+</dbObject>

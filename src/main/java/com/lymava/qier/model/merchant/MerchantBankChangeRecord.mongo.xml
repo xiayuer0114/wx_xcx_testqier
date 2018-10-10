@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.model.merchant.MerchantBankChangeRecord"
+		extends="com.lymava.trade.base.model.BusinessRecord">
+		 <indexs>
+            <index column="userV2_submit_id"  />
+        </indexs>
+
+		<property column="userV2_submit_id" name="userV2_submit_id"  />
+		<property column="userV2_shenghe_id" name="userV2_shenghe_id"  />
+		<property column="pinzheng" name="pinzheng"  />
+		<property column="accept_account" name="accept_account"  />
+		<property column="accept_bank_type" name="accept_bank_type"  />
+		<property column="accept_name" name="accept_name"  />
+		<property column="accept_depositary_bank" name="accept_depositary_bank"  />
+		<property column="accept_bank_addr" name="accept_bank_addr"  />
+		<property column="record_memo" name="record_memo"  />
+		<property column="accept_memo" name="accept_memo"  />
+	</class>
+</dbObject>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.model.TradeRecord72RefundRecord"
+		extends="com.lymava.trade.pay.model.RefundRecord" >
+		
+		<property column="aa" name="merchant_balance"  />
+	</class>
+</dbObject>

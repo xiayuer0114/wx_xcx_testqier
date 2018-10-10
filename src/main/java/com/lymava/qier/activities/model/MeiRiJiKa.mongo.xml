@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.MeiRiJiKa" collection="MeiRiJiKa">
+		 <indexs>
+            <index column="a"  />
+            <index column="h"  />
+        </indexs>
+		<id name="id"  />
+		<property column="a" name="my_openid"  />
+		<property column="b" name="friend_openid"  />
+		<property column="c" name="jika_lei"  />
+		<property column="d" name="jika_day" />
+		<property column="e" name="jika_kaishi_day" />
+		<property column="f" name="card_type" />
+		<property column="g" name="state" />
+
+	</class>
+</dbObject>

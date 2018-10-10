@@ -1,0 +1,40 @@
+*{	
+			/*去掉默认的外边距和内边距*/
+			margin: 0;
+			padding: 0;
+			}
+html{
+			/*把背景铺满整个页面*/
+			width: 100%;
+			height: 100%;
+		}  
+body {
+	width: 7.5rem;margin: auto;text-align: center;position: relative;
+}
+.zhuti img{
+	width: 4.86rem;height: 0.88rem;display: block;margin-top: 1.57rem;margin-left: 1.33rem;
+}
+.zhutibeijing img{
+	width: 5.11rem;height: 1.11rem;display: block;margin-top: 0.15rem;margin-left: 1.2rem;
+}
+.wenti img{
+	width: 4.28rem;height: 0.38rem;position: relative;top: 0.12rem;
+}
+.huida{
+	margin: 0 auto;padding-top: 0.3rem;
+}
+.huida_1 img{
+	width: 4.99rem;height: 0.77rem;position: relative;top: 0.15rem;
+}
+.huida_2 img{
+	width: 4.99rem;height: 0.77rem;position: relative;bottom: 0.05rem;
+}
+.huida_3 img{
+	width: 4.99rem;height: 0.77rem;position: relative;bottom: 0.23rem;
+}
+.huida_4 img{
+	width: 4.99rem;height: 0.77rem;position: relative;bottom: 0.38rem;
+}
+.huida_5 img{
+	width: 4.99rem;height: 0.77rem;position: relative;bottom: 0.56rem;
+}

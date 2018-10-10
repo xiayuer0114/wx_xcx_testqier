@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mongo>
+	<mapping>
+		<map>com/lymava/qier/self_order/model/mongoprops/PubConlumnFood.mongo.xml</map>
+		<map>com/lymava/qier/self_order/model/mongoprops/ProductFood.mongo.xml</map>
+		<map>com/lymava/qier/self_order/model/mongoprops/BillMainRecord.mongo.xml</map>
+		<map>com/lymava/qier/self_order/model/mongoprops/BillItemRecord.mongo.xml</map>
+	</mapping>
+</mongo>

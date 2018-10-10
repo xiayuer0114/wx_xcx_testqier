@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.backauto.model.BackTestUser"
+           extends="com.lymava.qier.model.User72" >
+
+       
+
+    </class>
+</dbObject>

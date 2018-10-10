@@ -1,0 +1,124 @@
+/* components/searchBar/index.wxss */
+.search_view_box{
+  width: 100%;
+  height: 100rpx;
+  /* border-bottom: 1rpx solid #333; */
+  background-color: #fff;
+}
+.search_view{
+  width: 90%;
+  margin:0 auto;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_location{
+  width: 36rpx;
+  height: 50rpx;
+}
+.place{
+  font-size: 30rpx;
+  color: #333;
+}
+.search_input_view{
+  width: 78%;
+  background-color: #4c4a4a;
+  border-radius: 13rpx;
+  height: 56rpx;
+  position:relative;
+  display: flex;
+  align-items: center;
+}
+.search_img_view{
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4c4a4a;
+  z-index: 111;
+  position: absolute;
+  border-radius: 13rpx;
+}
+.search{
+  width:35rpx;
+  height: 35rpx;
+  /* margin-left:40rpx;
+  margin-right: 30rpx; */
+  /* left:40rpx;
+  top:10rpx; 
+  position: absolute; */
+}
+.input{
+  width: 100%;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  color:#fff;
+
+}
+/*蒙版  */
+.mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top:0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.search_intro{
+  width: 100%;
+  position: absolute;
+  top:66rpx;
+  max-height: 610rpx;
+  z-index:111;
+  border: 1rpx solid #ccc;
+  overflow-y: scroll;
+  left:0;
+}
+.history{
+  width:100%;
+  height: auto;  
+  background-color:#fff;
+}
+.his_desc_text{
+  /* font-size: 26rpx; */
+  overflow:hidden;  
+  text-overflow:ellipsis;  
+  display:-webkit-box;  
+  -webkit-line-clamp:1;  
+  -webkit-box-orient:vertical;  
+}
+.history_list{
+  width: 100%;
+  height:120rpx;
+  border-bottom:1rpx solid #ffd000;
+}
+.history_item{
+  width: 90%;
+  margin:0 auto;
+  height: 100%;
+}
+.kong{
+  width: 100%;
+  height: 20rpx;
+}
+.his_title{
+  width: 100%;
+  font-size: 35rpx;
+  color: #333;
+  height: 50rpx;
+  display: flex;
+  align-items: flex-end;
+}
+.his_desc{
+  width: 100%;
+  font-size: 26rpx;
+  color: #999;
+  height: 50rpx;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}

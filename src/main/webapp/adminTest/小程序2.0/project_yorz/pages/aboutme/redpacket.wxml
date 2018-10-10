@@ -1,0 +1,43 @@
+<!--pages/aboutme/redpacket.wxml-->
+
+<serverLoading showError='{{globalData.showServerError}}' message='{{globalData.showServerMessage}}' showLoading='{{!globalData.sysConfigLoaded}}'>
+
+<!-- 正常显示内容 Begin -->
+<view class='page'>
+  <view class='body'>
+    <view class='data_list'>
+      <view class='item' wx:for='{{dataList}}' wx:key='id' wx:for-index="index" wx:for-item="item">
+      <view class='info'>
+        <view class='top'>
+          <text class='title'>{{item.name}}</text>
+          <view class='label'>
+            <image mode='aspectFit' src='{{resourceLocal}}icon3.png'></image>
+            {{item.label}}
+          </view>
+        </view>
+
+        <view class='bottom'>
+          <view class='line'>
+            <text class='amount'>金额：{{item.title}}</text>
+          </view>
+          <view class='line'>
+            <view class='operation'>
+              <button class="share_btn" id='{{item.id}}' data-id='{{item.id}}' data-title='{{item.title}}' data-photo='{{resourceServer + item.shopPhoto}}' open-type='share'></button>
+              <text>转赠</text>
+            </view>
+            <text class='explain'>{{item.explain}}</text>
+          </view>
+        </view>
+      </view>
+      <image class='photo' src='{{resourceServer + item.shopPhoto}}' />
+    </view>
+    </view>
+  </view>
+  
+  <view class='footer'>
+    <image mode='aspectFit' src='{{resourceLocal}}bottom2.png' />
+  </view>
+</view>
+<!-- 正常显示内容 End -->
+
+</serverLoading>

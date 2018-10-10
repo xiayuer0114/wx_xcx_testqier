@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "推荐卡",
+  "usingComponents": {
+    "search-bar": "/components/searchBar/index"
+  },
+  "disableScroll":true
+}

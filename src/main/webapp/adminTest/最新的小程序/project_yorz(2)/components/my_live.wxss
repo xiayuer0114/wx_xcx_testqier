@@ -1,0 +1,85 @@
+/* components/my_live.wxss */
+/*
+ * 内容区,店铺项
+ */
+.not_record {
+  text-align: center;
+}
+
+/*
+ * 店铺列表
+ */
+.live_list{
+  width: 100%;
+}
+.live_list image{
+  width: 100%;
+  /* 图片之间的缝隙 */
+  display: block;
+  vertical-align: top;
+}
+
+
+.shop_item {
+  position: relative;
+  color: #fff;
+}
+.shop_item image {
+  width: 50rpx;
+}
+.shop_item >image{
+  width: 100%;
+  /* 图片之间的缝隙 */
+  display: block;
+  vertical-align: top;
+}
+/*
+ * 内容区,店铺左边内容
+ */
+.shop_item .section_left{
+  position:absolute;
+  left:32rpx;
+  bottom:36rpx;
+  width: 60%;
+}
+.shop_item .section_left .title,
+.shop_item .section_left .address{
+  width: 100%;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.shop_item .section_left .title{
+  font-size: 36rpx;
+  padding: 28rpx 0;
+}
+.shop_item .section_left .address{
+  font-size: 24rpx;
+}
+.shop_item .section_left .address .address_icon{
+  width: 25rpx;
+  height: 25rpx; 
+  display: inline-block;
+}
+.shop_item .section_left .address .address_icon,
+.shop_item .section_left .address text{
+  vertical-align: middle;
+}
+/*
+ * 内容区,店铺右边内容
+ */
+.shop_item .section_right{
+  position:absolute;
+  right: 32rpx;
+  bottom: 48rpx;
+  width: 32%;
+  text-align: right;
+  overflow: hidden;
+}
+.shop_item .section_right .people{
+  font-size: 22rpx;
+}
+.shop_item .section_right .message{
+  font-family: 'customFont-Regular';
+  font-size: 34rpx;
+}

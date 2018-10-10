@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.xiaoChengXuModel.ShowPub"
+           extends="com.lymava.base.model.Pub" >
+        <indexs>
+            <index column="location" type="2dsphere" />
+        </indexs>
+        <property column="merchant72_Id" name="merchant72_Id"  />
+
+        <property column="title" name="title"  />
+
+        <property column="subhead" name="subhead"  />
+
+        <property column="avg" name="avg"  />
+
+        <property column="location" name="location"  />
+
+        <property column="headPics" name="headPics"  />
+
+        <property column="useRenshu" name="useRenshu"  />
+
+        <property column="background" name="background"  />
+
+        <property column="video" name="video"  />
+
+        <property column="zhiDing" name="zhiDing"  />
+
+        <property column="usageRule" name="usageRule"  />
+
+        <property column="longitude" name="longitude"  />
+
+        <property column="latitude" name="latitude"  />
+
+        <property column="suozaiCity" name="suozaiCity"  />
+
+    </class>
+</dbObject>

@@ -1,0 +1,75 @@
+<import src="/utils/wxParse/wxParse.wxml"/>
+<!-- 文章详情页模板 -->
+<template name='ArticleDetail'>
+  <view class='article'>
+    <view class='title'>{{article.title}}</view>
+
+    <!-- 作者 -->
+    <view class='author'>
+      <text>{{article.subTitle}}</text>
+      <!-- 接口弃用
+      <text>探秘师: {{article.author}}</text>
+      <text>摄影: {{article.photography}}</text>
+      -->
+    </view>
+
+    <!-- 工具栏 -->
+    <view class='tools'>
+      <!-- 分享 -->
+      <button class="share_btn" open-type='share'></button>
+      <image class='share_icon' mode='aspectFit' src='{{resourceLocal}}icon7.png' data-id="{{article.id}}" />
+      <!-- 收藏 -->
+      <image class='collected_icon' mode='aspectFit' wx:if='{{article.collected}}' bindtap='tapBtnFavorite' src='{{resourceLocal}}icon9.png'/>
+      <image class='collect_icon' mode='aspectFit' wx:else  bindtap='tapBtnFavorite' src='{{resourceLocal}}icon8.png'/>
+    </view>
+    <!-- 视频 -->
+    <view class="video_player" wx:if='{{article.video && article.video.source != ""}}'>
+      <video id="{{article.video.id}}" src='{{article.video.source}}' controls='true' objectFit='fill' custom-cache='{{false}}'>
+        <!-- 
+         initial-time='2'      // 指定视频初始播放位置
+         controls = true       // 是否显示默认播放控件（播放/暂停按钮、播放进度、时间）
+         autoplay = 'false'    // 是否自动播放
+         loop = 'false'        // 是否循环播放
+         muted = 'false'       // 是否静音播放
+         page-gesture='false'  // 在非全屏模式下，是否开启亮度与音量调节手势
+         show-progress='true'  // 若不设置，宽度大于240时才会显示
+         show-fullscreen-btn='true'  // 是否显示全屏按钮
+         show-play-btn='true'        // 是否显示视频底部控制栏的播放按钮
+         show-center-play-btn='true' // 是否显示视频中间的播放按钮
+         enable-progress-gesture='true' // 是否开启控制进度的手势
+         objectFit='contain'         // contain：包含，fill：填充，cover：覆盖
+         poster=''                   // 视频封面的图片网络资源地址
+         bindplay             // 当开始/继续播放时触发play事件
+         bindpause            // 当暂停播放时触发pause事件
+         bindended            // 当播放到末尾时触发ended事件
+         bindtimeupdate       // 播放进度变化时触发触发频率250ms一次,e.detail={currentTime,duration} 
+         bindfullscreenchange // 视频进入和退出全屏时触发,e.detail={fullScreen,direction}
+         bindwaiting          // 视频出现缓冲时触发
+         binderror            // 视频播放出错时触发
+        -->
+        <!-- <cover-view wx:if="{{globalData.canUse_CoverView}}"></cover-view> -->
+      </video>
+    </view>
+
+    <!-- 正文 -->
+    <!-- 
+    <rich-text nodes="{{article.detail.nodes}}" class='detail'></rich-text>
+    -->
+    <view class='detail'>
+      <template is="wxParse" data="{{wxParseData:article.detail.nodes}}" />
+    </view>
+
+    <view class='advertisement' wx:if='{{globalData.advertisement.length > 0}}'>
+      <block wx:for='{{globalData.advertisement}}' wx:key='*this'>
+        <image mode='widthFix' src='{{resourceServer + item.photo}}' data-id='{{item.id}}' data-type='{{item.type}}' bingtap='hanldTapAd' />
+      </block>
+    </view>
+
+    <!-- 标签 -->
+    <view class='tags'>
+      <view class='title'>相关标签</view>
+      <text wx:for='{{article.tigs}}' wx:key="*this" data-title='{{item.title}}' bindtap='tapBtnTags'>{{item.title}}</text>
+    </view>
+  </view>
+</template>
+

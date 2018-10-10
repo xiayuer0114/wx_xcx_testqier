@@ -1,0 +1,23 @@
+*{margin: 0;padding: 0;font-family: "微软雅黑";}
+.clear{clear: both;}
+body{background-color: #FFFFFF;}
+
+
+
+
+.hongbao1_18_01{width: 100%;/*position: absolute;*/}
+.hongbao1_18_01 img{width: 100%;}
+
+.hongbao1_18_02{/*position: relative;*/color: #777775;font-size: 1.1rem;margin: 0 auto;text-align: center;padding-top: 2.5rem;}
+.hongbao1_18_02 img{width: 21%;}
+
+.hongbao2_18{width: 100%;margin: 0 auto;text-align: center;border-bottom: solid #cbcbcb 1px;border-top: solid #cbcbcb 1px;margin-top: 0.5rem;}
+.hongbao2_18_01 img{width: 2.2rem;padding-top: 1.2rem;}
+.hongbao2_18_02{color: #6a6a6a;padding-top: 0.8rem;font-size: 1rem;}
+.hongbao2_18_03{color: #000000;padding-top: 0.8rem;font-size: 1rem;}
+
+.hongbao3_18{background-color: #eeeeee;height: 5.9rem;width: 98%;margin: 0 auto;margin-top: 0.5rem;}
+.hongbao3_18_01{width: 23%;float: left;padding-left: 2%;padding-top: 2.5%;}
+.hongbao3_18_01 img{width: 4.8rem;}
+.hongbao3_18_02{float: left;width: 32%;padding-top: 2.5%;}
+.hongbao3_18_03{float: right;width: 34%;padding-top: 2.5%;}

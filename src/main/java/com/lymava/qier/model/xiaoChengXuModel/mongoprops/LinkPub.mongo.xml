@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.xiaoChengXuModel.LinkPub"
+           extends="com.lymava.base.model.PubLink" >
+
+        <property column="headBg" name="headBg"  />
+
+        <property column="headPics" name="headPics"  />
+
+    </class>
+</dbObject>

@@ -1,0 +1,139 @@
+/* pages/aboutme/favorite.wxss */
+
+.page{
+  border-top: 1rpx solid #626262;
+  padding: 12rpx;
+}
+.page .body{
+  padding-bottom: 100rpx;
+}
+.time_line{
+}
+.time_line:last-child .line{
+  border: none;
+}
+.time_line .title{
+  font-size: 28rpx;
+  color: #6E6D6D;
+  line-height: 48rpx;
+}
+.time_line .title image{
+  width: 43rpx;
+  height: 43rpx;
+  vertical-align: text-top;
+}
+
+.time_line .line{
+  border-left: 2rpx solid #ababab;
+  height: 100%;
+  margin-left:22rpx;
+  margin-top: 0;
+}
+.time_line .item{
+  background-color: #EEE;
+  margin: 0 40rpx;
+  height: 150rpx;
+  padding: 17rpx;
+}
+
+
+
+
+.time_line .item::after{
+  clear: both;
+}
+.time_line .photo{
+  margin-top: 6rpx;
+  width: 140rpx;
+  height: 140rpx;
+}
+.time_line .info{
+  width: 440rpx;
+  height: 150rpx;
+  font-size: 24rpx;
+  color: #6e6d6d;
+  float: right;
+  position: relative;
+}
+.time_line .info .top{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+.time_line .info .top::after{
+  clear: both;
+}
+.time_line .info .top .title{
+  font-family: 'customFont-Regular';
+  font-size: 28rpx;
+  width: 72%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.time_line .info .top .label{
+  float: right;
+  width: 28%;
+  line-height: 36rpx;
+  display: flex; /* flex布局 */
+  justify-content: center; /* 使子项目水平居中 */
+  align-items: center; /* 使子项目垂直居中 */
+}
+.time_line .info .top .label image{
+  padding-right: 10rpx;
+  width: 19rpx;
+  height: 30rpx;
+}
+/* 信息底部*/
+.time_line .info .bottom {
+  width: 100%;
+  line-height: 38rpx;
+  position: absolute;
+  bottom:0rpx;
+}
+.time_line .info .bottom text{
+  display: block;
+}
+.time_line .info .bottom .row{
+  clear: both;
+}
+.time_line .bottom .explain{
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.time_line .bottom .amount,
+.time_line .bottom .explain{
+  float: left;
+}
+.time_line .bottom .operation,
+.time_line .bottom .deadline{
+  float: right;
+  line-height: 36rpx;
+  display: flex; /* flex布局 */
+  justify-content: center; /* 使子项目水平居中 */
+  align-items: center; /* 使子项目垂直居中 */
+}
+.time_line .bottom .operation image{
+  padding-left: 6rpx;
+  width: 22rpx;
+  height: 22rpx;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0rpx;
+  width: 100%;
+  text-align: center;
+  background-color: #FFF;
+  padding: 15rpx 0;
+}
+.footer image{
+  width: 90%;
+  height: 73rpx;
+  overflow: hidden;
+}

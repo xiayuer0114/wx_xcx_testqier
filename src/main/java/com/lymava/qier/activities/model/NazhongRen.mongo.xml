@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.NazhongRen" collection="NazhongRen">
+		 <indexs>
+            <index column="openid"  />
+        </indexs>
+		<id name="id"  />
+		<property column="openid" name="openid" /> 
+		<property column="dianying" name="dianying"  />
+		<property column="xiyouji" name="xiyouji"  />
+		<property column="nizuipa" name="nizuipa"  />
+	</class>
+</dbObject>

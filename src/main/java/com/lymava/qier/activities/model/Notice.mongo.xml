@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.Notice" collection="Notice">
+		 <indexs>
+            <index column="name"  />
+            <index column="idNumber"  />
+        </indexs>
+		<id name="id"  />
+		<property column="name" name="name" /> 
+		<property column="idNumber" name="idNumber"  />
+		<property column="examineeCard" name="examineeCard"  />
+		<property column="signUpSerialNumber" name="signUpSerialNumber"  />
+		<property column="sex" name="sex"  />
+		<property column="artsAndScience" name="artsAndScience"  />
+	</class>
+</dbObject>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.ShengmutiTemaiConfig" collection="ShengmutitemaiConfig">
+
+		<id name="id"  />
+
+		<property column="a" name="huodong_startTime" />
+		<property column="b" name="huodong_endTime" />
+		<property column="c" name="fenshu" />
+		<property column="d" name="daojishi" />
+		<property column="e" name="state" />
+		<property column="f" name="show_zhekou" />
+		<property column="g" name="zhekou_qian" />
+		<property column="h" name="zhekou_hou" />
+		<property column="i" name="xuyao_haoyou" />
+		<property column="j" name="merchant_id" />
+		<property column="k" name="merchant72" />
+		<property column="l" name="yijing_goumei" />
+		<property column="m" name="huodong_name" />
+		<property column="n" name="huodong_title" />
+
+
+	</class>
+</dbObject>

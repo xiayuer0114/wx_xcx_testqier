@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.gaosan.model.GaosanResult" collection="GaosanResult">
+		<indexs>
+			<index column="openid"  />
+		</indexs>
+		<id name="id"  />
+		<property column="openid" name="openid" /> 
+		<property column="name" name="name"  />
+		<property column="pubConlumnId" name="pubConlumnId" /> 
+		<property column="pub_link_id" name="pub_link_id"  />
+		<property column="state" name="state"  />
+		<property column="media_id" name="media_id"  />
+		<property column="scan_state" name="scan_state"  />
+	</class>
+</dbObject>

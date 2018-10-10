@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mongo>
+	<mapping>  
+		<map>com/lymava/qier/model/mongoprops/Cashier.mongo.xml</map>
+		<map>com/lymava/qier/model/mongoprops/Merchant72.mongo.xml</map>
+		<map>com/lymava/qier/model/mongoprops/Product72.mongo.xml</map>
+		<map>com/lymava/qier/model/mongoprops/TradeRecord72.mongo.xml</map>
+		
+		<map>com/lymava/qier/model/mongoprops/UserVoucher.mongo.xml</map>
+		<map>com/lymava/qier/model/mongoprops/User72.mongo.xml</map>
+		
+		<map>com/lymava/qier/model/mongoprops/SettlementBank.mongo.xml</map>
+		
+		<map>com/lymava/qier/model/mongoprops/MerchantRedEnvelope.mongo.xml</map>
+		<map>com/lymava/qier/model/mongoprops/MerchantRedEnvelopeConfig.mongo.xml</map>
+		
+		<map>com/lymava/qier/model/mongoprops/TradeRecord72RefundRecord.mongo.xml</map>
+		<map>com/lymava/qier/cmbpay/model/TransferToMerchantRecord.mongo.xml</map>
+		<map>com/lymava/qier/business/businessRecord/MerchantRedEnvelopePayRecord.mongo.xml</map>
+
+	</mapping>
+</mongo>

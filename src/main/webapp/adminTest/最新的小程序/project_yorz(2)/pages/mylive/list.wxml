@@ -1,0 +1,21 @@
+<import src="../../templates/shop_list.wxml"/>
+
+<!--pages/mylive/list.wxml 商圈店铺-->
+<serverLoading showError='{{globalData.showServerError}}' message='{{globalData.showServerMessage}}' showLoading='{{!globalData.sysConfigLoaded}}'>
+
+<!-- 正常显示内容 Begin -->
+<view class='page'>
+  <view class='page_mark' wx:if='{{showPageMark}}'></view>
+  <view class='content'>
+      <liveList id='liveList' area='{{currentArea}}' types='{{currentType}}'
+      bindtapBanner='handleTapBanner'  bindtapItem='handleTapListItem'
+      bindloadBegin='handleLoadingBegin' bindloadOver='handleLoadingOver'
+      >
+          <view slot="before"><!-- 前置内容 --></view>
+          <view slot="after"><!-- 后置内容 --></view>
+    </liveList>
+  </view>
+</view>
+<!-- 正常显示内容 End -->
+
+</serverLoading>

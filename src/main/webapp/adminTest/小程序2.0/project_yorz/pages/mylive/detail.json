@@ -1,0 +1,30 @@
+{
+  "_navigationBarBackgroundColor": "导航栏背景颜色",
+  "navigationBarBackgroundColor": "#ffffff",
+
+  "_navigationBarTextStyle": "导航栏标题颜色 black|white",
+  "navigationBarTextStyle": "black",
+
+  "_navigationBarTitleText": "导航栏标题文字内容",
+  "navigationBarTitleText": "生活圈",
+
+  "_backgroundColor": "窗口的背景色",
+  "backgroundColor": "#ffffff",
+
+  "_backgroundTextStyle": "拉loading的样式",
+  "backgroundTextStyle": "dark",
+
+  "_enablePullDownRefresh": "是否开启下拉刷新",
+  "enablePullDownRefresh": false,
+
+  "_disableScroll": "设置为true则页面整体不能上下滚动",
+  "disableScroll": false,
+
+  "_onReachBottomDistance": "页面上拉触底事件触发时距页面底部距离，单位为px",
+  "onReachBottomDistance": 0,
+
+  "_usingComponents": "调用的组件",
+  "usingComponents": {
+    "serverLoading": "/components/server_loading"
+  }
+}

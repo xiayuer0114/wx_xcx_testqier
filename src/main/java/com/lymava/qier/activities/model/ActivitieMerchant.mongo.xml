@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.ActivitieMerchant" collection="ActivitieMerchant" >
+
+		<id name="id"  />
+
+		<property column="a" name="user_merchant_id"  />
+		<property column="b" name="redEnvelope_headPic"  />
+		<property column="d" name="redEnvelope_pic"  />
+		<property column="e" name="redEnvelope_title"  />
+		<property column="f" name="redEnvelope_intro"  />
+		<property column="g" name="use_rule"  />
+		<property column="h" name="state"  />
+		<property column="j" name="activity_redEnvelope_price_fen"  />
+
+
+
+	</class>
+</dbObject>

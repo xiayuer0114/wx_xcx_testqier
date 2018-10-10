@@ -1,0 +1,23 @@
+<!--pages/rili/rili.wxml-->
+
+  <block >
+      <view class="calendar_view">
+    <view class="calendar">
+      <view class="week">
+        <view class="days" wx:for="{{weekArr}}"  class="{{(index==0 || index ==6 )?' per ':' ' }} week_days">{{item}}</view>
+      </view>
+    </view>
+  </view>
+  </block>
+
+  <block  >
+    <view class="days_view"> 
+    
+      <view wx:for='{{ arr }}' style='{{ index == 0 ? "margin-left:" + 85 * marLet + "rpx;" : "" }}'   class="{{((index+marLet)+1)%7==0 ||((index+marLet))%7==0 ?' per ':' ' }} days  " >
+      <view class="{{ item ==  getDate ? ' dateOn ' : ' '}} days_view_box"> {{ item }}</view>
+     
+      </view>
+    </view>
+      
+  </block>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.Tanmiguan" collection="Tanmiguan">
+		 <indexs>
+            <index column="openId"  />
+        </indexs>
+		<id name="id"  />
+
+		<property column="openId" name="openId" />
+		<property column="lingquTime" name="lingquTime" />
+		<property column="state" name="state" />
+
+	</class>
+</dbObject>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>生活需要一点红1_妈咪</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="telephone=no,email=no" name="format-detection">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /><!-- 屏蔽双击缩放 -->
+		<link rel="stylesheet" type="text/css" href="css/need_red.css"/>
+	    <script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				var window_width = $(window).width();
+				var rem_font_size = window_width*10/75;
+				$("html").css("font-size",rem_font_size+"px");
+                setInterval(function(){
+                    $("#img_3_1").fadeIn(1500);
+                },500);
+                setInterval(function(){
+                    $("#img_3_5").slideDown(1000);
+                },2000);
+                setInterval(function(){
+                    $("#img_3_4").slideDown(1000);
+                },3000);
+                setInterval(function(){
+                    $("#img_3_3").slideDown(1000);
+                },4000);
+                setInterval(function(){
+                    $("#img_3_2").slideDown(1000);
+
+                },5000);
+            });
+		</script>
+	</head>
+	<body>
+		<div class="need3_1">
+			<img src="img/three.gif" id="mama"/>
+		</div>
+		<div class="need3_2">
+			<div class="need3_01" id="img_3_1" style="display: none;">
+				<img src="img/3-1.png"/>
+			</div>
+			<div class="need3_02" id="img_3_5" style="display: none;">
+				<img src="img/3-5.png"/>
+			</div>
+			<div class="need3_02" id="img_3_4" style="display: none;">
+				<img src="img/3-4.png"/>
+			</div>
+			<div class="need3_02" id="img_3_3" style="display: none;">
+				<img src="img/3-3.png"/>
+			</div>
+			<div class="need3_02" id="img_3_2" style="display: none;">
+				<img src="img/3-2.png"/>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+        $("#mama").click(function () {
+            window.location.replace("/activities/PinPaiGuShi/pioneer.html");
+        });
+
+	</script>
+</html>

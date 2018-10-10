@@ -1,0 +1,60 @@
+*{margin: 0;padding: 0;font-family: "微软雅黑";}
+.clear{clear: both;}
+
+
+/*顶部*/
+.top{height: 2.5rem;background-color: #108ee9;text-align: center;color: #FFFFFF;font-size: 1.2rem;}
+.top1{padding-top: 0.45rem;}
+
+/*今日收益*/
+.bg{background-color:#108ee9;height:2rem ;}
+.today{background-color:#108ee9;}
+.today_1{color: #4daff4;text-align: center;}
+.today_2{color: #FFFFFF;font-size: 2.5rem;text-align: center;padding-top: 0.2rem;}
+
+.today_3{color: #b6ddfb;padding-top: 0.2rem;}
+.tt{float: right;padding-right: 4%;}
+.tt1{padding-left: 4%;float: left;}
+
+/*最新一笔*/
+.date{background-color: #1b93ea;color: #b6ddfb;height: 2rem;border-bottom: solid 1px #68b7f1;}
+.date_1{padding-left: 3%;padding-top: 0.4rem;}
+.date_1 div{float: left;}
+.date_2{padding-right: 3%;padding-top: 0.4rem;}
+.date_2 div{float: right;}
+
+
+/*对账*/
+.account{background-color: #2799eb;text-align: center;height: 3rem;color: #FFFFFF;font-size: 1.2rem;}
+.account_1{padding-top: 0.6rem;}
+.account_1 img{width: 1.65rem;}
+.account_2{padding-top: 0.6rem;}
+.account_2 img{width: 1.65rem;}
+
+/*详情处*/
+.details{background-color: #eeeeee;padding-top: 1rem;height: 30rem;}
+.details1{background-color: white;width: 95%;margin: 0 auto;height: 4rem;}
+.details1_1{float: left;padding-left: 2%;padding-top: 0.3rem;}
+.details1_1 img{width: 3.5rem;}
+.details1_2{float: left;padding-left: 2%;padding-top: 0.3rem;}
+.dd{font-size:1.2rem ;color: #000000;}
+.dd1{padding-top: 0.5rem;color: #929191;}
+.details1_3{float: right;padding-right: 2%;padding-top: 0.3rem;}
+
+/*点击出来的页面*/
+.click{/*这个是点击了过后的透明色：background-color: #000000; opacity:0.3;*/}
+.click1{position: absolute;width: 100%;}
+.click1 img{width: 100%;}
+.click2{position: relative;padding-top: 35%;}
+.click3{background-color:#FFFFFF;border-radius: 0.4rem;width: 90%;margin: 0 auto;}
+
+.click2_1{text-align: center;color: #202020;font-size: 1.2rem;padding-top: 2rem;}
+.click2_1 img{width: 1.5rem;}
+.click2_2{text-align: center;color: #202020;font-size: 2.5rem;}
+.click2_3{text-align: center;color: #928f8f;}
+.click2_4{width: 95%;margin: 0 auto;padding-top: 1rem;}
+.cl1{float: left;color: #928f8f;}
+.cl2{float: right;color: #141414;}
+.click2_5{width: 95%;margin: 0 auto;padding-top: 0.2rem;}
+.click2_6{width: 95%;margin: 0 auto;padding-top: 1rem;}
+

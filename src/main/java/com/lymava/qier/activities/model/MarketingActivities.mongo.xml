@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.MarketingActivities" collection="MarketingActivities" >
+		<indexs>
+            <index column="name"  />
+            <index column="start_date"  />
+            <index column="state"  />
+        </indexs>
+		<id name="id"  />
+		<property column="name" name="name"  />
+		<property column="every_day_count" name="every_day_count"  />
+		<property column="all_day_count" name="all_day_count"  />
+		<property column="start_date" name="start_date"  />
+		<property column="end_date" name="end_date"  />
+		<property column="day_start_time" name="day_start_time"  />
+		<property column="day_end_time" name="day_end_time"  />
+		<property column="start_week" name="start_week"  />
+		<property column="end_week" name="end_week"  />
+		<property column="not_start_message" name="not_start_message"  />
+		<property column="had_end_message" name="had_end_message"  />
+		<property column="marketingActivitiesConfig_list" name="marketingActivitiesConfig_list"  />
+		<property column="state" name="state"  />
+	</class>
+</dbObject>

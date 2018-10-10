@@ -1,0 +1,16 @@
+{
+  
+  "_backgroundTextStyle": "拉loading的样式",
+  "backgroundTextStyle": "dark",
+
+  "_enablePullDownRefresh": "是否开启下拉刷新",
+  "enablePullDownRefresh": false,
+
+  "_onReachBottomDistance": "页面上拉触底事件触发时距页面底部距离，单位为px",
+  "onReachBottomDistance": 200,
+
+  "_usingComponents": "调用的组件",
+  "usingComponents": {
+    "serverLoading": "/components/server_loading"
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.business.businessRecord.MerchantRedEnvelopePayRecord"
+		extends="com.lymava.trade.pay.model.PaymentRecordOperationRecord" >
+		 <indexs>
+            <index column="b1"  />
+        </indexs>
+		<property column="b1" name="merchantRedEnvelope_id"  />
+	</class>
+</dbObject>

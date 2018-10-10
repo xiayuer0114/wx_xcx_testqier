@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.MerchantRedEnvelope" collection="MerchantRedEnvelope">
+        <indexs>
+        	<index column="a"  />
+        	<index column="b"  />
+        	<index column="e"  />
+        	<index column="j"  />
+        	<index column="k" type="2dsphere" />
+        </indexs>
+        <id name="id"  />
+        <property column="a" name="userId_merchant" />
+        <property column="b" name="userId_huiyuan" />
+        <property column="c" name="amount" />
+        <property column="d" name="balance" />
+        <property column="e" name="state" />
+        <property column="f" name="red_envolope_name" />
+        <property column="g" name="expiry_time" />
+        <property column="h" name="tradeRecord72_id" />
+        <property column="i" name="merchant_type" />
+        <property column="j" name="index_id" />
+        <property column="k" name="location"  />
+        <property column="l" name="amount_to_reach"  />
+        <property column="m" name="userId_merchant_lingqu"  />
+        <property column="n" name="lingqu_time"  />
+    </class>
+</dbObject>

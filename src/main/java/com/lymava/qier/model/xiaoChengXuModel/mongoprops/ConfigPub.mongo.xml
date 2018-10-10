@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.xiaoChengXuModel.ConfigPub"
+           extends="com.lymava.base.model.Pub" >
+
+
+        <indexs>
+            <index column="id"  />
+        </indexs>
+
+        <id name="id" />
+        <property column="name" name="name"  />
+        <property column="key" name="key"  />
+        <property column="value" name="value" />
+        <property column="memo" name="memo" />
+
+    </class>
+</dbObject>

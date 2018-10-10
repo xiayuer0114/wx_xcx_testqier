@@ -1,0 +1,454 @@
+/* pages/my_integral/my_integral.wxss */
+.nick_name{
+  width: 95%;
+  height: 60rpx;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  color: #333;
+
+}
+/*收藏栏  */
+.collect_view{
+  width: 100%;
+  height: 237rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+}
+.item_view{
+  width: 35%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  
+}
+.number{
+  font-size: 33rpx;
+  color: #333;
+}
+.icon_view{
+  width: auto;
+  height: auto;
+  margin-top:25rpx;
+  display: flex;
+  align-items: center;
+}
+.collect{
+  width: 66rpx;
+  height: 57rpx;
+}
+.history_icon{
+  width: 67rpx;
+  height: 67rpx;
+}
+.record_icon{
+  width: 60rpx;
+  height: 60rpx;
+}
+.tex{
+  font-size: 30rpx;
+  color: #999;
+ 
+}
+.sign_num_view{
+   margin-top: 20rpx;
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #333;
+}
+.jifen_num_view{
+  margin-top: 20rpx;
+   width: 100%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #333;
+}
+
+
+.integral_tabs{
+  width: 100%;
+  height: 47rpx;
+  display: flex;
+}
+.integral_prize{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #ffe000;
+}
+.integral_record{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #fed000;
+}
+.selected{
+  background-color: #cea702;
+}
+/*规则  */
+.rule_view_box{
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  margin-top:17rpx;
+  font-size: 20rpx;
+  color: #333;
+  display: flex;
+ 
+}
+/*礼品列表  */
+.prize_list_view{
+  margin-top:7rpx;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 170rpx;
+ 
+}
+.prize_list{
+  width: 95%;
+  margin:0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.prize_img{
+  width: 140rpx;
+  height: 140rpx;
+}
+.prize{
+  width: 100%;
+  height: 100%;
+}
+.prize_desc{
+  width:42%;
+  height: 140rpx; 
+  font-size: 30rpx;
+  color:#999;
+  margin-left:20rpx;
+}
+/* .prize_name{
+  font-size: 30rpx;
+  color:#999;
+} */
+.prize_detail{
+  word-break: break-all;
+  margin-top:20rpx;
+}
+
+
+.receive_view{
+  width: auto;
+  height: 140rpx;
+  display: flex;
+  margin-left:40rpx;
+  font-size: 30rpx;
+  color:#999;
+  flex-direction: column;
+   align-items: center;
+   justify-content: space-between
+}
+.duihuan_view{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.duihuan_success{
+  color: #ffe000;
+}
+.receive{
+  width: 42rpx;
+  height: 45rpx;
+  margin-right: 20rpx;
+}
+/*兑换记录  */
+.record{
+  width: 95%;
+  margin:0 auto;
+  font-size: 30rpx;
+  color:#999;
+  margin-top:10px;
+}
+
+.record_date{
+  width: 95%;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  height: auto;
+  font-size: 30rpx;
+  color:#999;
+  margin-top:7px;
+}
+.history{
+  margin-right:10rpx;
+  width: 41rpx;
+  height: 41rpx;
+}
+
+.record_list_view{
+  width: 85%;
+  margin:0 auto;
+  background-color: #eeeeee;
+  height: 170rpx;
+  margin-top:10rpx;
+}
+.record_list{
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.record_prize{
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.record_prize_detail{
+  width: 75%;
+  font-size: 30rpx;
+  color:#999;
+  height: 140rpx;
+}
+
+.table{
+  width: 100%;
+  height: 120rpx;
+}
+.record_prize_title{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+}
+.title_right{
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: center;
+  font-size: 22rpx;
+  color: #999;
+}
+.niupai{
+  width:16rpx;
+  height: 26rpx;
+  margin-right: 15rpx;
+}
+.price{
+  width: 100%;
+  margin-top:30rpx;
+  font-size: 24rpx;
+}
+
+.address_view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-size: 24rpx;
+}
+.address{
+  max-width: 65%;
+}
+.toshop{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.arrow{
+  width: 15rpx;
+  height: 15rpx;
+  border-right: 1rpx solid #666;
+  border-bottom: 1rpx solid #666;
+  transform: rotate(-45deg);
+  margin-left: 10rpx;
+}
+
+.receive_date{
+  font-size: 25rpx;
+}
+
+.record_list_view{
+  width:100%;
+  margin-top:7rpx;
+  background-color: #eeeeee;
+  height: 170rpx;
+  /* margin-top:15rpx;  */
+}
+.record_list{
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.record_prize{
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.record_prize_detail{
+  width: 78%;
+  font-size: 30rpx;
+  color:#999;
+  height: 140rpx;
+}
+
+.table{
+  width: 100%;
+  height: 120rpx;
+}
+.record_prize_title{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+}
+.title_right{
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: center;
+  font-size: 22rpx;
+  color: #999;
+}
+.niupai{
+  width:16rpx;
+  height: 26rpx;
+  margin-right: 15rpx;
+}
+.price{
+  width: 100%;
+  margin-top:30rpx;
+  font-size: 24rpx;
+}
+
+.address_view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-size: 24rpx;
+  margin-top: 7rpx;
+}
+.discount{
+  max-width: 30%;
+}
+
+.coupon{
+  max-width: 30%;
+  margin-left:15rpx;
+}
+.toshop{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.arrow{
+  width: 15rpx;
+  height: 15rpx;
+  border-right: 1rpx solid #666;
+  border-bottom: 1rpx solid #666;
+  transform: rotate(-45deg);
+  margin-left: 10rpx;
+}
+
+/*日历  */
+.calendar_view{
+  margin-top:70rpx;
+  width: 100%;
+  height: auto;
+}
+.calendar{
+  width: 95%;
+  margin:0 auto;
+}
+.week{
+  display: flex;
+  
+}
+.days_view{
+  max-width: 95%;
+  margin:0 auto;
+  display: flex;
+ 
+  flex-wrap: wrap;
+}
+.week_days{
+  width: 60rpx;
+  height: 60rpx;
+  margin:0 20rpx;
+  font-size: 33rpx;
+  color:#7f7f7f;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+}
+.days{
+  width: 60rpx;
+  height: 60rpx;
+  padding:0 20rpx;
+  font-size: 35rpx;
+  color:#7f7f7f;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:7rpx;
+  margin-bottom:7rpx;
+}
+.days_view_box{
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.per{
+  color: #c37a92;
+}
+ .dateOn{
+   border-radius: 50%;
+   border: 5rpx solid #fed000;
+   box-sizing: border-box;
+} 
+.have_sign_in{
+  width: 35rpx;
+  height: 45rpx;
+}
+.page_img{
+  width:68rpx;
+  height: 68rpx;
+}
+.scroll_list{
+  width: 100%;
+  max-height: 740rpx;
+}

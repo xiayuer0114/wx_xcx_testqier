@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.SignInRecord" collection="SignInRecord">
+        <indexs>
+        </indexs>
+        <id name="id"  />
+
+        <property column="userId" name="userId" />
+        <property column="signTime" name="signTime"  />
+        <property column="state" name="state" />
+        <property column="jifen" name="jifen"  />
+
+        <property column="signStartTime" name="signStartTime"  />
+
+        <property column="lianxuMark" name="lianxuMark"  />
+
+    </class>
+</dbObject>

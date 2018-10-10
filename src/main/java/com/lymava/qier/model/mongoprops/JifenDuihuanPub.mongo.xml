@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.JifenDuihuanPub"
+           extends="com.lymava.base.model.Pub" >
+
+        <property column="jifen" name="jifen"  />
+
+
+    </class>
+</dbObject>

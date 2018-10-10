@@ -1,0 +1,69 @@
+
+<import src="../../templates/article.wxml"/>
+<!--pages/mylive/detail.wxml-->
+
+
+<serverLoading showError='{{globalData.showServerError}}' message='{{globalData.showServerMessage}}' showLoading='{{!globalData.sysConfigLoaded}}' style='{{globalData.userInfo.isNewUser?"height:"+globalData.systemInfo.windowHeight+"rpx;overflow:hidden;width:100%;":""}}'>
+
+
+<view class='first_used' wx:if='{{globalData.userInfo.isNewUser}}'>
+  <view class='first_detail'>
+    <block wx:if='{{globalData.userInfo.taskTotal < 4}}'>
+    <image mode='aspectFit' class='btn_tel' bindtap='tapBtnMakeCall' src='{{globalData.resourceLocal}}botton_4.png'></image>
+    <image mode='aspectFit' class='arrow_tel' catchtap='handleFirstUsedWallet' src='{{globalData.resourceLocal}}arrow_1.png'></image>
+    </block>
+
+    <block wx:if='{{globalData.userInfo.taskTotal == 4}}'>
+    <image mode='aspectFit' class='btn_map' bindtap='tapBtnOpenLocation' src='{{globalData.resourceLocal}}botton_3.png'></image>
+    <image mode='aspectFit' class='arrow_map' catchtap='handleFirstUsedWallet' src='{{globalData.resourceLocal}}arrow.png'></image>
+    </block>
+  </view>
+</view>
+
+<!-- 正常显示内容 Begin -->
+<view class='shop_header'>
+  <view class='article_image'>
+    <!--轮播  -->
+    <swiper class="background" autoplay='auto' indicator-dots="true" indicator-color="rgba(255,208,0, .3)" indicator-active-color="#fff5c9" interval='3000' duration='1000'>
+        <swiper-item wx:for='{{article.images}}' wx:key='*this'>
+          <image class="img" mode='aspectFill' src='{{resourceServer + item}}'></image>
+      </swiper-item>
+    </swiper>
+    <view class='info'>
+      <view class='consume'>
+        <text class='price'>CNY {{shop.price}}/人</text>
+        <text class='time'>{{shop.businessHours}}</text>
+      </view>
+      <view class='distances'>
+        <image mode='aspectFit' src='{{resourceLocal}}nav4.png'/>
+        <text>{{shop.distances}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='show_info {{globalData.userInfo.isNewUser? "first_detail" : ""}}'>
+    <view class='shop_sign'>
+      <image mode='aspectFill' src='{{resourceServer + shop.sign}}'/>
+    </view>
+    <view class='shop_name'>
+      <text>{{shop.name}}</text>
+    </view>
+    <view class='shop_contact {{globalData.userInfo.taskTotal < 4 ? "shop_phone": ""}}' data-phone="{{shop.phone}}" bindtap='tapBtnMakeCall'>
+      <view class='btn_icon'>
+        <image mode='aspectFit' src='{{resourceLocal}}phone.png'/>
+      </view>
+      <text>{{shop.phone}}</text>
+    </view>
+    <view class='shop_contact  {{globalData.userInfo.taskTotal == 4 ? "shop_address": ""}}' data-name='{{shop.name}}' data-address='{{shop.address}}' data-latitude="{{shop.coordinate.latitude}}" data-longitude="{{shop.coordinate.longitude}}" bindtap='tapBtnOpenLocation'>
+      <view class='btn_icon'>
+        <image mode='aspectFit' src='{{resourceLocal}}nav3.png'/>
+      </view>
+      <text>{{shop.address}}</text>
+    </view>
+  </view>
+</view>
+
+<template is="ArticleDetail" data='{{article, globalData: globalData, resourceLocal:resourceLocal, resourceServer: resourceServer }}'></template>
+<!-- 正常显示内容 End -->
+
+</serverLoading>

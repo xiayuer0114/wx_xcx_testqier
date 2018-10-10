@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>生活需要一点红1_人物合集1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="telephone=no,email=no" name="format-detection">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /><!-- 屏蔽双击缩放 -->
+		<link rel="stylesheet" type="text/css" href="css/need_red.css"/>
+	    <script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				var window_width = $(window).width();
+				var rem_font_size = window_width*10/75;
+				$("html").css("font-size",rem_font_size+"px");
+                setInterval(function(){
+                    $("#img_5_4").slideDown(1000);
+                },500);
+                setInterval(function(){
+                    $("#img_5_5").fadeIn(1500);
+                },1500);
+                setInterval(function(){
+                    $("#img_5_6").slideDown(1000);
+                },3000);
+                setInterval(function(){
+                    $("#img_5_7").slideDown(1000);
+                },4000);
+                setInterval(function(){
+                    $("#img_5_8").slideDown(1000);
+                },5000);
+                setInterval(function(){
+                    $("#img_5_9").fadeIn(1500);
+
+                },6000);
+			}); 
+		</script>
+	</head>
+	<body>
+		<div class="need51_1">
+			<img src="img/five.png" id="huodong2"/>
+		</div>
+		<div class="need51_2">
+			<div class="need51_01" id="img_5_4" style="display: none;">
+				<img src="img/5-04.png"/>
+			</div>
+			<div class="need51_02" id="img_5_5" style="display: none;">
+				<img src="img/5-05.png"/>
+			</div>
+			<div class="need51_01" id="img_5_6" style="display: none;">
+				<img src="img/5-06.png"/>
+			</div>
+			<div class="need51_01" id="img_5_7" style="display: none;">
+				<img src="img/5-07.png"/>
+			</div>
+			<div class="need51_01" id="img_5_8" style="display: none;">
+				<img src="img/5-08.png"/>
+			</div>
+			<div class="need51_02" id="img_5_9" style="display: none;">
+				<img src="img/5-09.png"/>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+        $("#huodong2").click(function () {
+            window.location.replace("/activities/PinPaiGuShi/fine.html");
+        });
+
+	</script>
+</html>

@@ -1,0 +1,13 @@
+*{margin: 0;padding: 0;font-family: "黑体";}
+body{width:100%;background-size:100% 100%;}
+.clear{clear: both;}
+
+.home_page{width: 100%;text-align: center;margin: 0 auto;}
+.home_page img{width: 100%;}
+
+.h_p1{width: 100%;margin: 0 auto;text-align: center;}
+.h_p1 img{width: 6.6rem;margin: 0 auto;text-align: center;padding-top: 0.31rem;}
+.h_p2{width: 100%;margin: 0 auto;text-align: center;}
+.h_p2 img{width: 4.78rem;padding-top: 0.28rem;}
+.h_p3{width: 100%;margin: 0 auto;text-align: center;}
+.h_p3 img{width: 4.78rem;padding-top: 0.222rem;}

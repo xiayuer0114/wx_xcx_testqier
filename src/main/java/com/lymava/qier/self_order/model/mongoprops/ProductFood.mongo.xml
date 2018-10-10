@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.self_order.model.ProductFood"
+		extends="com.lymava.trade.business.model.Product" >
+	</class>
+</dbObject>

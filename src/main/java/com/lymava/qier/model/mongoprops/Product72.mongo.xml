@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.model.Product72"
+		extends="com.lymava.trade.business.model.Product" >
+
+		<property column="preset_amount_fen" name="preset_amount_fen"  />
+
+		<property column="update_amount_time" name="update_amount_time"  />
+
+		<property column="canWeiFei_fen" name="canWeiFei_fen"  />
+
+		<property column="renshu" name="renshu"  />
+
+		<property column="yushe_state" name="yushe_state"  />
+		
+		<property column="canweifei_state" name="canweifei_state"  />
+	</class>
+</dbObject>

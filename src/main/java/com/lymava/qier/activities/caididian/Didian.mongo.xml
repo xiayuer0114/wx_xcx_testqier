@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.caididian.Didian" collection="Didian">
+		 <indexs>
+            <index column="openid"  />
+        </indexs>
+		<id name="id"  />
+		<property column="didianming" name="didianming" />
+		<property column="tishi" name="tishi" />
+		<property column="pic" name="pic" />
+		<property column="picResult" name="picResult" />
+	</class>
+</dbObject>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.JiKaHuoDong" collection="JiKaHuoDong">
+		 <indexs>
+            <index column="a"  />
+            <index column="e"  />
+        </indexs>
+		<id name="id"  />
+		<property column="a" name="openid" />
+		<property column="b" name="choujiang_jine"  />
+		<property column="c" name="jika_paiming"  />
+		<property column="d" name="lingqu_day"  />
+		<property column="e" name="state" />
+	</class>
+</dbObject>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"  
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="/v2/MarketingActivities" extends="struts-default" namespace="/v2/MarketingActivities">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.action.MarketingActivitiesAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/MarketingActivitiesMerchant" extends="struts-default" namespace="/v2/MarketingActivitiesMerchant">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.action.MarketingActivitiesMerchantAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+	<package name="/v2/GaosanResult" extends="struts-default" namespace="/v2/GaosanResult">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.gaosan.action.GaosanResultAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+     <package name="/v2/WorldCupForecast" extends="struts-default" namespace="/v2/WorldCupForecast">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.action.WorldCupForecastAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    
+     <package name="/v2/RedEnvelopes618" extends="struts-default" namespace="/v2/RedEnvelopes618">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.action.RedEnvelopes618Action" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/NazhongRen" extends="struts-default" namespace="/v2/NazhongRen">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.action.NazhongRenAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/RedEnvelopesKol200" extends="struts-default" namespace="/v2/RedEnvelopesKol200">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.action.RedEnvelopesKol200Action" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/GaokaoChengji" extends="struts-default" namespace="/v2/GaokaoChengji">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.action.GaokaoChengjiAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/Notice" extends="struts-default" namespace="/v2/Notice">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.action.NoticeAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/SubscribeFirstRedEnvelope" extends="struts-default" namespace="/v2/SubscribeFirstRedEnvelope">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.action.SubscribeFirstRedEnvelopeAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/GuaguakaJiangPin" extends="struts-default" namespace="/v2/GuaguakaJiangPin">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.guaguaka.GuaguakaJiangPinAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+	<package name="/v2/Daka" extends="struts-default" namespace="/v2/Daka">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.activities.action.DakaAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+	<package name="/v2/Tanmiguan" extends="struts-default" namespace="/v2/Tanmiguan">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.activities.action.TanmiguanAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+	<package name="/v2/MerchantQingliang" extends="struts-default" namespace="/v2/MerchantQingliang">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.activities.qingliang.MerchantQingliangAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+    <package name="/v2/Didian" extends="struts-default" namespace="/v2/Didian">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.caididian.DidianAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+    <package name="/v2/CaiDidianDaan" extends="struts-default" namespace="/v2/CaiDidianDaan">
+        <global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+        <action name="*" class="com.lymava.qier.activities.caididian.CaiDidianDaanAction" method="{1}">
+            <result>${successResultValue}</result>
+        </action>
+    </package>
+	<package name="/v2/Relife" extends="struts-default" namespace="/v2/Relife">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.activities.caididian.RelifeAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+</struts>

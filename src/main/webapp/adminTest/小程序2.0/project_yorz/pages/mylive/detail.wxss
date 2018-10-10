@@ -1,0 +1,128 @@
+@import "../../templates/article.wxss";
+@import "../../utils/wxParse/wxParse.wxss";
+
+/* pages/mylive/detail.wxss */
+.shop_header{
+  padding-bottom: 20rpx;
+  position: relative;
+  height: 680rpx;
+}
+
+.shop_header .article_image {
+  position: relative;
+  height: 400rpx;
+}
+.shop_header .article_image .background{
+  width: 100%;
+  height: 100%;
+  background-color:#fff;
+}
+.shop_header .article_image .background .img{
+  width: 100%;
+  height: 100%;
+  /*opacity: 0.84;*/
+}
+.shop_header .article_image .info {
+  width: 90%;
+  position:relative;
+  margin: 0 auto;
+  color: white;
+  line-height: 30rpx;
+}
+.shop_header .article_image .info .consume {
+  position:absolute;
+  left: 0;
+  bottom: 12rpx;
+  width: 250rpx;
+}
+.shop_header .article_image .info .consume text{
+  display: block;
+  padding: 3rpx 0;
+}
+.shop_header .article_image .info .distances {
+  position: absolute;
+  right: 0;
+  bottom: 12rpx;
+  display: flex;
+}
+.shop_header .article_image .info .distances text{
+  padding: 0 6rpx;
+}
+.shop_header .article_image .info .distances image{
+  width: 23rpx;
+  height: 23rpx;
+  padding-top: 4rpx;
+}
+
+.shop_header .show_info {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -88rpx;
+  position: absolute;
+  z-index: 2;
+  min-height: 380rpx;
+}
+.shop_header .shop_sign {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.shop_header .shop_sign image {
+  width: 175rpx;
+  height: 175rpx;
+  overflow: hidden;
+  border: 1rpx solid #FFCA03;
+  /* box-shadow: 2px 2px 3px #FFCA03; */
+}
+.shop_header .shop_name {
+  padding: 14rpx 0;
+  margin-bottom: 18rpx;
+  clear: both;
+  display: block;
+  font-family: 'customFont-Regular';
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.shop_header .shop_contact {
+  position: relative;
+  width: 90%;
+  height: 30rpx;
+  margin: 0 auto;
+  padding: 12rpx 0;
+  color: #636363;
+  font-size: 25rpx;
+  text-align: left;
+  line-height: 36rpx;
+  /*
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  */
+}
+.shop_header .shop_contact text{
+  display: block;
+  padding-right: 55rpx;
+}
+
+.shop_header .shop_contact .btn_icon{
+  position: absolute;
+  top: 8rpx;
+  right: 0;
+  height: 42rpx;
+  width: 42rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop_header .shop_contact image {
+  height: 22rpx;
+  width: 22rpx;
+  border: 1rpx solid #FFCA03;
+  border-radius: 50%;
+  padding: 6rpx;
+}
+

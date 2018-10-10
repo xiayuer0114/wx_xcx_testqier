@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+            
+	<bean id="MerChantFrontAction" class="com.lymava.qier.action.MerChantFrontAction" scope="prototype" />
+	<bean id="CashierAction" class="com.lymava.qier.action.CashierAction" scope="prototype" />
+	
+	<bean id="QierFrontAction" class="com.lymava.qier.front.QierFrontAction" scope="prototype" />
+	<bean id="CashOutSystemAction" class="com.lymava.qier.front.CashOutSystemAction" scope="prototype" />
+	<bean id="RedEnvelopes618Action" class="com.lymava.qier.activities.action.RedEnvelopes618Action" scope="prototype" />
+	<bean id="RedEnvelopesKol200Action" class="com.lymava.qier.activities.action.RedEnvelopesKol200Action" scope="prototype" />
+	<bean id="NoticeAction" class="com.lymava.qier.activities.action.NoticeAction" scope="prototype" />
+	
+</beans>
+ 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mongo>
+	<mapping>
+
+		<!-- 性格测试活动表 -->
+		<map>com/lymava/qier/activities/model/XingGeTest.mongo.xml</map>
+		<!-- 集卡活动表 -->
+		<map>com/lymava/qier/activities/model/JiKaHuoDong.mongo.xml</map>
+		<map>com/lymava/qier/activities/model/MeiRiJiKa.mongo.xml</map>
+	</mapping>
+</mongo>

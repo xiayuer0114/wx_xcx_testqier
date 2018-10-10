@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "生活圈",
+  "usingComponents": {
+    "search-bar": "/components/searchBar/index"
+  }
+}

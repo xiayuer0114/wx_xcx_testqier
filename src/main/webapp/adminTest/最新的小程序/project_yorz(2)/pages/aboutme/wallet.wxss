@@ -1,0 +1,249 @@
+/* pages/aboutme/wallet.wxss */
+.page{
+  min-height: 100%;
+  position: relative;
+}
+.noscroll {
+  height: 100%;
+  overflow: hidden;
+}
+.use_rules{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  background: rgba(0, 0, 0, 0.36);
+}
+.use_rules .message_box{
+
+  width: 75%; /* 原图比例 480rpx*/
+  height: 55%;/* 原图比例 615rpx*/
+  margin: 35% auto;
+  position: relative;
+  display: flex; /* flex布局 */
+  justify-content: center; /* 使子项目水平居中 */
+  align-items: center; /* 使子项目垂直居中 */
+}
+.use_rules .message_box .closed {
+  height: 90rpx;
+  width: 90rpx;
+  position: absolute;
+  top: -35rpx;
+  right: -35rpx;
+}
+.use_rules .message_box .background{
+  width: 100%;
+  height: 100%;
+}
+.use_rules .message_box .content{
+  position: absolute;
+  top: 46%;
+  left: 15%;
+  width: 75%;
+}
+.use_rules .message_box text{
+  display: block;
+}
+.use_rules .message_box .title{
+  float: left;
+  width: 50%;
+}
+.use_rules .message_box .tit{
+  font-weight: bold;
+}
+.use_rules .message_box .desc{
+  width: 95%;
+  overflow: hidden;
+  /*
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  */
+}
+.use_rules .message_box .rules{
+  clear: both;
+  width: 100%;
+  /*max-height: 300rpx;*/
+  overflow: hidden;
+}
+.header{
+  /*width: 100%;*/
+  min-height: 220rpx;
+  overflow: hidden;
+  padding: 35rpx 32rpx;
+  border-top: 1rpx solid #626262;
+  border-bottom: 1rpx solid #626262;
+  text-align: center;
+}
+.header .trade_detail{
+  position: absolute;
+  right: 32rpx;
+  font-size: 24rpx;
+  color: #6E6D6D;
+}
+.header .icon{
+  width: 70rpx;
+  height: 70rpx;
+}
+.header text {
+  font-size: 26rpx;
+  line-height: 42rpx;
+}
+.header .nick_name,
+.header .account_balance {
+  margin-top: 26rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.header .account_balance {
+  margin-bottom: 8rpx;
+}
+.header .nick_name text{
+  color: #6A6A6A;
+}
+.header .account_balance text{
+  font-family: 'customFont-Regular';
+  color: #000000;
+  /* font-weight: 300; */
+}
+
+
+.body{
+  padding-bottom: 100rpx;
+  min-height: 100%;
+}
+.body .item{
+  padding: 20rpx;
+  background: #fff;
+  border-bottom: 4rpx solid #eee;
+}
+.body .item::after{
+  clear: both;
+}
+.body .shop_avatar {
+  width: 165rpx;
+  height: 165rpx;
+  position: relative;
+}
+.body .shop_avatar .photo {
+  width: 100%;
+  height: 100%;
+}
+.body .shop_avatar .status{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.3) */
+}
+.body .shop_avatar .status image{
+  width: 100%;
+  height: 100%;
+}
+
+.body .info{
+  width: 500rpx;
+  height: 180rpx;
+  font-size: 24rpx;
+  color: #6e6d6d;
+  float: right;
+  position: relative;
+}
+.body .info .top{
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.body .info .top::after{
+  clear: both;
+}
+.body .info .top .title{
+  font-family: 'customFont-Regular';
+  font-size: 28rpx;
+  width: 75%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.body .info .top .label{
+  width: 25%;
+  float: right;
+  display: flex; /* flex布局 */
+  justify-content: center; /* 使子项目水平居中 */
+  align-items: center; /* 使子项目垂直居中 */
+}
+.body .info .top .label image{
+  padding-right: 10rpx;
+  width: 19rpx;
+  height: 30rpx;
+}
+/* 信息底部*/
+.body .info .bottom {
+  width: 100%;
+  line-height: 48rpx;
+  position: absolute;
+  bottom: 0rpx;
+}
+.body .info .bottom text {
+  background-position:0 -15rpx;
+}
+.body .info .bottom .row{
+  clear: both;
+}
+
+.body .bottom .amount{
+  width: 60%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.body .bottom .explain{
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.body .bottom .explain .address_icon{
+  width:25rpx;
+  height:25rpx;
+  padding-right: 5rpx;
+}
+.body .bottom .amount,
+.body .bottom .explain{
+  float: left;
+}
+.body .bottom .operation,
+.body .bottom .deadline{
+  float: right;
+  line-height: 36rpx;
+  display: flex; /* flex布局 */
+  justify-content: center; /* 使子项目水平居中 */
+  align-items: center; /* 使子项目垂直居中 */
+}
+.body .bottom .operation image{
+  padding-left: 6rpx;
+  width: 23rpx;
+  height: 23rpx;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0rpx;
+  width: 100%;
+  text-align: center;
+  background-color: #FFF;
+  padding: 15rpx 0;
+}
+.footer image{
+  width: 90%;
+  height: 73rpx;
+  overflow: hidden;
+}

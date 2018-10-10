@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "生活家",
+  "usingComponents": {
+    "search-bar": "/components/searchBar/index"
+  }
+  
+ 
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.UserBrowseHistory" collection="UserBrowseHistory">
+
+        <indexs>
+        </indexs>
+        <id name="id"  />
+
+        <property column="userId" name="userId" />
+        <property column="pubId" name="pubId" />
+
+        <property column="state" name="state" />
+
+        <property column="last_browse_time" name="last_browse_time" />
+
+    </class>
+</dbObject>

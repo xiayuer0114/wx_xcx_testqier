@@ -1,0 +1,55 @@
+/* components/server_loading.wxss */
+
+.server_info{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.9);
+  
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.server_detail{
+  width: 80%;
+  padding-bottom: 30%;
+  text-align: center;
+  line-height: 46rpx;
+}
+.server_detail .title{
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.server_detail .desc{
+  text-align: left;
+  padding-bottom: 32rpx;
+}
+
+
+.tabBar{
+  width: 100%;
+  height: 86rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: white;
+  z-index: 99;
+  border-top: 2rpx solid #d0d0d0;
+}
+.tabBar .tabbar_list{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.tabBar .tabbar_list .item{
+  width: 25%;
+  height: 86rpx;
+  text-align: center;
+}
+.tabBar .tabbar_list .item image{
+  width: 80rpx;
+  height: 86rpx;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.JifenDuihuanVoucherPub"
+           extends="com.lymava.qier.model.JifenDuihuanPub" >
+
+        <property column="voucherId" name="voucherId"  />
+
+    </class>
+</dbObject>

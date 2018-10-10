@@ -1,0 +1,417 @@
+/* pages/my_collect/my_collect.wxss */
+
+/* .bg_view{
+  width: 100%;
+  height: 350rpx;
+  position: relative;
+}
+.bg_img{
+  width: 100%;
+  height: 100%;
+}
+
+.inside_box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(238,238,238, 0.5);
+  top:0 ;
+}
+.change_bg_image{
+  position: absolute;
+  top:20rpx;
+  right:20rpx;
+  width: auto;
+  height: 30rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.avatar_view{
+  width: 100%;
+  height: 185rpx;
+  margin-top:30rpx;
+  display: flex;
+  justify-content: center;
+}
+.avatar_img{
+  width:185rpx;
+  height: 185rpx;
+}
+.nickname{
+  margin-top: 15rpx;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+}
+.user{
+  margin-top: 15rpx;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+} */
+
+.nick_name {
+  width: 95%;
+  height: 60rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  color: #333;
+}
+
+/*收藏栏  */
+
+.collect_view {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+}
+
+.item_view {
+  width: 33.33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  font-size: 33rpx;
+  color: #333;
+}
+
+.icon_view {
+  width: auto;
+  height: auto;
+  margin-top: 25rpx;
+  display: flex;
+  align-items: center;
+}
+
+.collect {
+  width: 66rpx;
+  height: 57rpx;
+}
+
+.history_icon {
+  width: 67rpx;
+  height: 67rpx;
+}
+
+.record_icon {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.tex {
+  font-size: 30rpx;
+  color: #999;
+}
+
+/*我的收藏  */
+
+.record_date {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: auto;
+  font-size: 30rpx;
+  color: #999;
+  /* margin-top:20rpx; */
+}
+
+.history {
+  margin-right: 10rpx;
+  width: 41rpx;
+  height: 41rpx;
+}
+
+.record_list_view {
+  width: 92%;
+  margin-left: 40rpx;
+  background-color: #eee;
+  height: 170rpx;
+  /* margin-top:15rpx;  */
+}
+
+.record_list {
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.record_prize {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.record_prize_detail {
+  width: 74%;
+  font-size: 30rpx;
+  color: #999;
+  height: 140rpx;
+}
+
+.table {
+  width: 100%;
+  height: 120rpx;
+}
+
+.record_prize_title {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  align-items: center;
+}
+
+.title_right {
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: center;
+  font-size: 22rpx;
+  color: #999;
+}
+
+.niupai {
+  width: 16rpx;
+  height: 26rpx;
+  margin-right: 15rpx;
+}
+
+.price {
+  width: 100%;
+  margin-top: 30rpx;
+  font-size: 24rpx;
+}
+
+.address_view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 34rpx;
+  font-size: 24rpx;
+  margin-top: 7rpx;
+}
+
+.address {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.addr_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.discount {
+  max-width: 30%;
+}
+
+.coupon {
+  max-width: 30%;
+  margin-left: 15rpx;
+}
+
+.toshop {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.arrow {
+  width: 15rpx;
+  height: 15rpx;
+  border-right: 1rpx solid #666;
+  border-bottom: 1rpx solid #666;
+  transform: rotate(-45deg);
+  margin-left: 10rpx;
+}
+
+.left_line {
+  border-left: 1rpx solid #eee;
+}
+
+.left_border {
+  width: 90%;
+  margin-left: 36rpx;
+  height: auto;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  display: flex;
+  align-items: center;
+}
+
+.outside_box {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.big_list_box {
+  margin-top: 15rpx;
+  width: 100%;
+  height: auto;
+  /* position: absolute;
+  left: 750rpx; *//* display: flex; *//* justify-content: center; */
+}
+
+/*浏览记录  */
+
+.record_date {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: auto;
+  font-size: 30rpx;
+  color: #999;
+  /* margin-top:20rpx; */
+}
+
+.history {
+  margin-right: 10rpx;
+  width: 41rpx;
+  height: 41rpx;
+}
+
+.record_list_view {
+  width: 92%;
+  margin-left: 40rpx;
+  background-color: #eee;
+  height: 170rpx;
+  /* margin-top:15rpx;  */
+}
+
+.record_list {
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.record_prize {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.record_prize_detail {
+  width: 75%;
+  font-size: 30rpx;
+  color: #999;
+  height: 140rpx;
+}
+
+.table {
+  width: 100%;
+  height: 120rpx;
+}
+
+.record_prize_title {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+}
+
+.title_right {
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: center;
+  font-size: 22rpx;
+  color: #999;
+}
+
+.niupai {
+  width: 16rpx;
+  height: 26rpx;
+  margin-right: 15rpx;
+}
+
+.price {
+  width: 100%;
+  margin-top: 30rpx;
+  font-size: 24rpx;
+}
+
+/* .address_view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-size: 24rpx;
+  margin-top: 7rpx;
+} */
+
+.discount {
+  max-width: 30%;
+}
+
+.coupon {
+  max-width: 30%;
+  margin-left: 15rpx;
+}
+
+.toshop {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.arrow {
+  width: 15rpx;
+  height: 15rpx;
+  border-right: 1rpx solid #666;
+  border-bottom: 1rpx solid #666;
+  transform: rotate(-45deg);
+  margin-left: 10rpx;
+}
+
+.page_img {
+  width: 68rpx;
+  height: 68rpx;
+}
+
+.scroll_list {
+  width: 750rpx;
+  min-height: 120rpx;
+  max-height: 960rpx;
+}
+
+.table {
+  width: 100%;
+  height: 100rpx;
+}
+
+.shop-name-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: 55%;
+}

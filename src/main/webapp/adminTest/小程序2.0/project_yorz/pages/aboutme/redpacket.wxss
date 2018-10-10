@@ -1,0 +1,107 @@
+/* pages/aboutme/redpacket.wxss */
+
+.body{
+  padding-bottom: 100rpx;
+}
+
+.body .item{
+  padding: 20rpx;
+  background: #fff;
+  border-bottom: 4rpx solid #eee;
+}
+.body .item::after{
+  clear: both;
+}
+.body .photo{
+  width: 165rpx;
+  height: 165rpx;
+}
+.body .info{
+  width: 500rpx;
+  height: 180rpx;
+  font-size: 24rpx;
+  color: #6e6d6d;
+  float: right;
+  position: relative;
+}
+.body .info .top{
+
+}
+.body .info .top::after{
+  clear: both;
+}
+.body .info .top .title{
+  font-size: 28rpx;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.body .info .top .label{
+  float: right;
+}
+.body .info .top .label image{
+  display: inline-block;
+  vertical-align: text-top;
+  width: 22rpx;
+  height: 35rpx;
+}
+/* 信息底部*/
+.body .info .bottom {
+  width: 100%;
+  line-height: 42rpx;
+  position: absolute;
+  bottom:0rpx;
+}
+.body .info .bottom text{
+  display: block;
+}
+.body .info .bottom .line{
+  clear: both;
+}
+.body .bottom .explain{
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.body .bottom .amount,
+.body .bottom .explain{
+  float: left;
+}
+.body .bottom .operation{
+  position: relative;
+}
+.body .bottom .operation .share_btn{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 11;
+}
+.body .bottom .operation,
+.body .bottom .deadline{
+  float: right;
+}
+.body .bottom .operation image{
+  width: 23rpx;
+  height: 23rpx;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0rpx;
+  width: 100%;
+  text-align: center;
+  background-color: #FFF;
+  padding: 15rpx 0;
+}
+.footer image{
+  width: 90%;
+  height: 73rpx;
+  overflow: hidden;
+}

@@ -1,0 +1,49 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.1",
+	"appid": "wx83907c5fb8ffcfdd",
+	"projectname": "project_yorz",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "获得红包进入",
+					"pathName": "pages/index/home",
+					"query": "uid=5abd8d647d170b7c06047fdc&packetId=5b2f38167d170b366d5123aa",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群1",
+						"shareName": "ZW6LhmaAJ_xteoyITp5aiB5tE4JZBz3Zp_CnDCRBfxw@cr4dev",
+						"shareKey": "T2KmS7AmfBdYz_kKrCkMTVXueLeE6ECzbHMOsSXUct87IMokuuc7pJfs42E3KfGVYfbdzg3DCSibtOH9Ch6WTQ~~"
+					}
+				}
+			]
+		}
+	}
+}

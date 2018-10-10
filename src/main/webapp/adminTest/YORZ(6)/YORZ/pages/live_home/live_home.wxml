@@ -1,0 +1,43 @@
+<!--pages/live_home/live_home.wxml-->
+<!--搜索栏  -->
+<view class="search_view">
+  <search-bar/>
+</view>
+
+
+<view class="main_view">
+
+  <block wx:for="{{detail}}">
+    <view bindtap='watchMore' class="artcle_view_box" data-id="{{item.pubId}}" data-mark="{{item.mark}}" hidden="{{item.isVideo==200}}">
+      <view class="artcle_view">
+        <image class="artcle_img" src='{{imgUrl+item.pubPic}}'></image>
+        <view class='artcle_desc'>
+          <view class="artcle_title"><text class='artcle_title_text'>{{item.pubName}}</text> </view>
+
+          <view class="artcle_info"><text class='artcle_info_text'>{{item.pubIntro}}</text> </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="video_box" hidden="{{item.isVideo==300}}">
+      <view data-id="{{item.pubId}}" class="video_title">{{item.pubName}}</view>
+      <view class="video_view">
+
+        <video class="my_video" poster='{{imgUrl+item.pubPic}}' src="{{item.link}}">
+          <!-- <cover-view hidden='{{!show_poster}}' class='c_view'>
+            <cover-image class='c_img' src='{{imgUrl+item.pubPic}}'></cover-image>
+          </cover-view> -->
+        </video>
+      </view>
+    </view>
+  </block>
+
+</view>
+
+
+
+
+<view class="title_view">
+  <image class="title_img" src="../../images/pic3.jpg"></image>
+</view>
+<view class='table'></view>

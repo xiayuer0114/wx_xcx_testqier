@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.GaokaoChengji" collection="GaokaoChengji">
+		 <indexs>
+            <index column="openid"  />
+        </indexs>
+		<id name="id"  />
+		<property column="openid" name="openid" /> 
+		<property column="user_name" name="user_name"  />
+		<property column="sex" name="sex"  />
+		<property column="kemu" name="kemu"  />
+		<property column="xuexiao" name="xuexiao"  />
+		<property column="state" name="state"  />
+	</class>
+</dbObject>

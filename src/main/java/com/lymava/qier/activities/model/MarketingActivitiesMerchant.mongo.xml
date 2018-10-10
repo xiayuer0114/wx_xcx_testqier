@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.MarketingActivitiesMerchant" collection="MarketingActivitiesMerchant" >
+		<indexs>
+			<index column="marketingActivities_id"  />
+            <index column="user_merchant_id"  />
+            <index column="state"  />
+        </indexs>
+		<id name="id"  />
+		<property column="every_day_count" name="every_day_count"  />
+		<property column="all_day_count" name="all_day_count"  />
+		<property column="start_date" name="start_date"  />
+		<property column="end_date" name="end_date"  />
+		<property column="day_start_time" name="day_start_time"  />
+		<property column="day_end_time" name="day_end_time"  />
+		<property column="start_week" name="start_week"  />
+		<property column="end_week" name="end_week"  />
+		<property column="state" name="state"  />
+		<property column="user_merchant_id" name="user_merchant_id"  />
+		<property column="marketingActivities_id" name="marketingActivities_id"  />
+	</class>
+</dbObject>

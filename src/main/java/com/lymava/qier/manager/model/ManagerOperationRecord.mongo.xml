@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.manager.model.ManagerOperationRecord"
+		extends="com.lymava.trade.base.model.BusinessRecord"  collection="ManagerOperationRecord" >
+		 <indexs>
+            <index column="userV2_submit_id"  />
+        </indexs>
+		<property column="userV2_submit_id" name="userV2_submit_id"  />
+		<property column="userV2_shenghe_id" name="userV2_shenghe_id"  />
+	</class>
+</dbObject>

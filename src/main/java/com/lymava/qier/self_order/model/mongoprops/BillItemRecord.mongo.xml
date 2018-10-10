@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.self_order.model.BillItemRecord"
+		extends="com.lymava.trade.business.model.TradeRecord" collection="BillItemRecord" >
+		<indexs>
+			<index column="m1" />
+		</indexs>
+		<property column="m1" name="paymentRecord_id" />
+	</class>
+</dbObject>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"  
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="/v2/BackTestUser" extends="struts-default" namespace="/v2/BackTestUser">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.backauto.action.BackTestUserAction"
+			method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+	<!-- 红包发放规则action -->
+	<package name="/v2/MerchantRedEnvelopeRecommendRule" extends="struts-default" namespace="/v2/MerchantRedEnvelopeRecommendRule">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.redenvelope.action.MerchantRedEnvelopeRecommendRuleAction"
+			method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+	
+	
+	<!-- 红包发放规则action -->
+	<package name="/v2/MerchantRedEnvelopeSharingRule" extends="struts-default" namespace="/v2/MerchantRedEnvelopeSharingRule">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.redenvelope.action.MerchantRedEnvelopeSharingRuleAction"
+			method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+</struts>

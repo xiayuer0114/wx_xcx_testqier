@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.XingGeTest" collection="XingGeTest">
+		 <indexs>
+            <index column="a"  />
+            <index column="e"  />
+        </indexs>
+		<id name="id"  />
+		<property column="a" name="openid" />
+		<property column="b" name="test_name"  />
+		<property column="c" name="da_an"  />
+		<property column="d" name="result_img"  />
+		<property column="e" name="state" />
+	</class>
+</dbObject>

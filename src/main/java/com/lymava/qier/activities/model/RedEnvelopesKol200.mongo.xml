@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.RedEnvelopesKol200" collection="RedEnvelopesKol200">
+		 <indexs>
+            <index column="openid"  />
+            <index column="state"  />
+            <index column="data_id"  />
+        </indexs>
+		<id name="id"  />
+		<property column="openid" name="openid" /> 
+		<property column="amount_fen" name="amount_fen"  />
+		<property column="state" name="state"  />
+		<property column="data_id" name="data_id"  />
+	</class>
+</dbObject>

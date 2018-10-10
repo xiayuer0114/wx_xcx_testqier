@@ -1,0 +1,47 @@
+*{margin: 0;padding: 0;font-family: "微软雅黑";}
+.clear{clear: both;}
+body{background-color: #e7eaec;}
+
+/*商家总金额*/
+
+.b_font{margin-top: 1rem;}
+.b_f{font-size: 1rem;padding-left: 1.5%;color: #504f4f;margin-top: 0.5rem;float: left;}
+.b_f1{font-size: 1rem;padding-left: 8.5rem;color: #504f4f;margin-top: 0.5rem;}
+.kuan input{height:1.5rem;  float:left;color: #c7c5c5;}
+.an input{ width:50px; height:1.7rem; float:left;color: #504f4f;}
+.b_f2{font-size: 1rem;padding-left: 25rem;color: #504f4f;margin-top: 0.5rem;}
+.kuan1 input{height:1.5rem;  float:left;color: #c7c5c5;width: 4.5rem;text-align: center;}
+.kuan1{float: left;}
+.kuan2 input{height:1.5rem;  float:left;color: #c7c5c5;width: 4.5rem;text-align: center;}
+
+
+.b_s{margin-top: 1.5rem;}
+.backstage1_1{background-color: #FFFFFF;box-shadow: 0px 0px 17px -1px #c7c7c7;width: 30%;float: left;margin-left: 1.5%;height: 6rem;}
+.ba1{float: left;padding-top: 1.15rem;width: 50%;text-align: center;}
+.ba2{float: right;width: 50%;text-align: center;padding-top: 0.65rem;}
+.ba1_1{color: #6b6b6b;font-size: 1.1rem;}
+.ba1_2{color: #cccccc;font-size: 1.8rem;}
+.backstage1_2{background-color: #FFFFFF;box-shadow: 0px 0px 17px -1px #c7c7c7;width: 30%;margin-left: 3.5%;float: left;height: 6rem;}
+.bb1{float: left;width: 50%;text-align: center;padding-top: 0.35rem;}
+.bb1_1{color: #6b6b6b;font-size: 0.6rem;}
+.bb1_2{color: #cccccc;font-size: 1.3rem;}
+.bb2{float: right;width: 50%;text-align: center;padding-top: 0.65rem;}
+.backstage1_3{background-color: #FFFFFF;box-shadow: 0px 0px 17px -1px #c7c7c7;width: 30%;margin-left: 3.5%;float: left;height: 6rem;margin-right: 1.5%;}
+.b_f3{font-size: 1rem;color: #504f4f;margin-top: 0.5rem;padding-left: 1.5%;}
+
+.kuan3{float: left;padding-left: 1.5rem;}
+.kuan3 input{height:1.5rem;  float:left;color: #c7c5c5;width: 4.5rem;text-align: center;}
+.kuan4 input{height:1.5rem;  float:left;color: #c7c5c5;width: 4.5rem;text-align: center;}
+.kuan5{float: left;}
+.an1 input{ width:50px; height:1.7rem; float:left;color: #504f4f;margin-left: 1.5rem;}
+
+.from{width: 97%;margin: 0 auto;}
+.from_a td{height:2rem;padding-left: 0.5%;font-size: 1rem;font-weight: bold;}
+.td_1{width:15%;}
+.td_2{width:8%;}
+.td_3{width:15%;}
+.td_4{width:12%;}
+.td_5{width:24%;}
+.from_b{background-color: #f8f8f8;}
+.from_b td{height:3rem;padding-left: 0.5%;}
+.from_c td{height:3rem;padding-left: 0.5%;}

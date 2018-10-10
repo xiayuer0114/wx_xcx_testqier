@@ -1,0 +1,8 @@
+<!--pages/index/notFound.wxml-->
+<view class='page'>
+  <view>
+    <text>页面已不存在</text>
+    <button bindtap="tapBtnNavigateBack">返回</button>
+  </view>
+</view>
+

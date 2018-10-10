@@ -1,0 +1,105 @@
+<!--pages/aboutme/wallet.wxml-->
+
+
+
+<serverLoading showError='{{globalData.showServerError}}' message='{{globalData.showServerMessage}}' showLoading='{{!globalData.sysConfigLoaded}}'>
+
+
+<view class='first_used' wx:if='{{globalData.userInfo.isNewUser}}'>
+  <view class='first_home'>
+    <image mode='aspectFit' class='info' src='{{globalData.resourceLocal}}tel.png'></image>
+    <image mode='aspectFit' class='btn_next' catchtap='handleFirstUsedWallet' src='{{globalData.resourceLocal}}botton_1.png'></image>
+  </view>
+</view>
+
+<!-- 正常显示内容 Begin -->
+<view class='page {{showRules.enabled ? "noscroll" : ""}}'>
+  <view class='use_rules' wx:if='{{showRules.enabled}}' catchtap='handleTapCloseMessage' catchtouchmove='handleTouchMoveMark'>
+    <view class='message_box' catchtouchmove='handleTouchMoveMark'>
+      <image class='closed' src='{{resourceLocal}}closed.png' catchtap='handleTapCloseMessage'></image>
+      <image class='background' src='{{resourceServer + globalData.ruleBackground}}'></image>
+      <scroll-view class='content' scroll-y='true' style='height: 300rpx;'>
+        <!--
+        <view class='title'>
+          <text class='tit'>使用时间:</text>
+          <text class='desc'>商家营业时间</text>
+        </view>
+        <view class='title'>
+          <text class='tit'>使用范围:</text>
+          <text class='desc'>全场通用</text>
+        </view>
+        -->
+        <view class='rules'>
+          <!--<text class='tit'>使用规则:</text>-->
+          <text class='desc' wx:for='{{showRules.info}}' wx:key='*this'>{{item}}</text>
+        </view>
+        
+      </scroll-view>
+    </view>
+  </view>
+  <view class='header {{globalData.userInfo.isNewUser ? "first_account" : ""}}'>
+    <navigator class='trade_detail' url='/pages/aboutme/tradeDetail'>交易明细</navigator>
+    <image class='icon' src='{{resourceLocal}}icon4.png' />
+
+      <view class='nick_name'>
+        <block wx:if='{{canUse_OpenData}}'> <!-- SDK版本1.4.0支持 -->
+          <open-data type="userNickName"><!-- 用户昵称 --></open-data>
+        </block>
+        <block wx:elif='{{globalData.userInfo.nickName == "" || globalData.userInfo.avatarUrl == ""}}'>
+          <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取我的资料</button>
+        </block>
+        <block wx:else>
+          <text>{{globalData.userInfo.nickName}}</text>
+        </block>
+      </view>
+      
+      <view class='account_balance'>
+        <text class='balance'>通用红包: ¥{{currentAttribute.balance}}</text>
+      </view>
+  </view>
+  <view class='body'>
+    <block wx:if='{{dataList.length > 0}}'>
+      <view class='item' wx:for='{{dataList}}' wx:key='id' wx:for-index="index" wx:for-item="item">
+        <view class='info'>
+          <view class='top'>
+            <text class='title'>{{item.name}}</text>
+            <view class='label'>
+              <image mode='aspectFit' src='{{resourceLocal}}icon3.png'></image>
+              {{item.label}}
+            </view>
+          </view>
+
+          <view class='bottom'>
+            <view class='row'>
+              <text class='deadline'>有效期至：{{item.date}}</text>
+              <text class='amount'>金额：CNY{{item.title}}</text>
+            </view>
+            <view class='row'>
+              <view class='operation' wx:if='{{item.status}}' data-id='{{item.id}}' bindtap='tapBtnJumpToShop'>前往商家 <image mode='aspectFit' src='{{resourceLocal}}icon5.png' /></view>
+              <view class='explain' data-rule='{{item.rule}}' catchtap='handleTapUsedRule'>
+                <!--<image class="address_icon" mode='aspectFit' src='{{resourceLocal}}nav3.png' />地址：{{item.address}}-->
+                <text class='title_bg'>使用规则</text>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class='shop_avatar'>
+            <image class='photo' mode='aspectFit' src='{{resourceServer + item.shopPhoto}}' />
+            <view class='status' wx:if='{{!item.status}}'>
+              <image mode='aspectFit' src='{{resourceLocal}}shop_disable_.png' />
+            </view>
+        </view>
+      </view>
+    </block>
+    <view class='not_record' wx:else>
+      <text>{{NotFoundData}}</text>
+    </view>
+  </view>
+  <view class='footer'>
+    <image mode='aspectFit' src='{{resourceLocal}}bottom2.png' />
+  </view>
+</view>
+<!-- 正常显示内容 End -->
+
+</serverLoading>

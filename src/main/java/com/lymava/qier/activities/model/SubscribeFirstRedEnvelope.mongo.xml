@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.SubscribeFirstRedEnvelope" collection="SubscribeFirstRedEnvelope">
+		 <indexs>
+            <index column="openid"  />
+            <index column="state"  />
+        </indexs>
+
+		<id name="id"  />
+		<property column="openid" name="openid" />
+		<property column="amount_fen" name="amount_fen"  />
+		<property column="startTime" name="startTime"  />
+		<property column="endTime" name="endTime"  />
+		<property column="state" name="state"  />
+
+	</class>
+</dbObject>

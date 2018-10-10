@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+	项目的开发配置 
+-->
+<properties>
+	<property key="project_path" value="/mnt/workdisk/workspace/java/qier"	/>
+	<property key="project_initdb_path" value="/mnt/workdisk/workspace/java/qier/src/main/resources/database"	/>
+</properties>
+		

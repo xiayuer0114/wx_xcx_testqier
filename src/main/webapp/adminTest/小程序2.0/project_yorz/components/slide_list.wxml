@@ -1,0 +1,35 @@
+<!--components/slide_list.wxml-->
+<block wx:if='{{dataList.length > 0}}'>
+    <scroll-view class='scroll_list' scroll-y upper-threshold='50' lower-threshold='50'
+      scroll-into-view="{{toView}}" scroll-with-animation='true'
+      bindscrolltoupper="_handleScrollUpper" bindscrolltolower="_handleScrollLower" bindscroll="_handleScroll"
+      style='height: {{app.globalData.systemInfo.windowHeight}}px;'
+    >
+      <view class='slide_body'>
+        <view class='slide_item' style='height:{{app.globalData.systemInfo.windowHeight - 120}}px; margin-bottom: {{ index == dataList.length - 1 ? itemMargin * 2 : itemMargin }}rpx;'
+        wx:for='{{dataList}}' wx:key='id' wx:for-item="item" wx:for-index="index" id="id_{{item.id}}" 
+        data-id='{{item.id}}' bindtap='_handleTapItem' animation='{{animationData[item.order]}}'>
+          <image class='background' mode='widthFix' src='{{app.globalData.resourceServer + item.photo}}' />
+          <view class='contents'>
+            <!--  // 屏蔽相机
+            -->
+            <view class='camera'>
+              {{item.desc}}
+              <!--<image mode='aspectFit' src='{{app.globalData.resourceLocal}}camera_1.png' />-->
+            </view>
+            <view class='info'>
+              <view class='type' data-id='{{item.typeId}}' data-name='{{item.typeName}}' catchtap='_handleTapType'>
+                <text>{{item.typeName}}</text>
+                <image class='icon' mode='aspectFit' src='{{app.globalData.resourceLocal}}topic.png'></image>
+              </view>
+              <text class='title'>{{item.title}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+</block>
+<view class='not_record' wx:else>
+  <text>--没有数据--</text>
+</view>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.redenvelope.model.MerchantRedEnvelopeSharingRule" collection="MerchantRedEnvelopeSharingRule">
+		<indexs>
+        	<index column="user_merchant_xiaofei_id"  />
+        	<index column="user_merchant_gongxiang_id"  />
+        	<index column="sort_id"  />
+        </indexs>
+		
+		<id name="id"  />
+		<property column="b" name="user_merchant_xiaofei_id" />
+		<property column="d" name="user_merchant_gongxiang_id" />
+		<property column="e" name="state" />
+		<property column="f" name="start_time_shengxiao" />
+		<property column="g" name="end_time_shengxiao" />
+		<property column="h" name="sort_id" />
+		
+	</class>
+</dbObject>

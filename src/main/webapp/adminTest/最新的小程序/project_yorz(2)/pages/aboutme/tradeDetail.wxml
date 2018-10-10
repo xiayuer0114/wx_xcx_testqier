@@ -1,0 +1,26 @@
+<!--pages/aboutme/tradeDetail.wxml-->
+
+<serverLoading showError='{{globalData.showServerError}}' message='{{globalData.showServerMessage}}' showLoading='{{!globalData.sysConfigLoaded}}'>
+
+<!-- 正常显示内容 Begin -->
+<view class='page'>
+  <view class='body'>
+    <view class='trade_list' data-id='{{item.id}}' wx:for='{{dataList}}' wx:key='id'>
+      <view class='item'>
+        <view class='amount'>
+          {{item.amount}}
+        </view>
+        <view class='content'>
+          <text class='title'>{{item.name}}</text>
+          <text class='date'>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='footer'>
+    <image mode='aspectFit' src='{{resourceLocal}}bottom2.png' />
+  </view>
+</view>
+<!-- 正常显示内容 End -->
+
+</serverLoading>

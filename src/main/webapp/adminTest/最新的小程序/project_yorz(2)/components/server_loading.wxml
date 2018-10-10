@@ -1,0 +1,17 @@
+<!--components/server_loading.wxml-->
+
+<view class='server_info' wx:if='{{showError}}'>
+  <view class='server_detail'>
+    <view class='title'>服务器运行异常,请稍后再试</view>
+    <view class='desc'>{{message}}</view>
+    <button bindtap='onRefresh'>刷新</button>
+  </view>
+</view>
+<view class='server_info' wx:if='{{showLoading}}'>
+  <view class='server_detail'>
+    系统配置载入中,请稍后...
+  </view>
+</view>
+<block wx:else>
+  <slot></slot>
+</block>

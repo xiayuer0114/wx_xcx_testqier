@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.Voucher" collection="voucher">
+
+        <indexs>
+            <index column="topUserId"  />
+            <index column="state"  />
+        </indexs>
+
+        <id name="id" />
+        <property column="topUserId" name="topUserId"  />
+        <property column="voucherName" name="voucherName"  />
+        <property column="voucherMiaoSu" name="voucherMiaoSu" />
+        <property column="voucherValue_fen" name="voucherValue_fen"  />
+        <property column="voucherCount" name="voucherCount"  />
+        <property column="releaseTime" name="releaseTime" />
+        <property column="stopTime" name="stopTime"  />
+        <property column="state" name="state"  />
+        <property column="voucherOutCount" name="voucherOutCount"  />
+
+        <property column="low_consumption_amount" name="low_consumption_amount" />
+        <property column="hight_consumption_amount" name="hight_consumption_amount" />
+        <property column="logo" name="logo" />
+
+
+        <property column="useReleaseTime" name="useReleaseTime" />
+        <property column="useStopTime" name="useStopTime" />
+
+    </class>
+</dbObject>

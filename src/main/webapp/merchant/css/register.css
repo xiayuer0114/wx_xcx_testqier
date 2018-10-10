@@ -1,0 +1,72 @@
+/*注册*/
+.regin_top{
+	height:80px; 
+	background:url(../img/regin_top.gif) repeat-x;
+}
+.regin_main{
+	width:1000px; 
+	margin:0 auto;
+}
+.regin_main img{float:left;}
+.regin_main span{
+	font-family:'微软雅黑'; 
+	line-height:80px; 
+	font-size:24px; 
+	float:left; 
+	color:#ffffff; 
+	text-indent:20px;
+}
+.regin_board{
+	margin-top:50px; 
+	color:#1d558e;
+}
+.regin_title_div{
+	height:33px; 
+	line-height:33px; 
+	background:url(../img/regin_title.gif) repeat-x;
+}
+.regin_title{
+	float:left; 
+	height:33px; 
+	background:url(../img/regin_title1.gif) repeat-x; 
+	padding:0px 10px; 
+	font-family:'微软雅黑'; 
+	font-size:14px;
+}
+.regin_content_div table tr .firsttd{
+	text-align:right;
+	font-family:'微软雅黑'; 
+	font-weight:bold;
+	width:200px;
+}
+.regin_content_div table tr td{
+	text-align:left; 
+}
+.input_regin{
+	float:left; 
+	margin-top:2px; 
+	text-indent:5px; 
+	border:1px solid #1d558e; 
+	width:250px; 
+	height:25px; 
+	line-height:25px; 
+	font-size:12px; 
+	vertical-align:middle;
+	display:inline;
+}
+.regin_content_div table tr td .regin_span{
+	color:#fb5311; 
+	text-indent:10px;  
+	float:left; 
+	font-family:'宋体'; 
+	line-height:35px; 
+	font-size:12px;
+}
+.select_regin{
+	width:100px; 
+	padding:2px;
+	float:left;
+	margin-top:5px;
+	margin-right:5px;
+	display:inline;
+} 

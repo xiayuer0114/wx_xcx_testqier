@@ -1,0 +1,584 @@
+/* pages/index/home.wxss */
+
+.userinfo_mark{
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.userinfo_mark .message_box{
+  width: 70%;
+  margin: 50% auto;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 8rpx;
+  padding: 2% 3%;
+}
+.userinfo_mark .message_box::after{
+  clear: both;
+}
+.userinfo_mark .title{
+  font-size: 32rpx;
+  padding: 3% 5%;
+}
+.userinfo_mark .option{
+  text-align: right;
+}
+.userinfo_mark button{
+  border: 2rpx solid transparent;
+  color: green;
+  font-size: 28rpx;
+}
+.userinfo_mark button[disabled]{
+  background: transparent;
+  border: 2rpx solid transparent;
+}
+.pages {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}
+.pages .page_mark{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.2); */
+  background: rgba(255, 255, 255, 0.01);
+}
+.pages .body_mark{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.2); */
+  background: rgba(255, 255, 255, 0.01);
+}
+/*
+ * 左侧打开效果
+ */
+.pages_move_left {
+  transform: rotate(0deg) scale(1) translate(40%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(40%,0%); 
+}
+/*
+ * 右侧打开效果
+ */
+.pages_move_right {
+  transform: rotate(0deg) scale(1) translate(-40%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(-40%,0%); 
+}
+
+.container_header{
+
+}
+.container_body {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.container_footer{
+  
+}
+/*
+ * 两侧菜单
+ */
+.left_menu_area,
+.menu_shop_type {
+  height: 100%;
+  width: 40%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: rgb(240,240,240);
+  opacity: 0;
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}
+.left_menu_area {
+  left: -40%;
+}
+/*
+ * 右侧菜单
+ */
+.menu_shop_type {
+  right: -40%;
+}
+/*
+ * 左侧打开效果
+ */
+.open_left_menu {
+  left: 0;
+  opacity: 1;
+}
+/*
+ * 右侧打开效果
+ */
+.open_right_menu {
+  right: 0;
+  opacity: 1;
+}
+.menu_home {
+  background: rgba(0, 0, 0, 1) !important;
+}
+.menu_home .title_bg {
+  background: none;
+  color: #FFCA03;
+}
+
+/*
+ * 菜单项
+ */
+.menu_list .item{
+  color: #989797;
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 36rpx;
+  vertical-align: middle;
+}
+.menu_list .item:last-child{
+  margin-bottom: 30rpx;
+}
+.menu_list .item text{
+  display: inline-block;
+  padding: 0 12rpx;
+  background-position-y: 18rpx;
+}
+
+
+/*
+ * 顶部菜单,定位
+ */
+.top_menu {
+  width: 100%;
+  height: 90rpx;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 8;
+  overflow: hidden;
+  
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}
+/*
+ * 顶部菜单,固定宽度居中显示
+ */
+.top_menu .menu_tools {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  color: #FEFEFE;
+  font-size: 30rpx;
+  line-height: 36rpx;
+}
+/*
+ * 顶部菜单,城市区域
+ */
+.top_menu .menu_tools .city,
+.top_menu .menu_tools .area {
+  float: left;
+  padding: 25rpx 0;
+  font-size: 32rpx;
+}
+.top_menu .menu_tools .city {
+  font-family: 'customFont-Regular';
+}
+/*
+ * 顶部菜单,城市区域 箭头
+ */
+.top_menu .menu_tools .arrow{
+  display: inline-block;
+  width: 60rpx;
+  height: 30rpx;
+  overflow: hidden;
+}
+.top_menu .menu_tools .arrow .square{
+  display: inline-block;
+  width: 12rpx;
+  height: 12rpx;
+  margin-top: 8rpx;
+  margin-left: 10rpx;
+}
+.top_menu .menu_tools .arrow .down {
+  border-left: 4rpx solid #fff;
+  margin-bottom: 5rpx;
+  border-top: 4rpx solid #fff;
+  transform: rotate(45deg);
+  -webkit-transition: rotate(45deg);
+}
+.top_menu .menu_tools .arrow .up{
+  border-right: 4rpx solid #fff;
+  border-bottom: 4rpx solid #fff;
+  margin-bottom: 22rpx;
+  transform: rotate(45deg);
+  -webkit-transition: rotate(45deg);
+}
+/*
+ * 顶部菜单,店铺分类
+ */
+.top_menu .menu_tools .scroll_shop_type{
+  position: absolute;
+  left: 225rpx;
+  top: 20rpx;
+  width: 60%;
+  height: 70rpx;
+  white-space: nowrap;
+  /*
+  background-color: rgba(255, 0, 0, 0.6);
+  border-radius: 12rpx;
+  */
+}
+/*
+ * 顶部菜单,店铺分类项
+ */
+.top_menu .menu_tools .scroll_shop_type .item{
+  display: inline-block;
+  padding: 5rpx 20rpx;
+}
+.top_menu .menu_tools .area text,
+.top_menu .menu_tools .scroll_shop_type text{
+  padding: 12rpx 0;
+  border-bottom: 2rpx solid transparent;
+}
+.top_menu .menu_tools .hover text{
+  border-bottom: 2rpx solid #FFF;
+}
+
+/*
+ * 顶部菜单,右侧菜单
+ */
+.top_menu .menu_tools .btn_more {
+  padding: 20rpx 10rpx;
+  width: 30rpx;
+  float: right;
+}
+.top_menu .menu_tools .btn_more text{
+  width: 100%;
+  display: block;
+  border-top: 3rpx solid #fff;
+  margin: 10rpx 0;
+}
+.top_menu .menu_tools .btn_more .btn_center{
+  width: 80%;
+}
+
+
+
+.search_result .search_item {
+  padding: 8rpx 22rpx;
+}
+.search_result .search_item .title {
+  font-size: 26rpx;
+  color: #010101;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 50rpx;
+  /*background: transparent url("/resources/title_bg.png") repeat-x fixed bottom;*/
+}
+.search_result .search_item .intro{
+  font-size: 24rpx;
+  color: #989797;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*
+ * 主内容区
+ */
+.card_content {
+  /*position: relative;*/
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}
+
+.card_content .header {
+  width: 90%;
+  margin: 0 auto;
+  height: 56rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.card_content .header .area{
+  width: 25%;
+  height: 100%;
+  display: flex; /* 弹性盒 */
+  justify-content: flex-start; /*flex-start: 开头  flex-end: 结尾 center: 中心 space-between: 各行之间留白 space-around: 平均留白*/
+  align-items: center;
+}
+.card_content .header .area image{
+  width: 50rpx;
+  height: 36rpx;
+}
+.card_content .header .area text{
+  font-family: 'customFont-Regular';
+  font-size: 32rpx;
+  color: #000;
+}
+.card_content .header .search{
+  height: 100%;
+  width: 75%;
+  float: left;
+  display: flex; /* 弹性盒 */
+  justify-content: flex-start; /*flex-start: 开头  flex-end: 结尾 center: 中心 space-between: 各行之间留白 space-around: 平均留白*/
+  align-items: center;
+  background-color: #000;
+  border-radius: 10rpx;
+}
+.card_content .header .search image {
+  padding: 0 30rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.card_content .header .search input{
+  width: 90%;
+  display: inline-block;
+  padding-right: 45rpx;
+  font-size: 25rpx;
+  color: white;
+  text-align: center;
+}
+.card_content .header .search_result {
+  width: 75%;
+  position: absolute;
+  top: 60rpx;
+  right: 0;
+  z-index: 9;
+  background-color: #F2F1F1;
+}
+.card_content .body {
+  position: relative;
+  height: 100%;
+  padding-top: 78rpx;
+}
+
+.card_content .body .cards {
+  width: 80%;
+  height: 768rpx;
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 7;
+}
+.cards .card_item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:white;
+  box-shadow:2px 2px 6px rgba(0,0,0,0.2);
+}
+.cards .card_item:nth-last-child(2){
+  transform: rotate(4deg);
+  opacity: 0.5;
+}
+.cards .card_item:nth-last-child(3){
+  transform:rotate(-4deg);
+  opacity:0.8;
+}
+.current_card .distance{
+  display: inline-block;
+}
+.card_item .card_header{
+  width: 100%;
+  height: 310rpx;
+  position: relative;
+  text-align: center;
+}
+.card_item .card_header .background{
+  width: 100%;
+  height: 100%;
+}
+.card_item .card_header .card_mark{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0rpx;
+  background-color:rgba(0, 0, 0, 0.2);
+}
+.card_item .card_header .head_content{
+  margin-top: 50rpx;
+  width: 100%;
+}
+.card_item .card_header .head_content .circle{
+  width: 167rpx;
+  height: 167rpx;
+  border-radius: 50%;
+  background: white;
+}
+.card_item .card_header .head_content text{
+  display: block;
+  margin-top: 8rpx;
+  align-items: center;
+  justify-content: center;
+  font-size: 35rpx;
+  color:#fff;
+}
+.card_item .card_body{
+  padding: 10rpx 30rpx;
+  display: block;
+  height: 220rpx;
+}
+.card_body text{
+  display: inline-block;
+}
+.card_body .title {
+  font-family: 'customFont-Regular';
+  font-weight: 300;
+  font-size: 24rpx;
+  line-height: 52rpx;
+  color: #B1B1B1;
+}
+.card_body .desc{
+  max-height: 160rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  font-weight: 300;
+  line-height: 40rpx;
+  color: #010101;
+  text-align: justify;
+}
+.card_item .card_footer {
+  width: 90%;
+  margin: 0 auto;
+  height: 210rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+.card_footer image{
+  width: 31%;
+  height: 185rpx;
+}
+.current_distance {
+  width: 40%;
+  margin: 40rpx auto;
+  text-align: center;
+}
+.current_distance image{
+  width: 25rpx;
+  height: 25rpx;
+  vertical-align: middle;
+}
+.current_distance text{
+  padding: 0 6rpx;
+  font-family: 'customFont-Regular';
+  vertical-align: middle;
+}
+.card_content .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  text-align: center;
+}
+.card_content .footer image {
+  width: 60%;
+  height: 30rpx;
+  padding: 10rpx 0 20rpx 0;
+}
+
+
+.article_body{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.about_content .header {
+  position: relative;
+  width: 100%;
+  max-height: 460rpx;
+  overflow: hidden;
+}
+.about_content .header .background{
+  width: 100%;
+}
+.about_content .header .user_avatar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.about_content .header .userinfo{
+  width: 80%;
+  margin: 120rpx auto;
+  text-align: center;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.about_content .header .userinfo .avatar {
+  width: 147rpx;
+  height: 147rpx;
+  border-radius: 50%;
+  display:inline-block;
+  overflow:hidden;
+}
+.about_content .header .userinfo .nickname {
+  display: block;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 48rpx;
+}
+
+.about_content .body {
+  text-align: center;
+  margin-top: 24rpx;
+}
+.about_content .body ::after{
+  clear: both;
+}
+.about_content .body .item {
+  width: 33.33%;
+  margin: 38rpx 0;
+  display: inline-block;
+  text-align: center;
+}
+.about_content .body .item .icon{
+  width: 78rpx;
+  height: 78rpx;
+}
+.about_content .body .item text{
+  display: block;
+  font-size: 26rpx;
+  color: #010101;
+}
+
+.about_content .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #FFF;
+}
+.about_content .footer image{
+  width: 90%;
+  height: 73rpx;
+  padding: 10rpx 0 20rpx 0;
+  overflow: hidden;
+}

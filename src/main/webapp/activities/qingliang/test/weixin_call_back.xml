@@ -1,0 +1,9 @@
+<xml>
+	<ToUserName><![CDATA[gh_4e34af65f089]]></ToUserName>
+	<FromUserName><![CDATA[oYb451J_r9u9tBbyq86c40RWxa48]]></FromUserName>
+	<CreateTime>1534648246</CreateTime>
+	<MsgType><![CDATA[event]]></MsgType>
+	<Event><![CDATA[SCAN]]></Event>
+	<EventKey><![CDATA[{"b":"qingliang","d":"7438"}]]></EventKey>
+	<Ticket><![CDATA[gQFI7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyTU9aRUFveC1jVmsxTHBSdHhyY2cAAgTZaHZbAwQAjScA]]></Ticket>
+</xml>

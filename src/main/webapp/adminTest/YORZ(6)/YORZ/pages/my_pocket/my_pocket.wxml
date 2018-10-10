@@ -1,0 +1,94 @@
+<!--pages/my_pocket/my_pocket.wxml-->
+<!--搜索栏  -->
+<search-bar/>
+
+<!--信息框  -->
+<view class="nick_name"><open-data  type="userNickName"></open-data></view>
+<!--信息框  -->
+
+<!--收藏数  -->
+
+<view class="collect_view">
+    <view class="item_view" data-index="0" bindtap='chooseTabs'>
+      <image class="page_img" src='../../images/c12.png' ></image>
+      <!-- <image class="collect" src='../../images/pho2.png'></image> -->
+      <view class="icon_view">
+        <text class="tex">我的钱包</text>
+      </view>
+      <view class="sign_num_view">
+          <text class="sign_num">余额:￥{{balance}}</text>
+      </view>
+    </view>
+</view>
+
+
+ <!-- <view class="fenxiang-box">
+    <image bindtap="show" src="" class="fenxiang-btn"></image>
+  </view> -->
+
+
+
+
+<view class="big_view">
+  <scroll-view scroll-y="true" class="big_box" bindscrolltolower="bindDownLoad">
+  <block wx:for="{{product_list}}">
+      <view class="record_list_view" data-mark="{{item.mark}}" data-id="{{item.pubId}}" bindtap='toDetailPage'>
+          <view class="record_list">
+            <image class="record_prize" src='{{imgUrl+item.pic}}'></image>
+
+            <view class="record_prize_detail">
+
+              <view class="record_prize_title">
+                <text>{{item.name}}</text>
+                <view class="title_right">
+                  <image class="niupai" src='../../images/jp4.png'></image> 
+                  <text>{{item.lable}}</text>
+                </view>
+              </view>
+
+              <view class="price"><text>{{item.title}}</text>   <text>有效期至：{{item.date}}</text> </view>
+              <view class="address_view">
+                <view class="address">
+                  <image class="plc" src='../../images/plc.png'></image>
+                   <text class="addr_text">地址：{{item.addr}}</text>   
+                </view>
+                <view class="toshop" >
+                  <text>前往商家</text>
+                  <view class="arrow"></view>
+                </view>
+              </view>
+
+            </view>
+
+          </view>
+
+      </view>
+    
+  </block>
+</scroll-view>
+
+
+  <!-- <view class="record_list_view">
+    <view class="record_list">
+      <image class="record_prize" src='../../images/jp1.png'></image>
+      <view class="record_prize_detail">
+        <view class="record_prize_title">
+          <text>通用红包</text>
+        </view>
+        <view class="price"><text>金额：50</text>   <text>有效期至：2018/5/9</text> </view>
+      </view>
+    </view>
+  </view> -->
+
+  <view class="modal-box" hidden="{{flag}}" bindtap="hide">
+    <view class="modal-body">
+      <view class="modal-content">
+        <image src="/images/c.jpg" class="fenxiang" mode="widthFix"></image>
+        <button class="knowBtn" bindtap="hide">我知道了</button>
+     </view>
+    </view>
+  </view>
+
+</view>
+<!--占位框  -->
+<view class="table"></view>

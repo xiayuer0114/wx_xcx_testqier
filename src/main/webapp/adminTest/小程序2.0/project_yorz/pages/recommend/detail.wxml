@@ -1,0 +1,11 @@
+<import src="../../templates/article.wxml"/>
+<!-- pages/recommend/detail.wxml -->
+
+
+<serverLoading showError='{{globalData.showServerError}}' message='{{globalData.showServerMessage}}' showLoading='{{!globalData.sysConfigLoaded}}'>
+
+<!-- 正常显示内容 Begin -->
+<template is="ArticleDetail" data='{{article, globalData:globalData, resourceLocal:resourceLocal, resourceServer: resourceServer}}'></template>
+<!-- 正常显示内容 End -->
+
+</serverLoading>

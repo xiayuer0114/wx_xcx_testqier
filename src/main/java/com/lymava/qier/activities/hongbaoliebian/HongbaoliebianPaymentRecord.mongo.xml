@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.hongbaoliebian.HongbaoliebianPaymentRecord"
+		extends="com.lymava.trade.pay.model.PaymentRecord" >
+
+		<id name="id" />
+		<property column="sourceRecord_id" name="sourceRecord_id"  />
+		<property column="activitie_redEnvelope_id" name="activitie_redEnvelope_id"  />
+
+
+	</class>
+</dbObject>

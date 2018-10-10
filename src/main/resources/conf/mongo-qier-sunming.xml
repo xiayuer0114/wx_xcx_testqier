@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mongo>
+	<mapping>
+
+		<!-- 收银员表 -->
+		<map>com/lymava/qier/model/mongoprops/Cashier.mongo.xml</map>
+
+		<!-- 代金券 -->
+		<map>com/lymava/qier/model/mongoprops/Voucher.mongo.xml</map>
+
+		<!-- 商家展示 -->
+		<map>com/lymava/qier/model/mongoprops/MerchantPub.mongo.xml</map>
+
+		<!-- 余额变动 -->
+		<map>com/lymava/qier/model/mongoprops/BalanceLog72.mongo.xml</map>
+
+		<!-- 用户浏览历史记录(小程序) -->
+		<map>com/lymava/qier/model/mongoprops/UserBrowseHistory.mongo.xml</map>
+
+		<!-- 商家银行 -->
+		<map>com/lymava/qier/model/mongoprops/SettlementBank.mongo.xml</map>
+
+		<!-- 登录签到(小程序) -->
+		<map>com/lymava/qier/model/mongoprops/SignInRecord.mongo.xml</map>
+
+		<!-- 积分兑换(小程序 积分兑换pub) -->
+		<map>com/lymava/qier/model/mongoprops/JifenDuihuanPub.mongo.xml</map>
+
+		<!-- 积分兑换(小程序 积分兑换代金券) -->
+		<map>com/lymava/qier/model/mongoprops/JifenDuihuanVoucherPub.mongo.xml</map>
+
+		<!-- 小程序的pub(小程序 主要是做文章推荐 活动) -->
+		<map>com/lymava/qier/model/mongoprops/XiaochengxuPub.mongo.xml</map>
+
+		<!-- 6.30  向商家发送信息的 日志表 -->
+		<map>com/lymava/qier/model/mongoprops/SendInformLog.mongo.xml</map>
+
+		<!-- 7.6  业务员表 -->
+		<map>com/lymava/qier/model/mongoprops/Salesman.mongo.xml</map>
+
+		<!-- 7.10  小程序配置表 -->
+		<!--<map>com/lymava/qier/model/mongoprops/XiaochengxuConfigPub.mongo.xml</map>-->
+
+		<!-- 7.19  小程序配置表 -->
+		<map>com/lymava/qier/model/xiaoChengXuModel/mongoprops/ConfigPub.mongo.xml</map>
+
+		<!-- 7.19  小程序外链表 -->
+		<map>com/lymava/qier/model/xiaoChengXuModel/mongoprops/LinkPub.mongo.xml</map>
+
+		<!-- 7.19  小程序展示表 -->
+		<map>com/lymava/qier/model/xiaoChengXuModel/mongoprops/ShowPub.mongo.xml</map>
+
+		<!-- 7.19  小程序地区表 -->
+		<map>com/lymava/qier/model/xiaoChengXuModel/mongoprops/CityPub.mongo.xml	</map>
+
+		<!-- 7.31  转赠表 -->
+		<map>com/lymava/qier/model/xiaoChengXuModel/mongoprops/ZhuanZengRecord.mongo.xml	</map>
+
+		<!-- 9.8   前端留言表 -->
+		<map>com/lymava/qier/model/qianduanModel/mongoprops/Liuyan.mongo.xml</map>
+
+		<!-- 9.17   活动商家表 -->
+		<map>com/lymava/qier/activities/model/ActivitieMerchant.mongo.xml</map>
+
+		<!-- 9.17   活动红包表 -->
+		<map>com/lymava/qier/activities/model/ActivitieMerchantRedEnvelope.mongo.xml</map>
+
+		<!-- 9.29   圣穆提特卖活动配置表 -->
+		<map>com/lymava/qier/activities/model/ShengmutiTemaiConfig.mongo.xml</map>
+
+	</mapping>
+</mongo>

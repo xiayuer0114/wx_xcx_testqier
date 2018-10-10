@@ -1,0 +1,114 @@
+/* components/page.wxss */
+
+.server_info{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.9);
+  
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.server_detail{
+  width: 80%;
+  padding-bottom: 30%;
+  text-align: center;
+  line-height: 46rpx;
+}
+.server_detail .title{
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.server_detail .desc{
+  text-align: left;
+  padding-bottom: 32rpx;
+}
+
+
+.main_wrapper{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  position: relative;
+
+}
+
+.main_wrapper::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.nav_wrapper{
+  height: 85rpx;
+}
+
+.tabbar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: 90rpx;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 1);
+  border-top: 2rpx solid rgba(211, 211, 211, 0.8);
+  display: flex;
+  flex-direction: row; /* 排列方向 row:沿水平主轴由左向右排列 column:沿垂直主轴右上到下 */
+  justify-content: space-around; /* 主轴上的对齐方式: flex-start|flex-end|center|space-between|space-around */
+  align-items: center; /* 交叉轴上对齐: flex-start|flex-end|center|baseline|stretch*/
+}
+.tabbar .item {
+  padding: 0 40rpx;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  display: flex;
+  flex-direction: column; /* 排列方向 row:沿水平主轴由左向右排列 column:沿垂直主轴右上到下 */
+  justify-content: center; /* 主轴上的对齐方式: flex-start|flex-end|center|space-between|space-around */
+  align-items: center; /* 交叉轴上对齐: flex-start|flex-end|center|baseline|stretch*/
+}
+.tabbar .tabbar_icon{
+  width: 110rpx;
+  height: 81rpx;
+}
+.tabbar .item_hover{
+  background: rgba(255, 255, 255, 0);
+}
+.tabbar .item_hover .tabbar_icon{
+  border: 1rpx solid transparent;
+}
+.tabbar .item_hover .tabbar_title{
+  color: #FFCA03;
+}
+.tabbar .tabbar_title{
+  color: #000000;
+}
+.tabbar .has_icon {
+
+}
+.tabbar .no_icon {
+
+}
+.tabbar .has_tit .tabbar_icon{
+  height: 60rpx;
+}
+.tabbar .no_tit{
+  
+}
+
+.load_more {
+  width: 100%;
+  height: 32rpx;
+  padding: 12rpx 0;
+  border-top: 1rpx solid #DDDDDD;
+  background: rgba(255, 255, 255, 0.2);
+  color: #848484;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* 排列方向 row:沿水平主轴由左向右排列 column:沿垂直主轴右上到下 */
+  justify-content: center; /* 主轴上的对齐方式: flex-start|flex-end|center|space-between|space-around */
+  align-items: center; /* 交叉轴上对齐: flex-start|flex-end|center|baseline|stretch*/
+}

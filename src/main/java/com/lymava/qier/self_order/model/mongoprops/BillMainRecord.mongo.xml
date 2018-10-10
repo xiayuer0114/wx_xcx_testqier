@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.self_order.model.BillMainRecord"
+		extends="com.lymava.trade.business.model.TradeRecord" collection="BillMainRecord">
+		<property column="z1" name="yongcan_renshu" />
+	</class>
+</dbObject>

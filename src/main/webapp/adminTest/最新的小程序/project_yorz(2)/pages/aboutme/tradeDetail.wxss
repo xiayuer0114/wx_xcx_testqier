@@ -1,0 +1,58 @@
+/* pages/aboutme/tradeDetail.wxss */
+
+.body{
+  padding-bottom: 100rpx;
+  border-top: 1rpx solid #626262;
+}
+
+.body .trade_list{
+  width: 100%;
+  height: 80rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #626262;
+}
+.trade_list .item{
+  padding: 0 32rpx;
+}
+.trade_list .amount {
+  font-weight: bolder;
+  float: right;
+  padding: 0 20rpx;
+  line-height: 80rpx;
+  font-size: 40rpx;
+  color: #000000;
+}
+
+.trade_list .content{
+  width: 75%;
+}
+.trade_list .content text{
+  display: block;
+}
+.trade_list .title{
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.trade_list .date{
+  font-size: 20rpx;
+  color: #7B7B7B;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0rpx;
+  width: 100%;
+  text-align: center;
+  background-color: #FFF;
+  padding: 15rpx 0;
+}
+.footer image{
+  width: 90%;
+  height: 73rpx;
+  overflow: hidden;
+}

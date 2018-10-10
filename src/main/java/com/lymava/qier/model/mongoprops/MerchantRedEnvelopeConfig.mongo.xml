@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.MerchantRedEnvelopeConfig" collection="MerchantRedEnvelopeConfig">
+        <indexs>
+        	<index column="b"  />
+        	<index column="d"  />
+        </indexs>
+        <id name="id"  />
+        <property column="a" name="red_envolope_name" />
+        <property column="b" name="userId_merchant" />
+        <property column="c" name="amount" />
+        <property column="d" name="state" />
+        <property column="e" name="probability" />
+        <property column="f" name="week_start" />
+        <property column="g" name="week_end" />
+        <property column="h" name="expiry_time" />
+        <property column="i" name="merchant_type" />
+
+        <!-- sunM 7.11 -->
+        <property column="j" name="day_start" />
+        <property column="k" name="day_end" />
+        <property column="l" name="amount_to_reach" />
+        <property column="amount_type" name="amount_type" />
+
+    </class>
+</dbObject>

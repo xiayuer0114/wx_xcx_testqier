@@ -1,0 +1,85 @@
+*{margin: 0;padding: 0;font-family: "黑体";}
+body{width:100%;background:url(../img/bg.jpg);background-size:100% 100%;}
+.clear{clear: both;}
+
+
+/*banner*/
+.cool_banner{width: 100%;margin: 0 auto;text-align: center;}
+.cool_banner img{width: 100%;}
+/*人物*/
+.cool_people{width: 100%;margin: 0 auto;text-align: center;}
+.cool_people img{width: 98%;margin-top: -5rem;}
+/*活动简介*/
+.cool_introduction{width: 100%;margin: 0 auto;text-align: center;}
+.cool_introduction img{width: 90%;padding-top: 1.5rem;}
+/*筹款详情*/
+.cool_cash{width: 100%;margin: 0 auto;text-align: center;margin-top: 1.5rem;}
+.cool_cash img{width: 8.2rem;}
+
+.cool_ca{width: 80%;margin: 0 auto;height: 85px;}
+.cool_ca1{width: 80%;margin: 0 auto;height: 85px;position: relative;}
+.cool_cc{width: 90%;margin: 0 auto;position: absolute;margin-top: 1.6rem;padding-left: 5%;}
+.cool_cc img{width: 4rem;}
+.cool_c1{width: 10%;margin: 0 auto;float: left;margin-top: 3.2rem;}
+.cool_c1 img{width: 0.8rem;padding-top: 1.1rem;padding-left: 30%;}
+.cool_c11{color: #626262;font-size: 1.5rem;padding-top: 1rem;padding-left: 30%;}
+.cool_c2{width: 30%;margin: 0 auto;text-align: center;float: left;margin-top: 3.2rem;}
+.cool_c2 img{width: 3.5rem;border: solid 1px #000000;border-radius: 50%;}
+.cool_c3{width: 30%;color: #626262;text-align: center;margin: 0 auto;padding-top: 1.3rem;float: left;margin-top: 3.2rem;}
+.cool_c4{width: 30%;color: #ff1008;text-align: center;margin: 0 auto;padding-top: 1.3rem;float: left;margin-top: 3.2rem;}
+
+.cool1_c1{width: 10%;margin: 0 auto;float: left;margin-top: 1.6rem;}
+.cool1_c1 img{width: 0.8rem;padding-top: 1.1rem;padding-left: 30%;}
+.cool1_c11{color: #626262;font-size: 1.5rem;padding-top: 1rem;padding-left: 30%;}
+.cool1_c2{width: 30%;margin: 0 auto;text-align: center;float: left;margin-top: 1.6rem;}
+.cool1_c2 img{width: 3.5rem;border: solid 1px #000000;border-radius: 50%;}
+.cool1_c3{width: 30%;color: #626262;text-align: center;margin: 0 auto;padding-top: 1.3rem;float: left;margin-top:1.6rem;}
+.cool1_c4{width: 30%;color: #ff1008;text-align: center;margin: 0 auto;padding-top: 1.3rem;float: left;margin-top: 1.6rem;}
+
+.cool_total1{width: 72%;margin: 0 auto;margin-top: 2rem;background-color: #FFE02A;height: 10PX;position: relative;}
+.cool_t1{float: left;margin-top:-0.9rem;width: 100%;text-align: center;letter-spacing:2px;color: #626262;font-size: 1.1rem;}
+.cool_t1 img{width: 1rem;padding-left: 0.4rem;}
+
+.cool_cc1{width: 100%;margin: 0 auto;position: absolute;margin-top: -1.6rem;}
+.cool_cc1 img{width: 4rem;float: right;padding-right: 5%;}
+
+.cool_enter{margin: 0 auto;text-align: center;margin-top: 3.5rem;width: 80%;}
+.cool_enter input{width: 100%;height: 2.5rem;border-radius: 5px;background-color: #FFFFFF;border: solid 1px #000000;padding-left: 1rem;color: #D1D1D1;font-size: 1.1rem;}
+.cool_botton{width: 100%;margin: 0 auto;text-align: center;margin-top: 1.8rem;}
+.cool_botton img{width: 13rem;}
+
+/*主办单位*/
+.cool_host{width: 100%;margin: 0 auto;text-align: center;margin-top: 2.5rem;}
+.cool_host img{width: 8.2rem;}
+.cool_concur{color: #4C4948;text-align: center;width: 100%;letter-spacing: 2px;margin-top: 0.8rem;}
+.cool_logo{width: 90%;margin: 0 auto;}
+.cool_l{width: 25%;text-align: center;float: left;margin-top: 0.8rem;}
+.cool_l img{width: 4rem;border: solid 1px #000000;}
+.cool_sign{text-align: center;}
+.cool_sign img{width: 10rem;margin-top: 1rem;}
+
+/*弹窗*/
+.cool_both{position: absolute;}
+.Pop-ups_3{height:100vh;width:100%;background:url(../img/bg.png) no-repeat;background-size:100% 100%;position: relative;text-align: center;}
+.Pop1_u{width: 92%;position: absolute;}
+.Pop1_u img{width: 3.8rem;padding-top: 35%;float: right;}
+.Pop2_u{width: 70%;margin: 0 auto;padding-top: 40%;}
+.Pop2_u img{width: 100%;}
+
+/*海报生成*/
+.cool_poster{width: 100%;margin: 0 auto;}
+.cool_poster img{width: 100%;}
+
+.cool_info{margin: 0 auto;width: 90%;border: dashed 2.2px #000000;margin-top: 0.4rem;border-radius: 3%;}
+.cool_in1{float: left;}
+.cool_in1 img{width: 3.5rem;border: solid 1px #000000;border-radius: 50%;margin-top: -0.65rem;margin-left: -0.65rem;}
+.cool_in2{float: left;padding-left: 0.8rem;padding-top: 0.3rem;letter-spacing: 1px;}
+.cool_i1{font-size: 1.3rem;}
+.cool_i2{}
+.cool_in3{width: 90%;text-align: left;margin: 0 auto;padding-top: 0.8rem;letter-spacing: 0.2rem;color: #5d5d5d;line-height: 1.2rem;font-size: 0.8rem;}
+.cool_in4{width: 100%;margin: 0 auto;text-align: center;}
+.cool_in4 img{width: 100%;padding-top: 0.5rem;}
+.cool_in5{width: 90%;margin: 0 auto;margin-top: 0.5rem;}
+.cool_code{float: left;}
+.cool_code img{width: 3rem;}
+.cool_code1{color: #5d5d5d;font-size: 0.8rem;float: left;padding-top: 1.2rem;padding-left: 0.5rem;}

@@ -1,0 +1,55 @@
+*{	
+			/*去掉默认的外边距和内边距*/
+			margin: 0;
+			padding: 0;
+			}
+html{
+			/*把背景铺满整个页面*/
+			width: 100%;
+			height: 100%;
+		}  
+body {
+	width: 7.5rem;margin: auto;text-align: center;position: relative;
+}
+.logo img{
+	width: 2.62rem;height: 0.6rem;display: block;margin-top: 1.01rem;margin-left: 0.58rem;
+}
+.zhuti img{
+	width: 4.86rem;height: 0.88rem;display: block;margin-top: 0.67rem;margin-left: 1.33rem;
+}
+.zhutibeijing img{
+	width: 5.11rem;height: 1.11rem;display: block;margin-top: 0.15rem;margin-left: 1.2rem;
+}
+.zhutibeijing_1 img{
+	width: 4.44rem;height: 0.53rem;display: block;position: relative;bottom: 1.01rem;left: 0.3rem;
+}
+.wenzi{
+	width: 392px;height: 1.62rem;
+}
+.wenzi_1{
+	text-align: center;font-size: 0.26rem;font-family: "微软雅黑";color:#000;
+}
+.wenzi_2{
+	text-align: center;font-size: 0.26rem;font-family: "微软雅黑";color:#000;position: relative;top: 0.14rem;
+}
+.wenzi_3{
+	text-align: center;font-size: 0.26rem;font-family: "微软雅黑";color:#000;position: relative;top: 0.34rem;
+}
+.wenzi_4{
+	text-align: center;font-size: 0.26rem;font-family: "微软雅黑";color:#000;position: relative;top: 0.54rem;
+}
+.fenggexian img{
+	width: 4.47rem;height: 0.02rem;position: relative;bottom: 0.2rem;
+}
+.sidaoti img{
+	width: 3rem;height: 0.86rem;text-align: center;
+}
+.xingming img{
+	width: 3.45rem;height: 0.64rem;text-align: center;
+}
+#name{
+	text-align: center;font-size: 0.22rem;height: 28px;border-radius: 6px;border: 2px solid #989898;position: relative;bottom: 0.72rem;
+}
+.kaishi img{
+	width: 3.6rem;height: 1.25rem;text-align: center;position: relative;bottom: 0.2rem;
+}

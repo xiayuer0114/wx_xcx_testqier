@@ -1,0 +1,11 @@
+<!--pages/browser.wxml-->
+
+<web-view wx:if='{{canOpen && userToken.status == 200}}' src='{{globalData.activityUrl}}?userId={{userToken.uid}}&token={{userToken.token}}&randCode={{userToken.code}}'>
+</web-view>
+
+<view wx:elif='!canOpen'>
+  没有指定活动地址
+</view>
+<view wx:elif='userToken.status !== 200'>
+  获取用户Token失败
+</view>

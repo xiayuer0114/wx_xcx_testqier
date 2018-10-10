@@ -1,0 +1,240 @@
+<!--pages/index/home.wxml-->
+<!-- 授权获取用户资料 -->
+<!--
+<view class='userinfo_mark' wx:if='{{globalData.scope.userInfo == false}}'>
+  <view class='message_box'>
+    <view class='title'> 小程序需要您的基本信息作为登陆凭证，是否允许? {{globalData.scope.userInfo}}</view>
+    <view class='option'>
+      <button size='mini' plain='true' disabled='true'>不允许</button>
+      <button size='mini' plain='true' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">允许</button>
+    </view>
+  </view>
+</view>
+-->
+
+<!-- 左侧菜单 -->
+<view class='left_menu_area {{pageAttribute.tabbarIndex == 0 ? "menu_home" : ""}} {{bodyData.openLeftMenu ? "open_left_menu" : ""}}'>
+  <scroll-view scroll-y='true' class='menu_list' style='height: {{globalData.systemInfo.windowHeight}}px'>
+    <view class="item"  wx:for='{{globalData.openCitys}}' wx:key='id' wx:for-index="index" wx:for-item="item" data-city='{{item.name}}' catchtap='handleTapBtnCity'>
+      <text class='{{item.name == bodyData.city ? "title_bg" : ""}}'>
+        {{item.name}}
+      </text>
+    <!-- // 屏蔽跳转
+      <navigator url='/pages/index/home?city={{item.name}}' open-type='reLaunch' hover-class='navigator_hover' class='{{item.name == bodyData.city ? "current_city" : ""}}'>{{item.name}}</navigator>
+    -->
+    </view>
+  </scroll-view>
+</view>
+<!-- 顶部菜单 -->
+<view class='top_menu {{bodyData.openLeftMenu ? "pages_move_left" : ""}} {{bodyData.openRightMenu ? "pages_move_right" : ""}}' style='display:{{pageAttribute.tabbarIndex == 1 ? "block": "none"}};'>
+  <view class='menu_tools'>
+    <view class='btn_more' catchtap='handleTapTypeMenu'>
+      <text class='btn_top'></text>
+      <text class='btn_center'></text>
+      <text class='btn_bottom'></text>
+    </view>
+    <view class='city' catchtap='handleTapAreaMenu'>
+      <text>{{bodyData.city}}</text>
+      <text class='arrow'><text class='square {{ bodyData.openLeftMenu ? "up" : "up"}}'></text></text>
+    </view>
+    <view class='area {{liveAttribute.currentType == "" || liveAttribute.currentType == "商圈" ? "hover" : ""}}' data-id="{{globalData.shopTypes[0].id}}" data-order="{{globalData.shopTypes[0].order}}" data-name="{{globalData.shopTypes[0].name}}" catchtap='handleTapShopTypes'>
+      <text>{{globalData.shopTypes[0].name}}</text>
+    </view>
+    <scroll-view class="scroll_shop_type" scroll-x="true" scroll-into-view='shop_type_item_{{liveAttribute.currentTypeIndex}}' scroll-with-animation='true'>
+      <block wx:for="{{globalData.shopTypes}}" wx:key="id" >
+        <view id='shop_type_item_{{item.order}}' wx:if='{{index > 0}}' data-id="{{item.id}}" data-order="{{item.order}}" data-name="{{item.name}}" class='item {{item.name == liveAttribute.currentType || (item.name == "商圈" && liveAttribute.currentType == "") ? "hover" : ""}}' catchtap='handleTapShopTypes'>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
+      
+<!-- 右侧菜单 -->
+<view class='menu_shop_type {{bodyData.openRightMenu ? "open_right_menu" : ""}}'>
+  <scroll-view scroll-y='true' class='menu_list' style='height: {{globalData.systemInfo.windowHeight}}px'>
+    <view class="item" wx:for='{{globalData.shopTypes}}' wx:key='id' wx:for-index="index" wx:for-item="item" data-id='{{item.id}}' data-order="{{item.order}}" data-name='{{item.name}}' catchtap='handleTapShopTypes'>
+      <text class='{{item.name == liveAttribute.currentType || (item.name == "商圈" && liveAttribute.currentType == "") ? "title_bg" : ""}}'>
+        {{item.name}}
+      </text>
+    </view>
+      <!-- // 屏蔽跳转
+      <navigator class="item" wx:for='{{globalData.shopTypes}}' wx:key='id' wx:for-index="index" wx:for-item="item"  url='/pages/mylive/index?type={{item.name}}' hover-class='navigator_hover' open-type='reLaunch' hover-stop-propagation='true'>
+        {{item.name}}
+      </navigator>
+      -->
+  </scroll-view>
+</view>
+
+
+<pages id='pageComponent' class='pages {{bodyData.openLeftMenu ? "pages_move_left" : ""}} {{bodyData.openRightMenu ? "pages_move_right" : ""}}' 
+bindswitchtab='handleSwitchTab' catchrefresh='handlePageFresh' catchnextpage='handlePageNext' catchscroll='handlePageScroll' binderrorback='handleConfigLoading' 
+scroll-y='{{pageAttribute.scrollY}}' showTopMenu='{{false}}' showTabbar='{{pageAttribute.showTabbar}}' tabbarSelectIndex='{{pageAttribute.tabbarIndex}}' 
+handleScrollUpper='{{pageAttribute.handleScrollUpper}}' handleScrollLower='{{pageAttribute.handleScrollLower}}' showError='{{globalData.showServerError}}' message='{{globalData.showServerMessage}}' showLoading='{{!globalData.sysConfigLoaded}}'>
+
+  <view slot='header' class='container_header'>
+    <block wx:if='{{globalData.userInfo.isNewUser}}' >
+      <block wx:if='{{pageAttribute.tabbarIndex == 0}}'>
+        <view class='first_used'>
+          <view class='first_home'>
+            <image mode='aspectFit' class='info' src='{{globalData.resourceLocal}}camera.png'></image>
+            <image mode='aspectFit' class='btn_next' catchtap='handleFirstUsedHome' src='{{globalData.resourceLocal}}botton.png'></image>
+          </view>
+        </view>
+      </block>
+      <block wx:if='{{pageAttribute.tabbarIndex == 1}}'>
+        <view class='first_used'>
+          <view class='first_home'>
+            <image mode='aspectFit' class='info' src='{{globalData.resourceLocal}}light.png'></image>
+            <image mode='aspectFit' class='btn_next' catchtap='handleFirstUsedLive' src='{{globalData.resourceLocal}}botton_2.png'></image>
+          </view>
+        </view>
+      </block>
+    </block>
+  </view>
+
+  <view slot='body' class='container_body'>
+      <view class='card_content' style='display:{{pageAttribute.tabbarIndex == 0 ? "block": "none"}};'>
+        <view class='body_mark' wx:if='{{bodyData.showBodyMark}}' catchtap='handleTapBodyMark'></view>
+        <view class='header'>
+          <view class='area' bindtap='handleTapAreaMenu'>
+            <image mode='aspectFit' src='{{globalData.resourceLocal}}nav1.png' />
+            <text>{{bodyData.city}}</text>
+          </view>
+          <view class='search'>
+            <image mode='aspectFit' src='{{globalData.resourceLocal}}search.png' />
+            <input class='input' placeholder='悠择YORZ' placeholder-style='color:#fff;' bindinput='handleSearchInput' bindfocus='handleFocusSearch' bindconfirm='handleConfirmSearch'></input>
+          </view>
+          <scroll-view class='search_result' scroll-y='true' wx:if='{{searchAttribute.showResult}}' bindscrolltolower='handleSearchNext' style="height: 400rpx;">
+            <view class='search_item' wx:for='{{searchAttribute.result}}' wx:key='id' data-id='{{item.id}}' data-type='{{item.type}}' bindtap='handleTapSearchItem'>
+              <view class='title'>
+                <text class='title_bg'>{{item.name}}</text>
+              </view>
+              <view class='intro'> {{item.intro}} </view>
+            </view>
+          </scroll-view>
+        </view>
+        <view class='body'>
+          <block wx:if='{{cardAttribute.dataList.length > 0 }}'>
+            <view class='cards'>
+              <block wx:for='{{cardAttribute.dataList}}' wx:key='id'>
+                <view class='card_item' bindtouchstart='handleTouchStart' bindtouchmove='handleTouchMove' bindtouchend='handleTouchEnd' catchtap='handleTapCardItem' data-id='{{item.id}}' data-order='{{item.order}}' data-index='{{index}}' animation='{{cardAttribute.animationDatas[item.order]}}'>
+                  <view class="card_header">
+                    <image class="background" mode='aspectFill' src="{{globalData.resourceServer + item.background}}" />
+                    <view class='card_mark'> <!-- 蒙版层 -->
+                      <view class="head_content"><!-- 内容区域 -->
+                          <image class="circle" src='{{globalData.resourceServer + item.avatar}}' />
+                          <text>{{item.name}}</text>
+                      </view>
+                    </view>
+                  </view>
+                  <view class='card_body'>
+                    <text class='title'>{{item.title}}</text>
+                    <text class='desc'>{{item.desc}}</text>
+                  </view>
+                  <view class='card_footer'>
+                    <block wx:for='{{item.pics}}' wx:key='*this' wx:for-item='pic' wx:for-index='pic_index'>
+                      <image src='{{globalData.resourceServer + pic}}' />
+                    </block>
+                  </view>
+                </view>
+              </block>
+            </view>
+            <view class='current_distance' data-latitude='{{cardAttribute.distance.latitude}}' data-longitude='{{cardAttribute.distance.longitude}}' catchtap='handleTapShopMap'>
+              <image mode='aspectFit' src='{{globalData.resourceLocal}}nav1.png' />
+              <text class='title_bg'>{{cardAttribute.distance.title}}</text>
+            </view>
+          </block>
+          <view class='not_record' wx:else>
+            <text>{{bodyData.NotFoundDatas}}</text>
+          </view>
+        </view>
+        <view class='footer'>
+          <image mode='aspectFit' src='{{globalData.resourceServer + globalData.homeBackground}}'></image>
+        </view>
+      </view>
+      <!-- 主内容区-->
+        <liveList id='liveList' class='live_body' area='{{liveAttribute.currentArea}}' types='{{liveAttribute.currentType}}' banner='true'
+        bindtapBanner='handleTapLiveBanner' bindtapItem='handleTapLiveListItem' bindloadBegin='handleLoadingLiveBegin' bindloadOver='handleLoadingLiveOver'
+        bindtouchstart="handleTouchStart" bindtouchmove="handleTouchMove" bindtouchend="handleTouchEnd"
+        style='display:{{pageAttribute.tabbarIndex == 1 ? "block": "none"}};'>
+              <view slot="before">
+                <view class='body_mark' wx:if='{{bodyData.showBodyMark}}' catchtouchstart="handleTapBodyMark" catchtouchmove="handleTapBodyMark" catchtouchend="handleTapBodyMark" catchtap='handleTapBodyMark'></view>
+              </view>
+              <view slot="after"><!-- 后置内容 --></view>
+        </liveList>
+        <!--
+        <view class='live_list'>
+          <block wx:if='{{liveAttribute.showBanner && liveAttribute.banner.pic.length > 0}}'>
+            <image mode='widthFix' lazy-load='true' data-id="{{liveAttribute.banner.id}}"  bindtap='handleTapLiveBanner' src='{{globalData.resourceServer + liveAttribute.banner.pic}}' />
+          </block>
+          <template is="ShopList" data="{{items: liveAttribute.dataList, resource: {server: globalData.resourceServer, local: globalData.resourceLocal} }}"/>
+        </view>
+        -->
+    
+    <!-- // 普通文章 -->
+    <articleList id='articleList' class='article_body' articleId='{{articleAttribute.articleId}}' articleName='{{articleAttribute.articleName}}' bindtaptype='handleTapArticleType'  bindtapitem='handleTapArticleItem' bindloadBegin='handleLoadingArticleBegin' bindloadOver='handleLoadingArticleOver' style='display:{{pageAttribute.tabbarIndex == 2 ? "block": "none"}};'/>
+    <!--
+    <slideList id='articleList' articleId='{{articleAttribute.articleId}}' articleName='{{articleAttribute.articleName}}' bindtaptype='handleTapArticleType'  bindtapitem='handleTapArticleItem' style='display:{{pageAttribute.tabbarIndex == 2 ? "block": ""}};'/>
+    -->
+
+    <view class='about_content' style='display:{{pageAttribute.tabbarIndex == 3 ? "block": "none"}};'>
+      <view class='header'>
+        <image mode='aspectFit' class='background' src='{{globalData.resourceServer + globalData.settingBackground}}' />
+        <view class='user_avatar'>
+          <view class='userinfo'>
+            <block wx:if='{{canUse_OpenData}}'> <!-- SDK版本1.4.0支持 -->
+              <open-data class='avatar' type="userAvatarUrl"><!-- 用户头像 --></open-data>
+              <open-data class='nickname' type="userNickName"><!-- 用户昵称 --></open-data>
+            </block>
+            <block wx:elif='{{globalData.userInfo.nickName == "" || globalData.userInfo.avatarUrl == ""}}'>
+              <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="handleGotUserInfo">获取我的资料</button>
+            </block>
+            <block wx:else>
+              <image class='avatar' src='{{globalData.userInfo.avatarUrl}}' background-size='cover'/>
+              <text class='nickname'>{{globalData.userInfo.nickName}}</text>
+            </block>
+          </view>
+        </view>
+      </view>
+      <view class='body'>
+        <view class='item' data-id='wallet' bindtap='handleTapAboutMenuItem'>
+            <image class='icon' mode='aspectFit' src='{{globalData.resourceLocal}}icon_1.png' />
+            <text>我的钱包</text>
+        </view>
+        <view class='item' data-id='redpacket' bindtap='handleTapAboutMenuItem' style='display: none;'>
+            <image class='icon' mode='aspectFit' src='{{globalData.resourceLocal}}icon_2.png' />
+            <text>红包转赠</text>
+        </view>
+        <view class='item' data-id='favorite' bindtap='handleTapAboutMenuItem'>
+            <image class='icon' mode='aspectFit' src='{{globalData.resourceLocal}}icon_3.png' />
+            <text>我的收藏</text>
+        </view>
+        <view class='item' data-id='purchaseHistory' bindtap='handleTapAboutMenuItem'>
+            <image class='icon' mode='aspectFit' src='{{globalData.resourceLocal}}icon_4.png' />
+            <text>消费记录</text>
+        </view>
+        <view class='item' data-id='signin' bindtap='handleTapAboutMenuItem' style='display: none;'>
+            <image class='icon' mode='aspectFit' src='{{globalData.resourceLocal}}icon_5.png' />
+            <text>打卡领红包</text>
+        </view>
+        <view class='item' wx:if='{{globalData.activityUrl != ""}}' data-id='activity' bindtap='handleTapAboutMenuItem'>
+            <image class='icon' mode='aspectFit' src='{{globalData.resourceLocal}}icon_5.png' />
+            <text>YORZ活动</text>
+        </view>
+        <view class='item' data-id='service' bindtap='handleTapAboutMenuItem'>
+            <image class='icon' mode='aspectFit' src='{{globalData.resourceLocal}}icon_6.png' />
+            <text>在线客服</text>
+        </view>
+        <view class='item' data-id='help' bindtap='handleTapAboutMenuItem'>
+            <image class='icon' mode='aspectFit' src='{{globalData.resourceLocal}}icon_7.png' />
+            <text>红包使用说明</text>
+        </view>
+      </view>
+      <view class='footer'>
+        <image mode='aspectFit' src='{{globalData.resourceLocal}}bottom2.png' />
+      </view>
+    </view>
+  </view>
+
+</pages>

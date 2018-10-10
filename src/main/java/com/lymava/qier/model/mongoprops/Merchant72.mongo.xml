@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.model.Merchant72"
+		extends="com.lymava.base.model.User" >
+		<indexs>
+            <index column="merchant72_type"  />
+            <index column="location" type="2dsphere"  />
+        </indexs>
+
+		<property column="red_pack_ratio_max" name="red_pack_ratio_max"  />
+		<property column="red_pack_ratio_min" name="red_pack_ratio_min"  />
+		<property column="discount_ratio" name="discount_ratio"  />
+		<property column="merchant_red_pack_ratio" name="merchant_red_pack_ratio"  />
+		<property column="queryHour" name="queryHour"  />
+		<property column="print_count" name="print_count"  />
+		<property column="merchant_balance" name="merchant_balance"  />
+		<property column="notify_openid" name="notify_openid"  />
+		<property column="notify_openid_list" name="notify_openid_list"  />
+		<property column="merchant72_type" name="merchant72_type"  />
+
+		<!--孙M  5.16-->
+		<property column="simInfo" name="simInfo"  />
+		<property column="longitude" name="longitude"  />
+		<property column="latitude" name="latitude"  />
+		<property column="location" name="location"  />
+		<property column="businessHours" name="businessHours"  />
+
+		<!-- 孙M  6.7 -->
+		<property column="merchart72Phone" name="merchart72Phone"  />
+		<property column="merchant_redenvelope_balance_fen" name="merchant_redenvelope_balance_fen"  />
+		<property column="merchant_redenvelope_arrive_fen" name="merchant_redenvelope_arrive_fen"  />
+		<property column="state_auto_print" name="state_auto_print"  />
+		<property column="default_printer_name" name="default_printer_name"  />
+		<property column="print_lianshu" name="print_lianshu"  />
+		<property column="state_auto_voice" name="state_auto_voice"  />
+		<property column="state_shaoma_yuzhi" name="state_shaoma_yuzhi"  />
+
+
+		<!-- 孙M  6.30 日流水 -->
+		<property column="oneDayLiuShui" name="oneDayLiuShui"  />
+
+		<!-- 孙M  7.7  业务员id -->
+		<property column="salesmanId" name="salesmanId"  />
+		
+		<property column="receive_red_envelope_order_price_fen" name="receive_red_envelope_order_price_fen"  />
+
+		<!-- 孙M  8.14  业务员id -->
+		<property column="userv2_yewuyuan_id" name="userv2_yewuyuan_id"  />
+		
+		<property column="merchant_redenvelope_share" name="merchant_redenvelope_share"  />
+		<!-- 孙M  8.27 红包使用人数 -->
+		<property column="useRed_renshu" name="useRed_renshu"  />
+		<property column="receive_red_envelope_create_type" name="receive_red_envelope_create_type"  />
+		<property column="receive_red_envelope_lingqu_type" name="receive_red_envelope_lingqu_type"  />
+
+	</class>
+</dbObject>

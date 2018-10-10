@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.Daka" collection="daka">
+		 <indexs>
+            <index column="openid"  />
+        </indexs>
+		<id name="id"  />
+
+		<property column="openId" name="openId" />
+
+		<property column="dakaTime" name="dakaTime" />
+
+		<property column="dakaStartTime" name="dakaStartTime" />
+
+		<property column="state" name="state" />
+
+		<property column="jiangLi" name="jiangLi" />
+
+		<property column="lianxuMark" name="lianxuMark" />
+
+
+
+	</class>
+</dbObject>

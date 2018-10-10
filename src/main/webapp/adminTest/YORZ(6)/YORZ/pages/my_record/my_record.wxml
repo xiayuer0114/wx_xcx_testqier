@@ -1,0 +1,115 @@
+<!--pages/my_record/my_record.wxml-->
+<!--搜索栏  -->
+<search-bar/>
+
+<!--信息框  -->
+<view class="bg_view">
+    <image class="bg_img" src='../../images/pic1.png'></image>
+    <view class="inside_box">
+      <view class="avatar_view">
+        <image class="avatar_img" src="../../images/pho1.png"></image>
+      </view>
+      <view class="nickname">昵称</view>
+      <view class="user">账号：11111111</view>
+    </view>
+    <view class="change_bg_image">更换背景</view>
+</view>
+<!--信息框  -->
+
+<!--收藏数  -->
+
+<view class="collect_view">
+    <view class="item_view">
+      <view class="number">32</view>
+      <view class="icon_view">
+        <image class="collect" src='../../images/pho2.png'></image>
+        <text class="tex">收藏</text>
+      </view>
+    </view>
+
+    <view class="item_view">
+      <view class="number">11</view>
+      <view class="icon_view">
+        <image class="history_icon" src='../../images/pho3.png'></image>
+        <text class="tex">历史消费</text>
+      </view>
+    </view>
+</view>
+
+<!-- 浏览记录 -->
+<view class="big_list_box">
+
+
+  <view class="record_date">
+    <image class="history" src='../../images/jp3.png'></image>
+    <text>05-06</text>
+  </view>
+
+  <view class="left_border">
+     <view class="record_list_view">
+      <view class="record_list">
+        <image class="record_prize" src='../../images/jp1.png'></image>
+
+        <view class="record_prize_detail">
+          <view class="record_prize_title">
+            <text>台塑王品</text>
+            <view class="title_right">
+              <image class="niupai" src='../../images/jp4.png'></image> 
+              <text>牛排</text>
+            </view>
+          </view>
+
+          <view class="price">消费：CNY360</view>
+          <view class="address_view">
+            <view class="discount">抵扣：50</view>
+            <view class="coupon">获卷：50</view>
+            <view class="toshop">
+              <text>前往商家</text>
+              <view class="arrow"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  
+
+
+
+  <view class="record_date">
+    <image class="history" src='../../images/jp3.png'></image>
+    <text>05-01</text>
+  </view>
+
+
+  <view class="left_border">
+     <view class="record_list_view">
+      <view class="record_list">
+        <image class="record_prize" src='../../images/jp1.png'></image>
+
+        <view class="record_prize_detail">
+          <view class="record_prize_title">
+            <text>台塑王品</text>
+            <view class="title_right">
+              <image class="niupai" src='../../images/jp4.png'></image> 
+              <text>牛排</text>
+            </view>
+          </view>
+
+          <view class="price">消费：CNY360</view>
+          <view class="address_view">
+            <view class="discount">抵扣：50</view>
+            <view class="coupon">获卷：50</view>
+            <view class="toshop">
+              <text>前往商家</text>
+              <view class="arrow"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+
+</view>

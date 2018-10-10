@@ -1,0 +1,56 @@
+*{margin: 0;padding: 0;font-family: "微软雅黑";}
+.clear{clear: both;}
+
+
+
+.date2_2 img{opacity: 0;}
+.date2_2 img:hover{opacity: 1;}
+
+@media screen and (min-width:320px )  {
+	.date1_2{width: 100%;position: absolute;}
+	.date1_2 img{width: 100%;}
+	.date2_2{position: relative;float: right;}
+	.date2_2 img{padding-top: 402px;width: 1.3rem;padding-right: 3.95rem;}
+}
+@media screen and (min-width:360px )  {
+	.date1_2{width: 100%;position: absolute;}
+	.date1_2 img{width: 100%;}
+	.date2_2{position: relative;float: right;}
+	.date2_2 img{padding-top: 452px;width: 1.492rem;padding-right: 4.41rem;}
+}
+@media screen and (width:320px ) and (height:568px) {
+	.date1_2{width: 100%;position: absolute;}
+	.date1_2 img{width: 100%;}
+	.date2_2{position: relative;float: right;}
+	.date2_2 img{padding-top: 402px;width: 1.355rem;padding-right: 3.91rem;}
+}
+@media screen and (min-width:371px) and (max-width:380px) {
+    .date1_2{width: 100%;position: absolute;}
+	.date1_2 img{width: 100%;}
+	.date2_2{position: relative;float: right;}
+	.date2_2 img{padding-top: 471px;width: 1.535rem;padding-right: 4.6rem;}
+}
+@media screen and (min-width:381px) and (max-width:412px) {
+    .date1_2{width: 100%;position: absolute;}
+	.date1_2 img{width: 100%;}
+	.date2_2{position: relative;float: right;}
+	.date2_2 img{padding-top: 516px;width: 1.70rem;padding-right: 5.08rem;}
+}
+@media screen and (min-width:413px) and (max-width:414px) {
+    .date1_2{width: 100%;position: absolute;}
+	.date1_2 img{width: 100%;}
+	.date2_2{position: relative;float: right;}
+	.date2_2 img{padding-top: 520px;width: 1.7rem;padding-right: 5.095rem;}
+}
+@media screen and (min-width:415px) and (max-width:420px) {
+    .date1_2{width: 100%;position: absolute;}
+	.date1_2 img{width: 100%;}
+	.date2_2{position: relative;float: right;}
+	.date2_2 img{padding-top: 519px;width: 1.8rem;padding-right: 5rem;}
+}
+@media screen and (min-width:768px ) {
+	.date1_2{width: 100%;position: absolute;}
+	.date1_2 img{width: 100%;}
+	.date2_2{position: relative;float: right;}
+	.date2_2 img{padding-top: 965px;width: 3.15rem;padding-right: 9.5rem;}
+}

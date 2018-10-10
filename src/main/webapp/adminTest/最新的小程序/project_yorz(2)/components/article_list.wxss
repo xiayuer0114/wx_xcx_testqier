@@ -1,0 +1,74 @@
+
+/* components/article_list.wxss */
+
+.not_record {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+}
+
+.not_record text{
+  line-height: 56rpx;
+  color: #6E6D6D;
+}
+
+
+.article_item{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 54rpx;
+  border-radius: 24rpx;
+  box-shadow: 2px 1px 5px rgba(0,0,0,0.35);
+  overflow: hidden;
+}
+.article_item .background{
+  width: 100%;
+  display: block;
+  vertical-align: top;
+}
+.article_item .contents{
+  width: 90%;
+  height: 100%;
+  margin: 0 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.article_item .contents .camera {
+  position: absolute;
+  top: 48rpx;
+  left: 0rpx;
+}
+.article_item  .contents .camera image{
+  width: 58rpx;
+  height: 58rpx;
+}
+.article_item .contents .info{
+  position: absolute;
+  bottom: 40rpx;
+  width: 100%;
+  color: #FFFEFE;
+  font-size: 45rpx;
+  text-align: left;
+  line-height: 62rpx;
+}
+.article_item .contents .info .icon{
+  width: 45rpx;
+  height: 45rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.article_item .info .type,
+.article_item .info .title{
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

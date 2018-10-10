@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mongo>
+	<mapping>
+		<map>com/lymava/qier/manager/model/ManagerOperationRecord.mongo.xml</map>
+		<map>com/lymava/qier/manager/model/RedEnvelopeTransfer.mongo.xml</map>
+		<map>com/lymava/qier/manager/model/UserRedEnvelopeTransfer.mongo.xml</map>
+		<map>com/lymava/qier/manager/model/RedEnvelopeChangeRecord.mongo.xml</map>
+		<map>com/lymava/qier/activities/caididian/CaiDidianDaan.mongo.xml</map>
+		<map>com/lymava/qier/activities/caididian/Didian.mongo.xml</map>
+		<map>com/lymava/qier/activities/caididian/Relife.mongo.xml</map>
+		<map>com/lymava/qier/model/merchant/MerchantBankChangeRecord.mongo.xml</map>
+		<map>com/lymava/qier/manager/model/ChangeRatioRecord.mongo.xml</map>
+	</mapping>
+</mongo>

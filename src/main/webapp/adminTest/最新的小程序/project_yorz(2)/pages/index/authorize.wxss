@@ -1,0 +1,56 @@
+/* pages/index/authorize.wxss */
+
+.page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 300rpx 0;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.help {
+  width: 80%;
+  margin: 22% auto;
+  line-height: 48rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 8rpx;
+}
+
+.help .info{
+  padding: 5% 3%;
+}
+.help .title{
+  font-size: 32rpx;
+}
+.help .desc{
+  text-indent: 2em;
+  font-size: 28rpx;
+  text-align: center;
+}
+.help .step{
+  text-indent: 2em;
+}
+.help .options{
+  text-align: center;
+  border-top: 2rpx solid #e3e3e3;
+}
+.help  button{
+  width: 100%;
+  border: 2rpx solid transparent;
+  color: #efa300;
+  font-size: 32rpx;
+}
+.help button[disabled]{
+  background: transparent;
+  border: 2rpx solid transparent;
+}
+

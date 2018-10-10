@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.redenvelope.model.RedBao">
+		<property column="a" name="user_huiyuan"  />
+		<property column="b" name="beizhu" />
+		
+	</class>
+</dbObject>

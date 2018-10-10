@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"  
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+
+	<!-- 管理操作记录Action -->
+	<package name="/v2/ManagerOperationRecord" extends="struts-default" namespace="/v2/ManagerOperationRecord">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.manager.action.ManagerOperationRecordAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+	<!-- 银行卡变更Action -->
+	<package name="/v2/MerchantBankChange" extends="struts-default" namespace="/v2/MerchantBankChange">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.manager.action.MerchantBankChangeAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+	<!-- 商户银行卡Action -->
+	<package name="/v2/SettlementBank" extends="struts-default" namespace="/v2/SettlementBank">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.action.SettlementBankAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+	<!-- 分店管理Action -->
+	<package name="/qier/branchManage" extends="struts-default" namespace="/qier/branchManage">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.action.BranchManageAction" method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+
+</struts>

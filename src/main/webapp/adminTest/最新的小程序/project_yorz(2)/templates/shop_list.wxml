@@ -1,0 +1,42 @@
+<!--
+  items: array
+  resource: object
+-->
+<template name="ShopList">
+  <block wx:if='{{items.length > 0}}'>
+    <block wx:for="{{items}}" wx:key="id" wx:for-item="item">
+      <template is="ShopItem" data="{{...item, resource}}"/>
+    </block>
+  </block>
+    <view class='not_record' wx:else>
+      <text>--没有数据--</text>
+    </view>
+</template>
+
+<!-- 
+  id: string
+  title: string
+  area: string
+  distances: int
+  address: string
+  people: int
+  message: string
+  resource: object
+-->
+<template name="ShopItem">
+  <view class="shop_item" data-id="{{id}}" data-area="{{area}}" bindtap='handleTapListItem'>
+    <image mode="widthFix" src="{{resource.server + image}}"></image>
+    <view class="section_left">
+      <view class="title">{{title}}</view>
+      <view class="address">
+        <image class="address_icon" mode='aspectFit' src='{{resource.local}}nav2.png' />
+        <text>{{distances}}</text>
+        <text>{{address}}</text>
+      </view>
+    </view>
+    <view class="section_right">
+      <view class="people">{{people}}人</view>
+      <view class="message"><text>{{message}}</text></view>
+    </view>
+  </view>
+</template>

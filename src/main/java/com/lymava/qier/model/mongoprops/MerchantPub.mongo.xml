@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.MerchantPub"
+           extends="com.lymava.base.model.Pub" >
+ 		<indexs>
+        	<index column="location" type="2dsphere" />
+        </indexs>
+        <property column="merchant72_Id" name="merchant72_Id"  />
+        <property column="merchantLogo" name="merchantLogo"  />
+
+        <!--孙M  5.16-->
+        <property column="title" name="title"  />
+        <property column="shangQuanId" name="shangQuanId"  />
+        <property column="shangPinType" name="shangPinType"  />
+        <property column="avg" name="avg"  />
+
+        <property column="yuyue" name="yuyue"  />
+        <property column="jiari" name="jiari"  />
+
+
+        <property column="xindian" name="xindian"  />
+
+        <property column="renqi" name="renqi"  />
+        <property column="haoping" name="haoping"  />
+        
+        <property column="location" name="location"  />
+
+        <property column="merchant72_type" name="merchant72_type"  />
+
+        <property column="headPics" name="headPics"  />
+
+        <property column="subhead" name="subhead"  />
+
+        <property column="useRenshu" name="useRenshu"  />
+
+        <property column="headBg" name="headBg"  />
+    </class>
+</dbObject>

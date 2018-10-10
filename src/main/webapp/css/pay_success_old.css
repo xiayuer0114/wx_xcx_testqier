@@ -1,0 +1,29 @@
+.f-leaft{float: left;}
+.f-right{float: right;}
+.font-30{font-size:30px;}
+.m-width20{width: 10%;}
+.g-header{ width: 100%;height: 44.5px;background-color: #333333;color: #FFFFFF;font-size: 15px}
+.g-header .nav{padding-top: 10px ;}
+.g-header .nav img{height: 23px;float: left;padding-left: 13px;}
+.g-header .nav span{padding-left: 6.5px;}
+.g-header .nav .nav-l{width: 20%;margin-top: 2px;}
+.g-header .nav .nav-text{width: 59%;text-align: center;}
+.g-header .nav .nav-text h1{font-size: 18px;}
+.g-header .nav .nav-icon{margin-right: 18px;}
+.g-header .nav .nav-icon li{display: inline-block;width:5px;height:5px;border-radius: 15px;padding-left: 0;background-color: #F7F7F7;}
+.g-main .m-payment{width: 50%;margin: auto;text-align: center;}
+.g-main .payment-c img{width: 51px;height: 52px;margin-top: 36px;}
+.g-main .m-payment .payment-txt{color: #f5c76f;margin-top: 15px;margin-bottom: 15px;font-size: 17px;}
+.g-main .m-payment .payment-txt1{margin-top: 17px;margin-bottom: 17px;font-size: 14px;opacity: .5;}
+.g-main .m-payment .payment-txt2 .font-money{font-size: 30px;}
+.g-main .m-open{height: 146px;margin-top: 65px;}
+.g-main .m-open img{width: 100%;height: 100%;}
+.g-main .m-open .open_red_package{display: block;position:relative;width: 55px;height: 57px;top:-100px;margin: auto;}
+.g-main .m-open .m-text{display: block;position:relative;font-size: 18px;top:-120px;text-align: center;color: #f8ca97;}
+.g-main .m-open .redenNve{display: none;position: relative;top:-395px;width: 76%;margin: auto;}
+.g-main .m-open .redenNve-text{font-size: 17px;color: #FF0000;background-image: url(../imgs/red_package.png);background-size: 100% 100%;height: 369px;padding-top: 28px;text-align: center;}
+.g-main .m-open .redenNve-text1{margin-top: 15px;font-size:17px;}
+.g-main .m-open .redenNve-text2{margin-top: 67px;font-size:15px;color: #fff;}
+.g-main .m-open .redenNve-text3{font-size:12px;color: #fff;}
+
+

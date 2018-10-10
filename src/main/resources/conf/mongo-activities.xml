@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mongo>
+	<mapping>  
+		<map>com/lymava/qier/activities/model/MarketingActivities.mongo.xml</map>
+		<map>com/lymava/qier/activities/model/MarketingActivitiesConfig.mongo.xml</map>
+		<map>com/lymava/qier/activities/model/MarketingActivitiesMerchant.mongo.xml</map>
+	
+		<map>com/lymava/qier/gaosan/model/GaosanResult.mongo.xml</map>
+		<map>com/lymava/qier/activities/model/WorldCupForecast.mongo.xml</map>
+		<map>com/lymava/qier/activities/model/RedEnvelopes618.mongo.xml</map>
+		<map>com/lymava/qier/activities/model/NazhongRen.mongo.xml</map>
+		<map>com/lymava/qier/activities/model/RedEnvelopesKol200.mongo.xml</map>
+		<map>com/lymava/qier/activities/model/GaokaoChengji.mongo.xml</map>
+		<map>com/lymava/qier/activities/model/Notice.mongo.xml</map>
+
+		<map>com/lymava/qier/activities/model/SubscribeFirstRedEnvelope.mongo.xml</map>
+
+
+		<!-- 孙M  7.3  -->
+		<map>com/lymava/qier/activities/model/Daka.mongo.xml</map>
+
+		<map>com/lymava/qier/activities/model/Tanmiguan.mongo.xml</map>
+		
+		<map>com/lymava/qier/activities/guaguaka/GuaguakaJiangPin.mongo.xml</map>
+		
+		<map>com/lymava/qier/activities/qingliang/MerchantQingliang.mongo.xml</map>
+		<map>com/lymava/qier/activities/qingliang/MerchantQingliangPaymentRecord.mongo.xml</map>
+
+		<!-- 孙M  9.19  -->
+		<map>com/lymava/qier/activities/hongbaoliebian/HongbaoliebianPaymentRecord.mongo.xml</map>
+
+
+
+	</mapping>
+</mongo>

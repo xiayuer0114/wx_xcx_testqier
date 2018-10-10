@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.manager.model.UserRedEnvelopeTransfer"
+		extends="com.lymava.trade.pay.model.PaymentRecord"  >
+		 <indexs>
+            <index column="userV2_submit_id"  />
+        </indexs>
+
+		<property column="userV2_submit_id" name="userV2_submit_id"  />
+		<property column="userV2_shenghe_id" name="userV2_shenghe_id"  />
+		<property column="userId" name="userId"  />
+		<property column="merchantRedEnvelopeId" name="merchantRedEnvelopeId"  />
+	</class>
+</dbObject>

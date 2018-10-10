@@ -1,0 +1,5 @@
+/* components/city.wxss */
+:host {
+  color: #999;
+  background: #333;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.cmbpay.model.TransferToMerchantRecord"
+		extends="com.lymava.trade.pay.model.PaymentRecord" >
+		 <indexs>
+            <index column="pay_account_no"  />
+        </indexs>
+		
+		<property column="userV2Id" name="userV2Id"  />
+		<property column="pay_account_no" name="pay_account_no"  />
+		<property column="accept_account" name="accept_account"  />
+		<property column="accept_bank_type" name="accept_bank_type"  />
+		<property column="accept_name" name="accept_name"  />
+		<property column="accept_depositary_bank" name="accept_depositary_bank"  />
+		<property column="accept_bank_addr" name="accept_bank_addr"  />
+		<property column="pinzheng" name="pinzheng"  />
+		<property column="yingxiao_price_fen" name="yingxiao_price_fen"  />
+		<property column="yufukuan_price_fen" name="yufukuan_price_fen"  />
+	</class>
+</dbObject>

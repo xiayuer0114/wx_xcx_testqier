@@ -1,0 +1,62 @@
+ <view bindtap='show'>btn</view>  
+<view class="mask" bindtap='cancleBtn' hidden='{{!hide_mask}}'></view>
+<block wx:if='{{hide_mask}}'>
+  <view class="set_view_box">
+
+    <view class="set_title">
+      <view class="reset_btn">重置</view>
+      <view bindtap='finishBtn' class="finish_btn">完成</view>
+    </view>
+
+
+    <view class="select_type_view">
+      <view class="select_item_view">
+        <text>节假日可用</text>
+        <switch></switch>
+      </view>
+      <view class="select_item_view">
+        <text>只看免预约</text>
+        <switch></switch>
+      </view>
+      <view class="select_item_view">
+        <text>只看免预约</text>
+        <switch></switch>
+      </view>
+    </view>
+
+
+    <view class="underline">
+      <view class="tabs">用餐时段</view>
+      <view class="tabs_view">
+        <view class="tabs_item" wx:for="{{tabs_item}}">
+          {{item}}
+        </view>
+      </view>
+
+      <view class="tabs">消费类型</view>
+      <view class="tabs_view">
+        <view class="tabs_item" wx:for="{{tabs_item1}}">
+          {{item}}
+        </view>
+      </view>
+    </view>
+
+    <view class="tabs">人均消费</view>
+
+    <view class="mo_view">
+      <movable-area class="slider_line">
+        <movable-view bindchange="onChange" class="circle_point" direction="horizontal">
+        </movable-view>
+        <movable-view bindchange="onChange2" class="circle_point2" direction="horizontal">
+        </movable-view>
+      </movable-area>
+
+      <!-- <movable-area class="slider_line2">
+        <movable-view  bindchange="onChange2" class="circle_point2" direction="horizontal">
+        </movable-view>
+      </movable-area>   -->
+      <view class="{{turn_price?' max_fee ':'min_fee' }} ">￥{{x1}}</view>
+      <view class="{{turn_price?' min_fee ':'max_fee' }} ">￥{{x2}}</view>
+    </view>
+  </view>
+</block>

@@ -1,0 +1,61 @@
+<!--pages/aboutme/favorite.wxml-->
+<!-- 收藏夹 -->
+
+<serverLoading showError='{{globalData.showServerError}}' message='{{globalData.showServerMessage}}' showLoading='{{!globalData.sysConfigLoaded}}'>
+
+<!-- 正常显示内容 Begin -->
+<view class='page'>
+  <view class='body'>
+    <block wx:if='{{dataList.length > 0}}'>
+      <view class='time_line' wx:for='{{dataList}}' wx:key='id' wx:for-index="index" wx:for-item="item">
+          <view class='title'>
+            <image src='{{resourceLocal}}icon6.png' />
+            {{item.date}}
+          </view>
+          <view class='line'>
+            <view class='item'>
+                <view class='info'>
+                  <view class='top'>
+                    <text class='title'>{{item.name}}</text>
+                    <view class='label'>
+                      <image mode='aspectFit' src='{{resourceLocal}}icon3.png'></image>
+                      {{item.label}}
+                    </view>
+                  </view>
+
+                  <view class='bottom'>
+                    <view class='row'>
+                      <!--<text class='deadline'>有效期至：{{item.date}}</text>-->
+                      <text class='amount' wx:if='{{item.amount}}'>消费：CNY{{item.amount}}</text>
+                    </view>
+                    <view class='row'>
+                      <view class='operation' data-id='{{item.id}}' data-type='{{item.type}}' bindtap='tapBtnJumpToShop'>
+                      <block wx:if='{{item.type == "pages/mylive/detail"}}'>
+                      前往商家
+                      </block>
+                      <block wx:else>
+                      前往专题
+                      </block>
+                      <image mode='aspectFit' src='{{resourceLocal}}icon5.png' />
+                      </view>
+                      <text class='explain' wx:if='{{item.address}}'>地址：{{item.address}}</text>
+                    </view>
+                  </view>
+                </view>
+                <image class='photo' src='{{resourceServer + item.shopPhoto}}' />
+            </view>
+          </view>
+          
+      </view>
+    </block>
+    <view class='not_record' wx:else>
+      <text>{{NotFoundData}}</text>
+    </view>
+  </view>
+  <view class='footer'>
+    <image mode='aspectFit' src='{{resourceLocal}}bottom2.png' />
+  </view>
+</view>
+<!-- 正常显示内容 End -->
+
+</serverLoading>

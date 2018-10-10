@@ -1,0 +1,152 @@
+/* pages/my/my.wxss */
+/*信息框  */
+.bg_view{
+  width: 100%;
+  height: 350rpx;
+  position: relative;
+}
+.bg_img{
+  width: 100%;
+  height: 100%;
+}
+
+.inside_box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(238,238,238, 0.8);
+  top:0 ;
+}
+.change_bg_image{
+  position: absolute;
+  top:20rpx;
+  right:20rpx;
+  width: auto;
+  height: 30rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.avatar_view{
+  width: 100%;
+  height: 185rpx;
+  margin-top:30rpx;
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+.avatar_img_view{
+  width:185rpx;
+  height: 185rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar_img{
+ width: 100%;
+ height: 100%;
+ border-radius: 50%;
+}
+.nickname{
+  margin-top: 15rpx;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+}
+.user{
+  margin-top: 15rpx;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+}
+
+/*三项列表  */
+.three_list_view{
+  border-bottom: 1rpx solid #ffd000;
+  width: 100%;
+  height: 235rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list_item1{
+  width: 33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collect{
+  width: 66rpx;
+  height: 57rpx;
+}
+.history{
+  width: 67rpx;
+  height: 67rpx;
+}
+.record{
+  width: 60rpx;
+  height: 60rpx;
+}
+.tabs{
+  margin-top:25rpx;
+  font-size: 30rpx;
+  color: #868686;
+}
+.two_box{
+  width: 100%;
+  height: auto;
+  border-bottom: 1rpx solid #ffd000;
+}
+.two_list_view{
+  width: 70%;
+  height: 230rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+.list_item2{
+  width:50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.sign_in{
+  width:61rpx;
+  height: 61rpx;
+}
+.integral{
+  width: 67rpx;
+  height: 69rpx;
+}
+/*单项  */
+.single_view_box{
+  width: 100%;
+  height: 235rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign_view{
+  width: 33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pocket{
+  width: 67rpx;
+  height: 59rpx;
+}
+.page_img{
+  width:68rpx;
+  height: 68rpx;
+}

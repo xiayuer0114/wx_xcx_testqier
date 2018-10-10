@@ -1,0 +1,509 @@
+@charset "UTF-8";
+
+body{
+	background-color: #efefef;
+}
+
+.index_header{
+	height: 1.5rem;
+	background:url("../images/header_bg.jpg");
+	background-repeat:repeat-y;
+	background-size:7.5rem 1.3rem;
+}
+.index_header_logo{
+	width: 0.95rem;
+	height: 0.95rem;
+	margin: 0.25rem;
+}
+.index_header_logo img{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.5rem;
+}
+.index_header_name{
+	font-size: 0.3rem;
+	color: #fff;
+}
+.index_header_gonggao{
+	font-size: 0.19rem;
+	color: #fff;
+}
+.index_header_right{
+	width: 4.5rem;
+	margin-top: 0.4rem;
+}
+.index_footer{
+	height: 1.3rem;
+	width: 100%;
+	position: fixed; 
+	bottom:0;
+	left:0;
+	right:0;
+	z-index: 999;
+}
+.shop_cart{
+	height: 7rem;
+}
+.shop_cart_header{
+	height: 0.8rem;
+	line-height:0.8rem;
+	background-color: #ebebeb;
+	color: #999999;
+	font-size: 0.26rem;
+	position: relative;
+} 
+.shop_cart_header .shop_cart_count_img{
+	width: 1rem;
+	height: 1rem;
+	left: 0.24rem;
+	top: -1.22rem;
+	position: absolute;
+}
+.shop_cart_header .gouwuche_jiantou_shang{
+	width: 0.28rem;
+	left: 0.58rem;
+    top: -0.13rem;
+	position: absolute;
+}
+.shop_cart_header .shop_cart_count{
+	width: 0.3rem;
+	height: 0.3rem;
+	line-height:0.35rem;
+	left: 0.94rem;
+	top: -1.32rem;
+	position: absolute;
+	font-size: 0.2rem;
+	text-align: center;
+	background-color: #ff6801;
+	color: #fff;
+	border-radius: 0.3rem;
+}
+
+.shop_cart_content{
+	height: 5.2rem;
+	background-color: #fff;
+}
+.shop_cart_product{
+	width:100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.shop_cart_product_name{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	width: 3.76rem;
+	padding-left: 0.25rem;
+	font-size: 0.3rem;
+}
+.shop_cart_product_jiage{
+	height: 0.8rem;
+	line-height: 0.8rem; 
+	width: 2.17rem;
+	font-size: 0.24rem;
+	color: #f44336;
+}
+.shop_cart_product_jia_jian{
+	height: 0.8rem;
+	width: 1.57rem;
+}
+.shop_cart_product_jia_jian .buttons{
+	height: 0.5rem;
+}
+.shop_cart_product_jia_jian .buttons .jian_btn{
+	width: 0.56rem;
+	height: 0.56rem;
+} 
+.shop_cart_product_jia_jian .buttons .shuzi{
+	width: 0.42rem;
+	height: 0.56rem;
+	line-height: 0.7rem;
+	font-size: 0.22rem;
+	color: #333333;
+	text-align: center;
+} 
+.shop_cart_product_jia_jian .buttons .jia_btn{
+	width: 0.56rem;
+	height: 0.56rem;
+}  
+.shop_cart_footer{
+	height: 1rem;
+	background-color: #fff;
+	border-top: 1px solid #cacaca;
+}
+.shop_cart_footer_left{
+	width:5.3rem;
+	background-color: #fff;
+	line-height: 1.1rem;
+	color: #000000;
+	padding-left: 0.25rem;
+	font-size: 0.3rem;
+}
+.shop_cart_footer_right{
+	width:2.2rem;
+	background-color: #fe4e4d;
+	height: 1rem;
+	line-height: 1.1rem;
+	text-align: center;
+	color: #fff;
+}
+.shop_cart_clear img{
+	width: 0.94rem;
+	height: 0.36rem;
+	margin-top: 0.22rem;
+	margin-left: 2.39rem;
+}
+.index_footer .index_footer_inner{
+	height: 1.03rem;
+	width: 100%;
+	margin-top: 0.26rem;
+	border-top: 1px solid #cacaca;
+}
+.index_footer .index_footer_count{
+	height: 1.01rem;
+	line-height: 1.01rem;
+	width: 1.54rem;
+	background-color: #3e4249;
+	color: #fff;
+	position: relative;
+}
+.index_footer .index_footer_count img{
+	width: 1rem;
+	height: 1rem;
+	left: 0.24rem;
+	top: -0.22rem;
+	position: absolute;
+}
+.index_footer .index_footer_count .cart_count{
+	width: 0.3rem;
+	height: 0.3rem;
+	line-height:0.35rem;
+	left: 0.94rem;
+	top: -0.32rem;
+	position: absolute;
+	font-size: 0.2rem;
+	text-align: center;
+	background-color: #ff6801;
+	color: #fff;
+	border-radius: 0.3rem;
+}
+.index_footer .index_footer_left{
+	height: 1.01rem;
+	width: 3.76rem;
+	background-color: #3e4249;
+	color: #fff;
+	font-size: 0.3rem;
+	font-weight: bold;
+	padding-top: 0.35rem;
+}
+.index_footer .index_footer_right{
+	height: 1.01rem;
+	width: 2.2rem;
+	background-color: #fe4e4d;
+	color: #fff;
+	font-size: 0.3rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0.35rem;
+}
+.index_content{
+}
+.index_content .left{
+	width: 1.7rem;
+}
+.index_content .left .fenlei_current{
+	width: 1.7rem;
+	height: 1rem;
+	background-color: #fe4e4d;
+}
+.index_content .left .fenlei_current .fenlei_content{
+	height: 100%;
+	margin-left: 0.08rem;
+	padding-left: 0.21rem;
+	width: 1.62rem;
+	background-color: #ffffff;
+	line-height: 1rem;
+	color: #fe4e4d;
+	font-size: 0.28rem;
+} 
+.index_content .left .fenlei{
+	width: 1.7rem;
+	height: 1rem;
+	background-color: #f7f7f7;
+	color: #666666;
+	border-bottom: 1px solid #bfbfbf; 
+}
+.index_content .left .fenlei .fenlei_content{
+	height: 100%;
+	margin-left: 0.08rem;
+	padding-left: 0.21rem;
+	width: 1.62rem;
+	line-height: 1rem;
+	font-size: 0.28rem;
+} 
+.index_content .right{
+	width: 5.78rem;
+	background-color: #ffffff;
+	padding-left: 0.18rem;
+	padding-top: 0.2rem;
+	height: 100%;
+	overflow: auto;
+} 
+
+.index_content .right .fenlei .header{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	background-color: #ffcd66;
+	
+}
+.index_content .right .fenlei .header .header_right{
+	width: auto;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	margin-left: 0.04rem;
+	padding-left:0.15rem;
+	background-color: #f7f7f7;
+	color: #656565;
+	font-size: 0.23rem;
+}
+.index_content .product_list .product{
+	width: 100%;
+	height: 2.12rem;
+	 
+}
+.index_content .product_list .line{
+	width: 100%;
+	height: 2px;
+	background-color: #f0f0f0;
+}
+.index_content .product_list .product .image{
+	width: 1.72rem;
+	height: 1.72rem;
+	margin:0.2rem;
+	margin-left: 0;
+	margin-right: 0;
+}
+.index_content .product_list .product .image img{
+	width: 100%;
+	height: 100%;
+}
+.index_content .product_list .product .desc{
+	width: 2.24rem;
+	height: 2.12rem;
+	padding-left: 0.21rem;
+	padding-top: 0.1rem;
+}
+.index_content .product_list .product .title{
+	height: 0.31rem;
+	font-size: 0.31rem;
+	line-height: 0.31rem;
+	margin-top: 0.21rem;
+	color: #333333;
+}
+.index_content .product_list .product .yishou{
+	height: 0.46rem;
+	line-height: 0.46rem;
+	font-size: 0.23rem;
+	color: #a9a9a9;
+}
+.index_content .product_list .product .xianjia{
+	height: 0.44rem;
+	line-height: 0.44rem;
+	font-size: 0.22rem;
+	color: #fe4e4d;
+}
+.index_content .product_list .product .yuanjia{
+	height: 0.39rem;
+	line-height: 0.39rem;
+	font-size: 0.1rem;
+	color: #bbbbbb;
+}
+.index_content .product_list .product .jiajian{
+	width: 1.54rem;
+	height: 100%;
+}
+.index_content .product_list .product .buttons{
+	width: 100%;
+	height: 0.56rem;
+	margin-top: 1.34rem;
+} 
+.index_content .product_list .product .buttons .jian_btn{
+	width: 0.56rem;
+	height: 0.56rem;
+} 
+.index_content .product_list .product .buttons .shuzi{
+	width: 0.42rem;
+	height: 0.56rem;
+	line-height: 0.7rem;
+	font-size: 0.22rem;
+	color: #333333;
+	text-align: center;
+} 
+.index_content .product_list .product .buttons .jia_btn{
+	width: 0.56rem;
+	height: 0.56rem;
+} 
+
+
+.confirm_header{
+	width: 7.1rem;
+	height: 1.6rem;
+	background-color: #fff;
+	margin-left:0.2rem; 
+	margin-top: 0.2rem;
+}
+.confirm_header_title{
+	margin-top: 0.4rem;
+	height: 0.78rem;
+	line-height: 0.78rem;
+	font-size: 0.38rem;
+	text-align: center;
+	font-weight: bold;
+}
+.confirm_header_state{
+	margin-top: 0.2rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.31rem;
+	text-align: center;
+	color: #f59b0f;
+	font-weight: bold;
+}
+.confirm_header_zhuohao{
+	margin-top: 0.1rem;
+	height: 0.64rem;
+	line-height:0.64rem;
+	font-size: 0.23rem;
+	color: #666666;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+.confirm_header_zh{
+	 padding-left: 0.21rem;
+}
+.confirm_header_time{
+	 text-align: right;
+	 padding-right: 0.21rem;
+}
+.confirm_header_yingfu{
+	height: 0.84rem;
+	line-height:0.84rem;
+	font-size: 0.31rem;
+	color: #333333;
+	padding-left: 0.2rem;
+}
+.confirm_order_list{
+	width: 7.1rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	overflow: auto;
+}
+.confirm_order_list .confirm_order{
+	margin-top: 0.1rem;
+	margin-bottom: 0.1rem;
+	background-color: #fff;
+}
+.confirm_order_list .confirm_order_header{
+	height:0.88rem;
+	line-height:0.98rem;
+	background-color: #fff;
+	font-size: 0.3rem;
+	overflow: hidden;
+	border-bottom: 1px solid #e6e6e6;
+}
+.confirm_order_header_img{
+	 padding-left: 0.21rem;
+	 padding-top:0.1rem;
+	 width: 0.92rem;
+	 height:0.88rem;
+}
+.confirm_order_header_img img{
+	 height:0.6rem;
+	 width: 0.6rem;
+}
+.confirm_order_header_name{
+	 width: 2.37rem;
+}
+.confirm_order_header_renshu{
+	width: 1.8rem;
+}
+.confirm_order_header_time{
+	text-align: right;
+	 padding-right: 0.21rem;
+	 width: 2rem;
+}
+.confirm_order_product_list{
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+}
+.confirm_order_product{
+	height:	0.85rem;
+	border-top: 1px solid #e6e6e6;
+	position: relative;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	background-color: #fff;
+}
+.confirm_order_product .state_img{
+	height: 0.7rem;
+    position: absolute;
+    left: 4.3rem;
+    top: 0.1rem;
+}
+.confirm_order_product_name{
+	font-size: 0.33rem;
+	padding-top: 0.26rem;
+	width: 3.09rem;
+	font-weight: bold;
+}
+.confirm_order_product_fenshu{
+	width: 1.1rem;
+	font-size: 0.23rem;
+	padding-top: 0.25rem;
+}
+.confirm_order_product_price{
+	width: 2.5rem;
+	font-size: 0.27rem;
+	padding-top: 0.23rem;
+	color: #ed3743;
+	text-align: right;
+} 
+.index_footer .confirm_order_footer_count{
+	height: 1.01rem;
+	width: 2.3rem;
+	background-color: #fe4e4d;
+	color: #fff;
+	font-size: 0.3rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0.35rem;
+}
+.index_footer .confirm_order_footer_left{
+	height: 1.01rem;
+	width: 3rem;
+	background-color: #3e4249;
+	color: #fff;
+	font-size: 0.35rem;
+	padding-top: 0.35rem;
+	text-align: center;
+}
+.index_footer .confirm_order_footer_right{
+	height: 1.01rem;
+	width: 2.2rem;
+	background-color: #fe4e4d;
+	color: #fff;
+	font-size: 0.3rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0.35rem;
+}
+.index_footer .confirm_order_footer_pay{
+	height: 1.01rem;
+	width: 4.5rem;
+	background-color: #fe4e4d;
+	color: #fff;
+	font-size: 0.35rem;
+	text-align: center;
+	padding-top: 0.35rem;
+}
+

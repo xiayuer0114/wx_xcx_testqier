@@ -1,0 +1,135 @@
+
+.article {
+  clear: both;
+  width: 90%;
+  margin: 30rpx auto;
+}
+.article .title {
+  margin: 12rpx 0;
+  font-family: 'customFont-Regular';
+  color: #010101;
+  font-size: 48rpx;
+}
+.article .author{
+  color: #333;
+  font-size: 28rpx;
+}
+.article .author text{
+  /*padding: 0 10rpx;*/
+}
+.article .tools {
+  text-align: right;
+  height: 80rpx;
+  position: relative;
+  margin: 50rpx 0;
+}
+.article .tools .share_btn{
+  height: 72rpx;
+  width: 72rpx;
+  position: absolute;
+  right: 100rpx;
+  top: 0;
+  opacity: 0;
+  z-index: 11;
+}
+.article .tools .share_icon{
+  position: absolute;
+  right: 100rpx;
+  top: 0;
+}
+.article .tools .collect_icon,
+.article .tools .collected_icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.article .tools image{
+  height: 40rpx;
+  width: 40rpx;
+  padding: 18rpx;
+  border-radius: 50%;
+  border: 2rpx solid #FFCA03;
+}
+.article .tools .collected_icon{
+  background-color: #FFCA03;
+}
+.article .video_player{
+  width: 100%;
+  height: 360rpx;
+  margin: .83em 0;
+}
+.article .video_player video{
+  width:100%;
+  height:100%;
+  display: block;
+  background: white;
+}
+.article .detail{
+  font-size: 28rpx;
+  font-weight: 300;
+  line-height: 44rpx;
+  color: #848484;/* 20180806加深文字颜色 848484 202020*/ 
+  letter-spacing: 5rpx;
+  text-align: justify;
+  text-justify: newspaper;
+}
+.article .detail .wxParse-img{
+  width: 100%;
+  box-shadow: 2px 1px 5px rgba(0,0,0,0.35);
+  margin: 44rpx 0;
+}
+.article .detail .wxParse-p {
+
+}
+.article .detail .wxParse-h1 {
+  font-family: 'customFont-Regular';
+  color: #010101;
+  font-size: 52rpx;
+  line-height: 72rpx;
+  /* line-height: 56rpx; */
+  margin: 50rpx 0 33rpx 0 !important;
+  font-weight: normal !important;
+}
+.article .detail .wxParse-h2 {
+  font-family: 'customFont-Regular';
+  font-weight: normal !important;
+  font-size: 48rpx;
+}
+.article .detail .wxParse-h3 {
+  font-family: 'customFont-Regular';
+  font-weight: normal !important;
+  line-height: 56rpx;
+  margin: 44rpx 0;
+  font-size: 38rpx;
+  color: #010101;
+}
+
+.article .tags {
+  margin-top: 30rpx;
+  padding-bottom: 20rpx;
+  border-top: 1rpx solid #D9D9D9;
+}
+.article .tags .title{
+  padding: 20rpx 0;
+  font-size: 22rpx;
+  font-weight: bold;
+  font-family: 'customFont-Light';
+  color: #000000;
+}
+.article .tags text {
+  font-size: 20rpx;
+  border: 1rpx solid #FFC900;
+  padding: 8rpx 20rpx;
+  margin: 22rpx 10rpx;
+}
+.article .tags text:nth-child(2){
+  margin-left: 0;
+}
+.article .advertisement {
+  padding: 36rpx 0;
+}
+.article .advertisement image{
+  width: 100%;
+  min-height: 100rpx;
+  padding: 5rpx 0;
+}

@@ -1,0 +1,314 @@
+/* pages/tetui/tetui.wxss */
+page {
+  height: 100%;
+}
+/*黄色框  */
+
+.yellow_view {
+  width: 100%;
+  /* height: 950rpx; *//* padding-top: 50rpx; *//* background-color: #ffd000; *//* display:flex;
+  flex-direction: column;
+  align-items: center; */
+  position: relative;
+  text-align: center;
+  padding-top:50rpx;
+  background-color: #ffd000;
+  height:79%;
+}
+
+.inside_title_view_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.yellow_bg {
+  width: 100%;
+  height: 915rpx;
+}
+
+.shuye {
+  width: 83%;
+  height: 740rpx;
+  position: absolute;
+  top: 49rpx;
+  left: 63rpx;
+  /* border:1rpx solid #333; */
+  display: none;
+}
+
+/*内容框  */
+
+.inside_viewx_box {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+/*里图片  */
+
+.img_view {
+  width: 100%;
+  height: 310rpx;
+  position: relative;
+}
+
+.inside_img {
+  width: 100%;
+  height: 100%;
+}
+
+.head_view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.circle_view {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 175rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+}
+
+.name {
+  width: 100%;
+  margin-top: 10rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35rpx;
+  color: #fff;
+}
+
+.circle_desc {
+  width: 100%;
+  margin-top: 10rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+  color: #fff;
+}
+
+/*about  */
+
+.inside_title_view {
+  width: 94%;
+  height: 40rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  font-size: 22rpx;
+  color: #919191;
+}
+
+/*描述  */
+
+.desc_view {
+  width: 94%;
+  /* margin: 0 auto; */
+  margin-top: 10rpx;
+  height: 150rpx;
+  font-size: 26rpx;
+  color: #000;
+  line-height: 40rpx;
+  margin:0 auto;
+}
+
+.desc_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align:left;
+}
+
+/*图片列表  */
+
+.flex_view {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  height: 210rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex_img {
+  width: 31%;
+  height: 92%;
+}
+
+/*收藏和转发  */
+
+.icon_view {
+  margin-left: 10%;
+  margin-top: 2%;
+  width: 60%;
+  height:9%;
+  display: flex;
+  background: #ffd000;
+  align-items: center;
+  position:relative;
+}
+
+.page_img {
+  width: 54rpx;
+  height: 50rpx;
+}
+
+.zhuanfa {
+  width: 54rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+}
+
+/* .zhuanfa{
+   width: 55rpx;
+  height: 45rpx;
+  margin-left:30rpx;
+} */
+
+/*title_img  */
+
+.title_view {
+  width: 100%;
+  height: 85rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  /* padding-top: 12rpx; */
+  /* border-top:1rpx solid #626262; */
+}
+
+.title_img {
+  width: 100%;
+  height: 100%;
+}
+
+.table {
+  width: 100%;
+  height: 150rpx;
+}
+
+/*蒙版  */
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.share_view {
+  width: 100%;
+  height: 420rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 111;
+}
+
+.share-title {
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 34rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.share_list_view {
+  width: 100%;
+  height: 340rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.share_item_view {
+  width: 25%;
+  height: 150rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.share_img {
+  width: 95rpx;
+  height: 81rpx;
+}
+
+.share_name {
+  width: auto;
+  font-size: 33rpx;
+  color: #666;
+}
+
+.table {
+  width: 100%;
+  height: 120rpx;
+  background-color: #fff;
+}
+
+.share_btn {
+  /* background-color:rgba(0,0,0,0); */
+    width:60rpx;
+    height:60rpx;
+    position:absolute;
+    left:18%;
+    z-index:111;
+    border:none;
+    opacity:0;
+
+}
+
+.ad {
+  width: 80%;
+  margin:auto;
+  position: relative;
+  height:88%;
+}
+
+.ad .adlist {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color:white;
+}
+.ad .adlist:nth-last-child(2) {
+  transform: rotate(4deg);
+  opacity: 0.5;
+}
+.ad .adlist:nth-last-child(3) {
+  transform: rotate(-4deg);
+  opacity: 0.8;
+}
+.ad image{
+  max-width:100%;
+  max-height:100%；
+}

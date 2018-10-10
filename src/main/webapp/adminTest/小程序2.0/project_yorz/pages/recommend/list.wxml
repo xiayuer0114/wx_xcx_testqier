@@ -1,0 +1,13 @@
+<!--pages/recommend/list.wxml-->
+<!-- 专题类别 -->
+<serverLoading showError='{{globalData.showServerError}}' message='{{globalData.showServerMessage}}' showLoading='{{!globalData.sysConfigLoaded}}'>
+
+<!-- 正常显示内容 Begin -->
+<view class='page'>
+  <view class='body'>
+    <articleList id='articleList' articleId='{{articleId}}' articleName='{{articleName}}' bindtaptype='handleTapType'  bindtapitem='handleTapItem' bindloadBegin='handleLoadingBegin' bindloadOver='handleLoadingOver'/>
+  </view>
+</view>
+<!-- 正常显示内容 End -->
+
+</serverLoading>

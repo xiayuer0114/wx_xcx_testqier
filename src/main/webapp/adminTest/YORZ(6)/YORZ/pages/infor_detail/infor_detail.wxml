@@ -1,0 +1,123 @@
+<!--pages/infor_detail/infor_detail.wxml-->
+ <import src="/wxParse/wxParse.wxml" />
+<!--搜索栏  -->
+<search-bar/>
+<view>
+  <block wx:if="{{show_detail}}">
+  
+    
+    <!--餐厅图  -->
+    <block wx:if="{{ismark}}">
+      <view class='detail_img_view'  >
+        <image class='detail_img' src="{{imgUrl+detail.headBackground}}"></image>
+        <view class="inside_view">
+            <view class="circle_view">
+                <image class="circle" src='{{imgUrl+detail.headPortrait}}'></image> 
+            </view>
+            <view class="name">{{detail.name}}</view>
+            <view class="tabs_view_box">
+              <view class="tabs_view">
+                <image class="tabs" src="../../images/tu2.png"></image>
+                <text class="food_type">{{detail.lable}}</text>
+              </view>
+
+              <view class="distance_view">
+                  <image class="location" src='../../images/tu3.png'></image>
+                  <text class="distance">{{detail.distance}}</text>
+              </view>
+            </view>
+        </view>
+      </view>
+      <!--餐厅图  -->
+      <!--黄色标题  -->
+      <view class="yellow_title">
+        <!-- <text>{{detail.title}}</text> -->
+      </view>
+      <!--黄色标题  -->
+
+      <!--消费信息  -->
+      <view class="detail_view_box">
+        <view class="detail_view">
+          <view>
+            <text>人均消费：</text>
+            <text>{{detail.avg}}元/人</text>
+          </view>
+          <view>
+            <text >营业时间：</text>
+            <text>{{detail.businessHours}}</text>
+          </view>
+        
+          <view class="yellow_font" data-num="{{detail.phone}}" bindtap='makePhoneCall'>
+            <image class="phone" src='../../images/phone_call.png'></image>
+            <!-- <text>联系电话：</text> -->
+            <text>{{detail.phone}}</text>
+          </view>
+          <view   class="yellow_font" bindtap='getLocationBtn'>
+            <image class="address" src='../../images/y_location.png'></image>
+            <!-- <text>地址：</text> -->
+            <text class="addr_text" >{{detail.addr}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+    <!--消费信息  -->
+
+    <view class="logo_view">
+      <image class="logo" src="../../images/tu1.png"></image>
+    </view>
+
+    <view class="commend_view">
+      <image class="commend" src='../../images/tu7.png'></image>
+    </view>
+    <view class="desc_view">
+      <text>{{detail.pubIntro}}</text>
+    </view>
+
+    <view class="icon_view">
+    <button class="share_btn" open-type='share'></button>
+      <image data-id="{{detail.pubId}}" bindtap='toShareBtn' class="page_icon" src="../../images/f1.png"></image>
+      <image class="page_icon" hidden='{{!is_collect}}' src="../../images/f2.png" data-id="{{detail.pubId}}" bindtap='collectBtn'></image>
+      <image class="page_icon" hidden='{{is_collect}}' src="../../images/f21.png" data-id="{{detail.pubId}}" bindtap='collectBtn'></image>
+    </view>
+
+
+      <!--title_img  -->
+    <view class="title_view">
+      <image class="title_img" src="../../images/pic3.jpg"></image>
+    </view>
+
+
+    <!--特推亮点  -->
+    <view class="light_point">
+      <view class="yellow_view"></view>
+        <text>特推亮点</text>
+      <view class="yellow_view"></view>
+    </view>
+
+    <view class="light_img_view">
+      <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+    </view>
+
+
+
+    <!--蒙版  -->
+    <!-- <view bindtap='clickMask' class="mask" hidden='{{!to_share}}'>
+        
+    </view>
+      <view class="share_view" hidden='{{!to_share}}'>
+          <view class="share-title">分享</view>
+          <view class="share_list_view" >
+              <view class="share_item_view" wx:for="{{share_list}}">
+                  <image class="share_img" src='{{item.img}}'></image>
+                  <view class="share_name">{{item.name}}</view>
+              </view>
+              <view class="share_item_view">
+                
+              </view>
+          </view>
+        </view> -->
+
+      <view class="table"></view>
+
+   </block>
+</view>

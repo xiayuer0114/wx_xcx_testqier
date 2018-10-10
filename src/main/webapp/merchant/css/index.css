@@ -1,0 +1,176 @@
+#submit_form>div>div.form-body {
+	padding: 0px;
+}
+
+#submit_form>div>div.form-body>ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+#submit_form>div>div.form-body>ul>li.active>a>span {
+	color: #32c5d2;
+	font-weight: bold;
+}
+
+#submit_form>div>div.form-body>ul>li.done>a>span {
+	font-weight: bold;
+	color: #32c5d2;
+}
+
+#submit_form>div>div.form-body>ul>li.done>a>span>i {
+	color: #32c5d2;
+}
+
+#bar {
+	height: 10px;
+}
+
+#submit_form>div>div.form-body>div.tab-content>div.alert.alert-danger.display-none
+	{
+	padding: 10px;
+	font-size: 12px;
+}
+
+.help-block, .help-block-error {
+	margin: 0px;
+}
+
+.confirm-phonenum>div>h3, .phonenum-info>div>h3 {
+	margin: 0px;
+	line-height: 38px;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+}
+
+.phonenum-info>div>h3, .confirm-money>div>h3, .confirm-info>div>h3 {
+	margin: 0px;
+	font-family: '微软雅黑';
+	line-height: 34px;
+	font-size: 20px;
+}
+
+* {
+	font-family: '微软雅黑';
+}
+
+body, h1, h2, h3, h4, h5 {
+	font-family: '微软雅黑';
+}
+
+.cash-select>label {
+	width: 50px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+.cash-select>label.active {
+	color: #FFF;
+	background-color: #3598dc;
+	border-color: #3598dc;
+}
+
+.result-text {
+	text-align: center;
+	margin: 100px 0px;
+}
+
+.tab-pane>a {
+	margin-bottom: 10px;
+}
+
+.bootstrap-touchspin-down {
+	border-right: none;
+}
+
+.bootstrap-touchspin {
+	width: 150px;
+}
+
+.bootstrap-touchspin input {
+	text-align: center;
+}
+
+.result-text {
+	text-align: center;
+	margin: 100px 0px;
+}
+
+.table .frist_tr {
+	background: #ecf6fd none repeat scroll 0 0;
+	color: #32c5d2;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.table .last_tr {
+	text-align: center;
+}
+
+.table .last_tr td, .table .frist_tr th {
+	vertical-align: middle;
+	margin: 0;
+	padding: 4px;
+	text-align: center;
+	vertical-align: middle;
+}
+.pager .current {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 5px 14px;
+}
+.form-wizard .progress {
+    margin-bottom: 10px;
+}
+.pager_sun {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+}
+.pager_sun li {
+    display: inline;
+}
+.pager_sun li > a, .pager_sun li > span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.pager_store {
+	padding-left: 0;
+	margin: 20px 0;
+	text-align: center;
+	list-style: none;
+}
+.pager_store li {
+	display: inline;
+}
+.pager_store li > a, .pager_store li > span {
+	display: inline-block;
+	padding: 5px 14px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+}
+
+.pager_store_list {
+	padding-left: 0;
+	margin: 20px 0;
+	text-align: center;
+	list-style: none;
+}
+.pager_store_list li {
+	display: inline;
+}
+.pager_store_list li > a, .pager_store_list li > span {
+	display: inline-block;
+	padding: 5px 14px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+}

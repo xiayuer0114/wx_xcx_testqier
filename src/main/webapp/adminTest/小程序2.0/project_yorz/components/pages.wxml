@@ -1,0 +1,63 @@
+<!--components/page.wxml-->
+<view class='server_info' wx:if='{{showError}}'>
+  <view class='server_detail'>
+    <view class='title'>服务器运行异常,请稍后再试 {{showError}}</view>
+    <view class='desc'>{{showMessage}}</view>
+    <button bindtap='_handleRefreshPage'>刷新</button>
+  </view>
+</view>
+<view class='server_info' wx:if='{{showLoading}}'>
+  <view class='server_detail'>
+    系统配置载入中,请稍后... 
+  </view>
+</view>
+<block wx:else>
+  <view id='topMenu' class='nav_wrapper' wx:if='{{showTopMenu}}'>
+
+  </view>
+
+  <scroll-view class='main_wrapper' scroll-y='{{scrollY}}' scroll-top='300' lower-threshold='150' enable-back-to-top='true'
+      bindscrolltoupper="_handleScrollUpper" bindscrolltolower="_handleScrollLower" bindscroll="_handleScroll"
+      style='height: {{showTabbar ? systemInfo.windowHeight - 45 : systemInfo.windowHeight}}px; '
+    >
+    <view class='system_info' wx:if='{{debug}}'>
+      <view>手机品牌: {{systemInfo.brand}}</view>
+      <view>手机型号: {{systemInfo.model}}</view>
+      <view>设备像素比: {{systemInfo.pixelRatio}}</view>
+      <view>屏幕宽度: {{systemInfo.screenWidth}}</view>
+      <view>屏幕高度: {{systemInfo.screenHeight}}</view>
+      <view>可使用窗口宽度: {{systemInfo.windowWidth}}</view>
+      <view>可使用窗口高度: {{systemInfo.windowHeight}}</view>
+      <view>状态栏的高度: {{systemInfo.statusBarHeight}}</view>
+      <view>微信设置的语言: {{systemInfo.language}}</view>
+      <view>微信版本号: {{systemInfo.version}}</view>
+      <view>操作系统版本: {{systemInfo.system}}</view>
+      <view>客户端平台: {{systemInfo.platform}}</view>
+      <view>用户字体大小设置: {{systemInfo.fontSizeSetting}}</view>
+      <view>客户端基础库版本: {{systemInfo.SDKVersion}}</view>
+    </view>
+
+    <slot name='header'><!-- 前置内容 --></slot>
+    <slot name='body'><!-- 主显区 --></slot>
+    <slot name='footer'><!-- 后置内容 --></slot>
+    <view class='load_more' wx:if='{{handleLower}}'>
+      <text>-- 载入更多 --</text>
+    </view>
+  </scroll-view>
+
+  <view id='bottomMenu' class='tabbar' wx:if='{{showTabbar && tabbar.data.length > 1}}'>
+    <block wx:for='{{tabbar.data}}' wx:key='id'>
+      <view id='tabbar_{{item.id}}' class='item {{tabbar.selectIndex == item.index ? "item_hover" : ""}}  {{tabbar.showTitle ? "has_tit" : "no_tit"}} {{tabbar.showIcon ? "has_icon" : "no_icon"}}' data-id='{{item.id}}' data-index='{{item.index}}' bindtap='_handleTapTabbarItem'>
+        <block wx:if='{{tabbar.showIcon}}'>
+          <image mode='aspectFit' class='tabbar_icon' src='{{item.icon}}' wx:if='{{item.icon && item.icon != "" && (tabbar.selectIndex != item.index || !item.selectIcon && item.selectIcon == "")}}'></image>
+          <image mode='aspectFit' class='tabbar_icon' src='{{item.selectIcon}}' wx:if='{{tabbar.selectIndex == item.index && (item.selectIcon && item.selectIcon !== "")}}'></image>
+        </block>
+        <view class='tabbar_title' wx:if='{{tabbar.showTitle}}'>
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</block>
+

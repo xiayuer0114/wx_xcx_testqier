@@ -1,0 +1,58 @@
+<!--pages/aboutme/purchaseHistory.wxml-->
+<!-- 消费记录 -->
+
+<serverLoading showError='{{globalData.showServerError}}' message='{{globalData.showServerMessage}}' showLoading='{{!globalData.sysConfigLoaded}}'>
+
+<!-- 正常显示内容 Begin -->
+<view class='page'>
+  <view class='body'>
+    <block wx:if='{{dataList.length > 0}}'>
+      <view class='time_line' wx:for='{{dataList}}' wx:key='id' wx:for-index="index" wx:for-item="item">
+          <view class='title'>
+            <image src='{{resourceLocal}}icon6.png' />
+            {{item.date}}
+          </view>
+          <view class='line'>
+            <view class='item'>
+                <view class='info'>
+                  <view class='top'>
+                    <text class='title'>{{item.name}}</text>
+                    <view class='label'>
+                      <image mode='aspectFit' src='{{resourceLocal}}icon3.png'></image>
+                      {{item.label}}
+                    </view>
+                  </view>
+
+                  <view class='bottom'>
+                    <view class='row'>
+                      <!--<text class='deadline'>有效期至：{{item.date}}</text>-->
+                      <text class='amount'>抵扣：CNY{{item.amount}}</text>
+                    </view>
+                    <view class='row'>
+                      <view class='operation' data-id='{{item.id}}' wx:if='{{item.status}}' bindtap='tapBtnJumpToShop'>前往商家 <image mode='aspectFit' src='{{resourceLocal}}icon5.png' /></view>
+                      <text class='explain'>消费：CNY{{item.used}}</text>
+                    </view>
+                  </view>
+                </view>
+                <view class='shop_avatar'>
+                    <image class='photo' mode='aspectFit' src='{{resourceServer + item.shopPhoto}}' />
+                    <view class='status' wx:if='{{!item.status}}'>
+                      <image mode='aspectFit' src='{{resourceLocal}}shop_disable_.png' />
+                    </view>
+                </view>
+            </view>
+          </view>
+          
+      </view>
+    </block>
+    <view class='not_record' wx:else>
+      <text>{{NotFoundData}}</text>
+    </view>
+  </view>
+  <view class='footer'>
+    <image mode='aspectFit' src='{{resourceLocal}}bottom2.png' />
+  </view>
+</view>
+<!-- 正常显示内容 End -->
+
+</serverLoading>

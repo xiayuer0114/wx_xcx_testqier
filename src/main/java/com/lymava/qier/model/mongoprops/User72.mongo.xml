@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.model.User72"
+		extends="com.lymava.base.model.User" >
+
+		<property column="newUser" name="newUser"  />
+
+	</class>
+</dbObject>

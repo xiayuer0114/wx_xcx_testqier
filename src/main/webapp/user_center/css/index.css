@@ -1,0 +1,72 @@
+*{margin: 0;padding: 0;font-family: "黑体";}
+.clear{clear: both;}
+body{background-color: #eaeaea;}
+.container{}
+
+/*顶部*/
+.top{height: 50px;background-color: white;}
+.top_left{padding-left: 2%;}
+.top_left div{float: left;}
+.top_left img{width: 1.4em;padding-top: 11px;}
+.top_left1{font-size: 1.4em;color: #fc7a08;padding-top: 14px;padding-left: 5px;}
+.top_middle{font-size: 1.4em;padding-top: 14px;text-align: center;color: #3c3c3c;}
+.top_right div{padding-right: 5%;float: right;}
+.top_right img{width: 1.5em;padding-top: 14px;}
+
+/*banner*/
+.banner img{width: 100%;}
+
+/*图标*/
+.icon{background-color: white;height: 200px;}
+.icon_1{}
+.icon_11{width: 20%;float: left;margin-top: 14px;}
+.icon_11 div{text-align: center;padding-top: 6px;color: #a7a6a6;font-size: 1.2rem;}
+.icon_1 img{display: block;margin:auto;}
+
+.icon_2 img{display: block;margin:auto;}
+
+
+/*热门推荐*/
+.popular{width: 100%;height: 500px;background-color: white;margin-top: 20px;}
+.p_title{padding-left: 2%;border-bottom: solid 2px #eaeaea;height: 50px;}
+.p_title_left{float: left;margin-top: 15px;padding-left: 5px;border-left:solid 4px #fc7a08 ;font-size: 1.4em;color: #3c3c3c;}
+.p_title_right{float: right;padding-right: 2%;margin-top: 15px;}
+.p_title_right img{width: 1.5rem;}
+
+.content{margin-top: 20px;background-color: #01AAED;}
+/*.content_left{padding-left: 2%;float: left;}
+.content_left img{width: 100%;}
+.content_right{padding-left: 2%;float: left;}
+.c_r_1{overflow: hidden;text-overflow: ellipsis;}
+.c_r_1 h1{width: 50%;font-size: 1.3em;float: left;height: 20px;}
+.c_r_1 p{float: right;padding-right: 2%;color: #a7a6a6;}
+.c_r_2{line-height: 40px;}
+.c_r_2 li{float: left;}
+.c_r_2 li img{width: 1.2em;}
+.c_r_2_li{padding-left: 1%;}
+.c_r_3{line-height: 40px;}
+span{float: left;color: #a7a6a6;overflow: hidden;text-overflow: ellipsis;font-style: none;}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

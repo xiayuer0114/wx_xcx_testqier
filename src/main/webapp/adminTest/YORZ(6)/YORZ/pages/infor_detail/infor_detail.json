@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "推荐卡详情",
+  "usingComponents": {
+    "search-bar": "/components/searchBar_b/index"
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.xiaoChengXuModel.ZhuanZengRecord" collection="ZhuanZengRecord">
+
+        <indexs>
+            <index column="id"  />
+        </indexs>
+
+        <id name="id" />
+
+        <property column="redId" name="redId" />
+
+        <property column="oldOpenId" name="oldOpenId" />
+
+        <property column="zhuanzengTime" name="zhuanzengTime" />
+
+        <property column="newOpenId" name="newOpenId" />
+
+        <property column="takeTime" name="takeTime" />
+
+        <property column="state" name="state" />
+
+
+    </class>
+</dbObject>

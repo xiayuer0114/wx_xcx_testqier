@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>生活需要一点红</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="telephone=no,email=no" name="format-detection">
+	    <meta content="yes" name="apple-touch-fullscreen">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /><!-- 屏蔽双击缩放 -->
+		<link rel="stylesheet" type="text/css" href="css/need_red.css"/>
+	    <script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				var window_width = $(window).width();
+				var rem_font_size = window_width*10/75;
+				$("html").css("font-size",rem_font_size+"px");
+			}); 
+		</script>
+	</head>
+	<body>
+		<div class="need_poster1">
+			<img src="img/poster.png"/>
+		</div>
+		<div class="need_poster2">
+			<img src="img/2_02.jpg"/>
+		</div>
+		<div class="need_poster3">
+			<div class="">
+				<div class="" style="color: #5d777f;font-size: 0.4rem;float: left;padding-left: 2rem;padding-top: 0.23rem;">
+					TO:
+				</div>
+				<input type="text" id="mingzi" placeholder="输入ta的名字" class="">
+			</div>
+			<div class="">
+				<div class="" style="color: #5d777f;font-size: 0.4rem;float: left;padding-left: 2rem;padding-top: 0.23rem;">
+					BY:
+				</div>
+				<input type="text" id="chenghu" placeholder="告诉ta你是谁" class="">
+			</div>
+			<div>
+				<img id="save" src="img/2_04.png" style="width:2.1rem;height:0.64rem;padding-left: 2.6rem;padding-top: 2.3rem;">
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		$("#save").click(function () {
+		    var mingzi=$("#mingzi").val();
+		    var chenghu=$("#chenghu").val();
+			window.location.replace("/activities/PinPaiGuShi/hechengtupian.jsp?mingzi="+mingzi+"&chenghu="+chenghu);
+		});
+	</script>
+</html>

@@ -1,0 +1,111 @@
+*{margin: 0;padding: 0;font-family: "黑体";}
+body{width:100%;background-size:100% 100%;}
+.clear{clear: both;}
+
+/*假日老爸*/
+.need1_1{width: 100%;margin: 0 auto;text-align: center;position: absolute;}
+.need1_1 img{width: 100%;}
+
+.need1_2{width: 100%;margin: 0 auto;text-align: right;position: relative;}
+.need1_2 div{float: left;margin-top: 0.66rem;}
+.need1_01{padding-left: 0.54rem;}
+.need1_01 img{width: 0.48rem;}
+.need1_02{padding-left: 0.17rem;}
+.need1_02 img{width: 0.32rem;}
+
+/*小情侣*/
+.need2_1{width: 100%;margin: 0 auto;text-align: center;position: absolute;}
+.need2_1 img{width: 100%;}
+
+.need2_2{width: 100%;margin: 0 auto;text-align: right;position: relative;}
+.need2_2 div{float: left;margin-top: 1rem;}
+.need2_01{padding-left: 4.7rem;}
+.need2_01 img{width: 0.48rem;}
+.need2_02{padding-left: 0.17rem;}
+.need2_02 img{width: 0.32rem;}
+
+/*妈咪*/
+.need3_1{width: 100%;margin: 0 auto;text-align: center;position: absolute;}
+.need3_1 img{width: 100%;}
+
+.need3_2{width: 100%;margin: 0 auto;text-align: right;position: relative;}
+.need3_2 div{float: left;margin-top: 0.66rem;}
+.need3_01{padding-left: 0.54rem;}
+.need3_01 img{width: 0.48rem;}
+.need3_02{padding-left: 0.17rem;}
+.need3_02 img{width: 0.32rem;}
+
+/*创业者*/
+.need4_1{width: 100%;margin: 0 auto;text-align: center;position: absolute;}
+.need4_1 img{width: 100%;}
+
+.need4_2{width: 100%;margin: 0 auto;text-align: right;position: relative;}
+.need4_2 div{float: left;margin-top: 1rem;}
+.need4_01{padding-left: 0.54rem;}
+.need4_01 img{width: 0.48rem;}
+.need4_02{padding-left: 0.17rem;}
+.need4_02 img{width: 0.32rem;}
+
+/*人物合集*/
+.need5_1{width: 100%;margin: 0 auto;text-align: center;position: absolute;}
+.need5_1 img{width: 100%;}
+
+.need5_2{width: 100%;margin: 0 auto;text-align: right;position: relative;}
+.need5_2 div{float: left;margin-top: 1.09rem;}
+.need5_01{padding-left: 3.06rem;}
+.need5_01 img{width: 0.32rem;}
+.need5_02 img{width: 0.32rem;padding-left: 0.17rem;}
+
+/*.need5_1{width: 100%;margin: 0 auto;text-align: center;position: absolute;}*/
+/*.need5_1 img{width: 100%;}*/
+
+/*.need5_2{width: 100%;margin: 0 auto;text-align: left;position: relative;float: left}*/
+/*.need5_2 div{margin-top: 1.09rem;}*/
+/*.need5_01{padding-left: 3.06rem;}*/
+/*.need5_01 img{width: 0.32rem;}*/
+/*.need5_02 img{width: 0.32rem;padding-left: 0.17rem}*/
+/*.need5_03 img{width: 0.32rem;padding-left: 0.17rem}*/
+/*人物合集1*/
+.need51_1{width: 100%;margin: 0 auto;text-align: center;position: absolute;}
+.need51_1 img{width: 100%;}
+
+.need51_2{width: 100%;margin: 0 auto;text-align: right;position: relative;padding-left: 2.1rem;}
+.need51_2 div{float: left;margin-top: 1.09rem;}
+.need51_01{padding-left: 0.17rem;}
+.need51_01 img{width: 0.32rem;}
+.need51_02 img{width: 0.48rem;padding-left: 0.17rem;}
+
+/*圣慕缇*/
+.need6_1{width: 100%;margin: 0 auto;text-align: center;position: absolute;}
+.need6_1 img{width: 100%;}
+
+.need6_2{width: 100%;margin: 0 auto;text-align: right;position: relative;}
+.need6_2 div{float: left;margin-top: 1.09rem;}
+.need6_01{padding-left: 3.29rem;}
+.need6_01 img{width: 0.48rem;}
+.need6_02 img{width: 0.48rem;padding-left: 0.17rem;}
+.need6_03{padding-left: 3.29rem;}
+.need6_03 img{width: 0.32rem;}
+.need6_04 img{width: 0.32rem;padding-left: 0.17rem;}
+
+.need7_1{width: 100%;margin: 0 auto;text-align: center;}
+.need7_01 img{float: left;width: 50%;}
+
+.need8_1{width: 100%;margin: 0 auto;text-align: center; position: relative;margin-top: 4.38rem;height: 1rem;}
+.need8_1 img{width: 3.12rem;}
+.need8_2{width: 100%;margin: 0 auto;text-align: center; position: relative;height: 0.78rem;}
+.need8_2 img{width: 3.12rem;}
+
+/*海报页*/
+.need_poster1{width: 100%;margin: 0 auto;text-align: center;}
+.need_poster1 img{width: 100%;}
+.need_poster2{width: 100%;margin: 0 auto;text-align: center;}
+.need_poster2 img{width: 100%;display: block;}
+.need_poster3{height:6.2rem;width:100%;background:url(../img/2_03bg.jpg) no-repeat;background-size:100% 100%;}
+.need_poster3 input{float: left;border-bottom:  #5d777f;width: 3.02rem;border:0;outline:none;font-size: 0.4rem;color: #5d777f;border-bottom: #5D777F solid 1px;padding-top: 0.23rem;}
+
+
+
+
+
+

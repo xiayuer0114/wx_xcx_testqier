@@ -1,0 +1,68 @@
+<!--pages/index/authorize.wxml-->
+
+<view class='page'>
+  <view class='help'>
+    <!-- 没有获得授权时提醒 -->
+    <!--
+    <block wx:if='{{!currentScope.hasUserInfo}}'>
+      <view class='info'>
+        <view class='desc'>
+          悠择YORZ需您的公开资料信息
+        </view>
+      </view>
+      <view class='options'>
+        <button size='mini' plain='true' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">同意授权</button>
+      </view>
+
+    </block>
+    -->
+    <!-- 设置地理位置失败后显示提醒 -->
+    <block wx:if='{{currentScope.showAgreeLocation}}'>
+    
+        <view class='info'>
+          <view class='desc'>
+            悠择YORZ需您同意授权地理位置
+          </view>
+          <block wx:if='{{currentScope.openSettingType == 0}}'>
+            <view class='step'>1. 打开右上角"...", 选择《关于悠择YORZ》</view>
+            <view class='step'>2. 打开右上角"...", 选择《设置》</view>
+            <view class='step'>3. 开启《使用我的地理位置》选项</view>
+          </block>
+        </view>
+        <view class='options'>
+          <block wx:if='{{currentScope.openSettingType == 2}}'>
+              <button size='mini' plain='true' open-type="openSetting" bindopensetting='onGotOpenSetting'>去开启</button>
+          </block>
+          <block wx:elif='{{currentScope.openSettingType == 1}}'>
+              <button size='mini' plain='true' bindtap='onBtnOpenSetting'>去开启</button>
+          </block>
+          <block wx:else>
+              <button size='mini' plain='true' bindtap='onRefresh'>刷新应用</button>
+          </block>
+        </view>
+    </block>
+    <block wx:elif='{{!currentScope.hasUserLocation}}'>
+        <view class='info'>
+          <view class='desc'>
+            悠择YORZ需您的《地理位置》
+          </view>
+        </view>
+        <view class='options'>
+          <button size='mini' plain='true' lang="zh_CN" bindtap='onGotUserLocation'>允许</button>
+        </view>
+    </block>
+    <!--
+    <block wx:else>
+        <view class='title'>
+          授权已完成
+        </view>
+        <view class='desc'>
+          您已同意获取《地理位置》和《公开资料信息》,请刷新应用
+        </view>
+      <view class='options'>
+          <button size='mini' plain='true' bindtap='onRefresh'>刷新应用</button>
+      </view>
+    </block>
+    -->
+  </view>
+</view>

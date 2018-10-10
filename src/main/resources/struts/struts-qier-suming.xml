@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"  
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="/applet" extends="struts-default" namespace="/applet">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.front.AppletAction"
+			method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+
+	<package name="/appletV2" extends="struts-default" namespace="/appletV2">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.front.AppletV2Action"
+				method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+
+	<package name="/v2/ActivitieMerchant" extends="struts-default" namespace="/v2/ActivitieMerchant">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.action.ActivitieMerchantAction"
+				method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+
+	<package name="/v2/ActivitieMerchantRedEnvelope" extends="struts-default" namespace="/v2/ActivitieMerchantRedEnvelope">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.action.ActivitieMerchantRedEnvelopeAction"
+				method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+
+	<package name="/v2/ShengmutitemaiConfig" extends="struts-default" namespace="/v2/ShengmutitemaiConfig">
+		<global-allowed-methods>regex:([A-Za-z0-9_$]*)</global-allowed-methods>
+		<action name="*" class="com.lymava.qier.activities.action.ShengmutitemaiConfigAction"
+				method="{1}">
+			<result>${successResultValue}</result>
+		</action>
+	</package>
+
+
+</struts>

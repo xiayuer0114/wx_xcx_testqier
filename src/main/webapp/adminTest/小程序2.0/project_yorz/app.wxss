@@ -1,0 +1,174 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/**
+ * 网络字体
+ **/
+@font-face {
+  font-family: 'customFont-Light';
+  src: url('//at.alicdn.com/t/webfont_72in1rsl2r5.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_72in1rsl2r5.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_72in1rsl2r5.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_72in1rsl2r5.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_72in1rsl2r5.svg#思源黑体-极细') format('svg'); /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'customFont-Regular';
+  src: url('//at.alicdn.com/t/webfont_dxvmhijy8t9.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_dxvmhijy8t9.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_dxvmhijy8t9.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_dxvmhijy8t9.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_dxvmhijy8t9.svg#思源黑体-普通') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'customFont-Light_Disabled';/*思源黑体-极细*/
+  src: url('//at.alicdn.com/t/webfont_1got95fweyo.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_1got95fweyo.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_1got95fweyo.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_1got95fweyo.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_1got95fweyo.svg#customFont-Light') format('svg'); /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'customFont-Regular_Disabled';/*思源黑体-粗*/
+  src: url('//at.alicdn.com/t/webfont_dl6cro2eix4.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_dl6cro2eix4.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_dl6cro2eix4.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_dl6cro2eix4.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_dl6cro2eix4.svg#customFont-Regular') format('svg'); /* iOS 4.1- */
+}
+page, .page{
+ /*   
+  font-family: 'customFont-Light','customFont-Regular','SourceHanSansSC-Light', 'NotoSansHant-Bold','Microsoft Yahei','PingFang SC','STXihei' !important;
+  */
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, 'Segoe UI', Courier,'Calibri', sans-serif;
+  /*font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';*/
+  font-size: 24rpx;
+  /*
+  font-weight: lighter;
+  line-height: 1.25;
+  min-height: 100%;
+  */
+}
+
+.title_bg{
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAhCAYAAAARUmHFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjExOUI3MkIzOUFFOTExRTg4NTM2ODk3Rjc4MTQwQjFGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjExOUI3MkI0OUFFOTExRTg4NTM2ODk3Rjc4MTQwQjFGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTE5QjcyQjE5QUU5MTFFODg1MzY4OTdGNzgxNDBCMUYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTE5QjcyQjI5QUU5MTFFODg1MzY4OTdGNzgxNDBCMUYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5/HI6yAAAAJElEQVR42mL8//8/AzpgYsACRgXJFmT593Hr/9EAoZogQIABAC1JBuSbJS2jAAAAAElFTkSuQmCC");
+  background-repeat: repeat-x;
+  background-position: 0 -15rpx;
+}
+
+
+.not_record {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+}
+
+.not_record text{
+  line-height: 56rpx;
+  color: #6E6D6D;
+}
+
+
+
+
+.first_used{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.57);
+  /*display: none;*/
+}
+.first_used .first_home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.first_used .first_home .info {
+  width: 80%;
+}
+.first_used .first_home .btn_next {
+  width: 200rpx;
+  height: 69rpx;
+}
+.first_used .first_detail {
+  position: absolute;
+  top: 510rpx;
+  right: 0;
+}
+.first_used .first_detail .btn_tel {
+  position: absolute;
+  top: 0rpx;
+  right: 100rpx;
+}
+.first_used .first_detail .arrow_tel {
+  position: absolute;
+  top: 60rpx;
+  right: 90rpx;
+}
+.first_used .first_detail .btn_map {
+  position: absolute;
+  top: 90rpx;
+  right: 100rpx;
+}
+.first_used .first_detail .arrow_map {
+  position: absolute;
+  top: 150rpx;
+  right: 100rpx;
+}
+.first_used .first_detail .btn_map,
+.first_used .first_detail .btn_tel {
+  width: 150rpx;
+  height: 58rpx;
+}
+.first_used .first_detail .arrow_tel,
+.first_used .first_detail .arrow_map {
+  width: 43rpx;
+  height: 34rpx;
+}
+.first_detail {
+  z-index: auto !important;
+}
+.first_detail .shop_phone .btn_icon,
+.first_detail .shop_address .btn_icon {
+  z-index: 30;
+  padding: 6rpx;
+  background: white;
+  border-radius: 50%;
+  right: -8rpx !important;
+}
+.first_account .account_balance {
+  position: relative;
+}
+.first_account .account_balance .balance{
+  z-index: 30;
+  padding: 10rpx 20rpx;
+  background: white;
+  border-radius: 50%;
+}
+
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+    color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:red;
+}

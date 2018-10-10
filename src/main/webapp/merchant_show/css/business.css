@@ -1,0 +1,47 @@
+*{margin: 0;padding: 0;font-family: "微软雅黑";}
+.clear{clear: both;}
+.container{}
+body{}
+/*主页面*/
+/*banner部分*/
+.banner{height:100%;}
+.banner1{}
+.banner1 img{width: 100%;}
+.banner2{background: url(../img/na-bg.png);height: 2rem;padding-top: 0.3rem;}
+.banner2_1 img{width: 1.3rem;padding-left: 2%;}
+.banner2_2 img{width: 1.3rem;float: right;padding-right: 2%;}
+
+/*导航部分*/
+.nav1{background-color: #dcdcdc;}
+.nav1_1{text-align: center;}
+.nav1_1 img{width: 90%;padding-top: 1rem;}
+.nav1_2{text-align: center;}
+.nav1_2 img{width: 90%;padding-top: 1rem;}
+.nav2{height: 1em;background-color: #dcdcdc;}
+
+/*内容部分*/
+.content{}
+.content1{text-align: center;}
+.content1 img{width: 20%;padding-top: 1rem;}
+.content2{}
+
+.content2_all{width: 90%;margin: 0 auto;border-radius: 0.4rem;box-shadow:3px 3px 3px #e5e5e5;}
+.content1_ph{text-align: center;}
+.content1_ph img{width: 100%;}
+.content2_font {text-align: center;padding-top: 0.5rem;width: 95%;margin: 0 auto;}
+.content3_1{padding-top: 0.3rem;width: 95%;margin: 0 auto;}
+.content3_a{padding-left:3%;float: left;}
+.content3_a img{width: 2rem;}
+.content3_b{padding-top: 0.4rem;padding-right: 3%;float: right;}
+.content3_b1{float: right;}
+.content3_b2{float: right;}
+.content3_b2 img{width: 90%;}
+.content2_2{margin-top: 1rem;}
+
+/*分类页面*/
+.banner_f{height:100%;}
+.banner_f img{width: 100%;}
+
+
+
+

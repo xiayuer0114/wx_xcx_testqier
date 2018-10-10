@@ -1,0 +1,32 @@
+<!--components/my_live.wxml-->
+
+<view class='live_list'>
+  <slot name="before"><!-- 前置内容 --></slot>
+  <block wx:if='{{showBanner && banner.pic.length > 0}}'>
+    <image mode='widthFix' lazy-load='true' data-id="{{banner.id}}" data-type='{{banner.type}}' bindtap='_handleTapBanner' src='{{app.globalData.resourceServer + banner.pic}}' />
+  </block>
+  <block wx:if='{{dataList.length > 0}}'>
+    <block wx:for="{{dataList}}" wx:key="id" wx:for-item="item">
+      <view class="shop_item" data-id="{{item.id}}" data-area="{{item.area}}" bindtap='_handleTapListItem'>
+        <image mode="widthFix" src="{{app.globalData.resourceServer + item.image}}"></image>
+        <view class="section_left">
+          <view class="title">{{item.title}}</view>
+          <view class="address">
+            <image class="address_icon" mode='aspectFit' src='{{app.globalData.resourceLocal}}nav2.png' />
+            <text>{{item.distances}}</text>
+            <text>{{item.address}}</text>
+          </view>
+        </view>
+        <view class="section_right">
+          <view class="people">{{item.people}}人</view>
+          <view class="message"><text>{{item.message}}</text></view>
+        </view>
+      </view>
+    </block>
+    <slot name="after"><!-- 后置内容 --></slot>
+  </block>
+  <view class='not_record' wx:else>
+    <text>{{NotFoundData}}</text>
+  </view>
+
+</view>

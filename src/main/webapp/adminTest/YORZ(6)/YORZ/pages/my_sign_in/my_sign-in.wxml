@@ -1,0 +1,206 @@
+<!--pages/my_integral/my_integral.wxml-->
+<!--搜索栏  -->
+<search-bar/>
+
+<!--信息框  -->
+
+<view class="nick_name">昵称</view>
+<!--信息框  -->
+
+<!--收藏数  -->
+
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+<!-- 需要使用 button 来授权登录 -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view>
+
+<view class="collect_view">
+    <view class="item_view" data-index="0" bindtap='chooseTabs'>
+      <image class="collect" src='../../images/pho5.png' ></image>
+      <!-- <image class="collect" src='../../images/pho2.png'></image> -->
+      <view class="icon_view">
+        <text class="tex">签到</text>
+      </view>
+      <view class="sign_num_view">
+          <text class="sign_num">5</text>
+      </view>
+    </view>
+
+    <view class="item_view" data-index="1" bindtap='chooseTabs'>
+      <image class="history_icon" src='../../images/pho6.png'></image>
+      <view class="icon_view">
+        <text class="tex">积分兑换</text>
+      </view>
+      <view class="jifen_num_view">
+          <text class="jifen_num">6</text>
+      </view>
+    </view>
+
+   
+</view>
+
+ <block  wx:if="{{tabs_id==0}}"> 
+
+  <block >
+      <view class="calendar_view">
+    <view class="calendar">
+      <view class="week">
+        <view class="days" wx:for="{{weekArr}}"  class="{{(index==0 || index ==6 )?' per ':' ' }} week_days">{{item}}</view>
+      </view>
+    </view>
+  </view>
+  </block>
+
+  <block  >
+    <view class="days_view"> 
+    
+      <view wx:for='{{ arr }}' style='{{ index == 0 ? "margin-left:" + 100 * marLet + "rpx;" : "" }}'   class="{{((index+marLet)+1)%7==0 ||((index+marLet))%7==0 ?' per ':' ' }} days  " >
+      <view class="{{ item ==  getDate ? ' dateOn ' : ' '}} days_view_box"> {{ item }}</view>
+     
+      </view>
+    </view>
+      
+  </block>
+
+ </block> 
+
+
+
+
+<block wx:if="{{tabs_id==1}}">
+    <view class="integral_tabs">
+      <view class="{{integral_id==0?' selected ':''}} integral_prize" data-index="0" bindtap='showList'>兑换商品</view>
+      <view class="{{integral_id==1?' selected ':''}}  integral_record" data-index="1" bindtap='showList'>兑换记录</view>
+    </view>
+    <!--规则    -->
+    <view hidden='{{integral_id ==1}}'>
+      <view class="rule_view_box">
+        <text>兑换规则：</text>
+        <view class="rule_view">
+          <view class="rule_point">1、</view>
+          <view class="rule_point">2、</view>
+          <view class="rule_point">3、</view>
+        </view>
+      </view>
+
+      <!--奖品列表  -->
+      <view class="prize_list_view">
+        <view class="prize_list">
+          <view class="prize_img">
+            <image class="prize" src='../../images/jp1.png'></image>
+          </view>
+          <view class="prize_desc">
+            <view class="prize_name">雨伞</view>
+            <view class="prize_detail">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+          </view>
+          <view class="receive_view">
+            <image class="receive" src='../../images/jp2.png'></image>
+            <text>点击领取</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="prize_list_view">
+        <view class="prize_list">
+          <view class="prize_img">
+            <image class="prize" src='../../images/jp1.png'></image>
+          </view>
+          <view class="prize_desc">
+            <view class="prize_name">雨伞</view>
+            <view class="prize_detail">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+          </view>
+          <view class="receive_view">
+            <image class="receive" src='../../images/jp2.png'></image>
+            <text>点击领取</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+    <view hidden='{{integral_id ==0}}'>
+        <!--奖品列表  -->
+      <view class="record_list_view">
+          <view class="record_list">
+            <image class="record_prize" src='../../images/jp1.png'></image>
+
+            <view class="record_prize_detail">
+              <view class="record_prize_title">
+                <text>台塑王品</text>
+                
+              </view>
+
+            <view class="price">定向或通用红包信息</view>
+            <view class="address_view">
+              <view class="address">xxxxxxxxxxxx </view>
+              <view class="toshop">
+                <text>兑换日期：</text>
+                <text>2018/5/15</text>
+              </view>
+            </view>
+
+            </view>
+          </view>
+        </view>
+
+      <view class="record_list_view">
+          <view class="record_list">
+            <image class="record_prize" src='../../images/jp1.png'></image>
+
+            <view class="record_prize_detail">
+              <view class="record_prize_title">
+                <text>台塑王品</text>
+                
+              </view>
+
+            <view class="price">定向或通用红包信息</view>
+            <view class="address_view">
+              <view class="address">xxxxxxxxxxxx </view>
+              <view class="toshop">
+                <text>兑换日期：</text>
+                <text>2018/5/15</text>
+              </view>
+            </view>
+
+            </view>
+          </view>
+        </view>
+
+    </view>
+
+<!-- 兑换记录  
+<view class="record">兑换记录</view>
+
+<view class="record_date">
+  <image class="history" src='../../images/jp3.png'></image>
+  <text>05-01</text>
+</view>
+
+<view class="record_list_view">
+    <view class="record_list">
+      <image class="record_prize" src='../../images/jp1.png'></image>
+
+      <view class="record_prize_detail">
+        <view class="record_prize_title">
+          <text>台塑王品</text>
+          <view class="title_right">
+             <image class="niupai" src='../../images/jp4.png'></image> 
+             <text>牛排</text>
+          </view>
+        </view>
+
+        <view class="price">人均消费：CNY360/人</view>
+        <view class="address_view">
+          <view class="address">地址：xxxxxxxxxxxx </view>
+          <view class="toshop">
+            <text>前往商家</text>
+            <view class="arrow"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+</view> -->
+</block>
+<!--table  -->
+<view class='table'></view>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.UserVoucher" collection="UserVoucher">
+        <indexs>
+            <index column="a"  />
+            <index column="b"  />
+            <index column="c"  />
+            <index column="d"  />
+        </indexs>
+        <id name="id" />
+        <property column="a" name="userId_merchant"  />
+        <property column="b" name="userId_huiyuan"  />
+        <property column="c" name="voucherId"  />
+        <property column="d" name="useState"  />
+        <property column="e" name="voucherValue_fen"  />
+        <property column="f" name="low_consumption_amount"  />
+    </class>
+</dbObject>

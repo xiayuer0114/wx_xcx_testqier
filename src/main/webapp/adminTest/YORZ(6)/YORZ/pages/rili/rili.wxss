@@ -1,0 +1,70 @@
+/* pages/rili/rili.wxss */
+
+
+
+
+.calendar_view{
+  margin-top:84rpx;
+  width: 100%;
+  height: auto;
+}
+.calendar{
+  width: 80%;
+  margin:0 auto;
+}
+.week{
+  display: flex;
+  
+}
+.days_view{
+  max-width: 80%;
+  margin:0 auto;
+  display: flex;
+ 
+  flex-wrap: wrap;
+}
+.week_days{
+  width: 60rpx;
+  height: 60rpx;
+  margin:0 13rpx;
+  font-size: 30rpx;
+  color:#7f7f7f;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+}
+.days{
+  width: 60rpx;
+  height: 60rpx;
+  padding:0 13rpx;
+  font-size: 35rpx;
+  color:#7f7f7f;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+}
+.days_view_box{
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.per{
+  color: #c37a92;
+}
+ .dateOn{
+   border-radius: 50%;
+   border: 5rpx solid #fed000;
+   box-sizing: border-box;
+   /* background-color:#fed000;  */
+   /* color: #fff;  */
+  
+
+} 

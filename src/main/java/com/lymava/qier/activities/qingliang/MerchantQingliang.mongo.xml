@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.qingliang.MerchantQingliang" collection="MerchantQingliang">
+		 <indexs>
+            <index column="userId_merchant"  />
+            <index column="state"  />
+            <index column="price_fen"  />
+        </indexs>
+        <id name="id" />
+		<property column="userId_merchant" name="userId_merchant"  />
+		<property column="price_fen" name="price_fen"  />
+		<property column="state" name="state"  />
+		<property column="pic" name="pic"  />
+		<property column="subscribe_pic" name="subscribe_pic"  />
+	</class>
+</dbObject>

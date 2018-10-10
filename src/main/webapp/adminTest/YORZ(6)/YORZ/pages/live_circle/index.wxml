@@ -1,0 +1,195 @@
+<!--pages/live_circle/index.wxml-->
+<!--搜索栏  -->
+<view class="search_view">
+  < search-bar/>
+</view>
+
+
+<!--轮播  -->
+<view class="banner_view">
+  <swiper class="swiper" autoplay='auto' indicator-dots="true" indicator-color="rgba(255,208,0, .3)" indicator-active-color="#fff5c9"   interval='3000' duration='1000'>
+    <block wx:for="{{swiper}}">
+      <swiper-item>
+        <image class="swiper_img" bindtap='toDetailPage' data-mark="{{item.mark}}" data-id='{{item.pubId}}' src='{{imgUrl+item.pubPic}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="{{jump_out?' in_out ': ' ' }} tabs_list_view">
+    <view bindtap='typeBind' data-index="{{index}}" class="item_tabs" wx:for="{{tabs_list}}">
+      <text >{{item}}</text>
+      <image data-index="{{index}}" class="down" hidden='{{tabs_list_item_id == index}}' src="../../images/down.png"></image>
+      <image data-index="{{index}}" class="down" hidden='{{tabs_list_item_id!=index}}' src="../../images/down_active.png"></image>
+    </view>
+</view>
+<!-- <view class="replace_view" hidden='{{!jump_out}}'></view> -->
+
+<!-- <scroll-view scroll-y="true" bindscrolltolower="bindDownLoad" class="shore_list_box"> -->
+<view class="{{jump_out?' distance_top ': ' ' }} main_detail_view">
+  <block wx:for="{{product_list}}">
+    <view class="product_view_box" data-mark="{{item.mark}}" data-id="{{item.pubId}}" bindtap='toDetailPage' >
+      <view class="product_view">
+        <view class="product_img">
+          <image class="page_img" src='{{imgUrl+item.pic}}'></image>
+        </view>
+        <view class="product_right">
+          <view class="product_title">
+            <text class='product_title_text'>{{item.name}}</text>
+          </view>
+          <view class="product_dec"><text class="product_dec_text">{{item.title}}</text></view>
+          <view class="product_price">
+            <image  class="icon1" src="../../images/yuan.png"></image>
+            <text>人均{{item.avg}}元</text>
+          </view>
+          <view class="product_address">
+            <image  class="icon" src="../../images/location.png"></image>
+            <text class="address_text">{{item.addr}}</text>
+            <text class='distance'>{{item.distance}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- </scroll-view> -->
+
+
+
+
+
+
+<!--点击商圈显示  -->
+<view bindtap='hideMak' class="mask" hidden='{{!show_mask}}'></view>
+
+  <view class="type_list1" animation="{{animationData}}" hidden='{{!show_circle}}'>
+    <view class="hot_top">
+      <view bindtap='cancelBtn' class="cancle">取消</view>
+      <view class="hot_title"> 商圈</view>
+    </view>
+
+     <scroll-view scroll-y="true"  bindscrolltolower="bindDownLoadShangquan" class="shangquan_list_view"> 
+      <block wx:for="{{shangquan_list}}">
+         <view data-id="{{item.shangQuanId}}" class="circle_item" bindtap='getShangquanId'>
+            <image class="circle_img" src='{{imgUrl+item.pubPic}}'></image>
+            <view class="inside_item_view">
+                <text class="item-text_name">{{item.pubName}}</text>
+            </view>   
+        </view>
+      </block>
+     </scroll-view> 
+   
+  </view>
+
+  
+<!--点击热门显示  -->
+<!-- <view bindtap='cancleBtn' class="hot_mask" hidden='{{!show_hot}}'></view> -->
+<view class="type_list2" hidden='{{!show_type_list}}' animation="{{animationData}}">
+    <view class="hot_top">
+      <view bindtap='cancelBtn' class="cancle">取消</view>
+      <view class="hot_title"> 热门</view>
+    </view>
+     <view  data-index="{{index}}" bindtap='getHotDataDetail' class="{{hover_click==index? ' click_it ':''}} hot_list_item" wx:for="{{item_text}}"><text class="item_text">{{item}}</text> </view> 
+  </view>
+
+  <view class="type_list3" hidden='{{!show_hot}}' animation="{{animationData}}">
+    <view class="hot_top">
+      <view bindtap='cancelBtn' class="cancle">取消</view>
+      <view class="hot_title"> 品类</view>
+    </view>
+     <scroll-view scroll-y="true"  bindscrolltolower="bindDownLoadPeilei" class="shangquan_list_view">   
+      <block hidden='{{show_type_list}}' wx:for="{{pinlei_list}}">
+        <view data-id="{{item.pinLeiId}}" bindtap='getTeastTypeId' class="circle_item"  >
+          <image class="circle_img" src='{{imgUrl+item.pubPic}}'></image>
+          <view class="inside_item_view">
+              <text class="item-text_name">{{item.pubName}}</text>
+          </view>
+        </view>
+      
+      </block>
+     </scroll-view> 
+    
+     <!-- <view hidden='{{!show_type_list}}' data-index="{{index}}" bindtap='clickBind' class="{{hover_click==index? ' click_it ':''}} hot_list_item" wx:for="{{item_text}}"><text class="item_text">{{item}}</text> </view>  -->
+  </view>
+
+  <!--蒙版  -->
+<view class="set_mask" bindtap='cancleBtn' hidden='{{!hide_mask}}'></view>
+<block wx:if='{{hide_mask}}'>
+  <view class="set_view_box" hidden='{{!hide_mask}}' >
+
+    <view class="set_title">
+    <view bindtap='notsetBtn' class="notset_btn">取消</view>
+      <view bindtap='resetBtn' class="reset_btn">重置</view>
+      <view bindtap='finishBtn' class="finish_btn">完成</view>
+    </view>
+
+
+    <view class="select_type_view">
+      <view class="select_item_view">
+        <text>节假日可用</text>
+        <switch class="switch" checked="{{isChecked1}}" color="#ffd000" bindchange='switch1'></switch>
+      </view>
+      <view class="select_item_view">
+        <text>只看免预约</text>
+        <switch  bindchange='switch2' checked="{{isChecked2}}" color="#ffd000"></switch>
+      </view>
+      <view class="select_item_view">
+        <text>只看新店</text>
+        <switch bindchange='switch3' checked="{{isChecked3}}" color="#ffd000"></switch>
+      </view>
+    </view>
+
+    
+    <view class="underline">
+      <view class="tabs">用餐时段</view>
+      <view class="tabs_view">
+          <view data-name="{{item.pubName}}" class="{{yongcan_index==index?' yellow_rect ' : ' '}} tabs_item" wx:for="{{yongcan_list}}" data-index="{{index}}" bindtap='yongcanBtn'>
+          {{item.pubName}}
+          </view>
+      </view>
+
+      <view class="tabs">消费类型</view>
+      <view class="tabs_view">
+          <view data-name="{{item.pubName}}" data-index="{{index}}" class="{{fee_index == index?' yellow_rect ' : ' '}} tabs_item" wx:for="{{fee_type_list}}" bindtap='feeType'>
+          {{item.pubName}}
+          </view>
+      </view>
+    </view>
+
+    <view class="tabs">人均消费</view>
+
+       <view class="mo_view" >
+        <movable-area class="slider_line">
+          <movable-view  x="{{x1_index}}" damping="10" friction="6" bindchange="onChange" class="circle_point" direction="horizontal">
+          </movable-view>
+          <movable-view  x="{{x2_index}}" damping="10" friction="6" bindchange="onChange2" class="circle_point2" direction="horizontal">
+          </movable-view>
+        </movable-area>  
+        
+         <!-- <movable-area class="slider_line2">
+          <movable-view  bindchange="onChange2" class="circle_point2" direction="horizontal">
+          </movable-view>
+        </movable-area>    -->
+        <view class="{{turn_price?' max_fee ':'min_fee' }} ">￥{{x1}}</view>
+        <view class="{{turn_price?' min_fee ':'max_fee' }} ">￥{{x2}}</view>
+      </view> 
+      <!-- <view class='avg_view_box'>
+        <view class='min_avg_view'>
+          <input class='min_input' bindinput='minAvg'  type='number' placeholder='请输入金额' ></input>
+        </view>
+          <view class="middle_line"></view>
+        <view class='max_avg_view'>
+          <input class='max_input' bindinput='maxAvg' type='number' placeholder='请输入金额' ></input>
+        </view>
+      </view>
+      <view class="avg_title_view">
+        <view class="min_title">最低</view>
+        <view class='max_title'>最高</view>
+      </view> -->
+  </view>
+</block>
+
+<view class="title_view">
+  <image class="title_img" src="../../images/pic3.jpg"></image>
+</view>
+<view class="table"></view>

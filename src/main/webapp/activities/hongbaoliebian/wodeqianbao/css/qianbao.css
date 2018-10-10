@@ -1,0 +1,176 @@
+
+*{	
+			/*去掉默认的外边距和内边距*/
+			margin: 0;
+			padding: 0;
+			/*把背景铺满整个页面*/
+			width: 100%;
+			/*background: #fffbe0;*/
+			}
+.xiantian_1{
+	width: 100%;height: 1px;background: #626262;
+}
+.qianbao_1_1{
+	padding-left: 3.42rem;padding-top: 0.3rem;
+}
+.qianbao_1_1 img{
+	width: 0.68rem;
+}
+.qianbao_1_2{
+	padding-left: 0.45rem;padding-top: 0.35rem;font-size: 0.24rem;color: #6a6a6a;
+}
+.nicheng{
+	text-align: center;padding-top: 0.2rem;
+}
+.yue{
+	text-align: center;padding-top: 0.2rem;
+}
+.xiantian_2{
+	width: 100%;height: 1px;background: #626262;margin-top: 0.4rem;
+}
+.shangjia{
+	width: 7.5rem;height: 2.04rem;
+}
+.shangjialogo img{
+	width: 1.65rem;padding-left: 0.3rem;padding-top: 0.3rem;
+}
+.xinxi_1{
+	font-size: 0.28rem;color: #6e6d6d;padding-top: 0.36rem;
+}
+.xinxi_2_12 img{
+	width: 0.16rem;margin-left: 1.7rem;padding-top: 0.4rem;
+}
+.xinxi_2_13{
+	font-size: 0.26rem;color: #6e6d6d;padding-top: 0.36rem;text-align: right;padding-right: 0.4rem;
+}
+.qian_1{
+	font-size: 0.26rem;color: #6e6d6d;padding-top: 0.2rem;
+}
+.qian_2{
+	font-size: 0.26rem;color: #6e6d6d;padding-top: 0.2rem;
+}
+.guize1_1{
+	height: 0.33rem;width: 1.05rem;border-bottom: 8px solid #fdf0b4 ;
+}
+.guize_1_2{
+	font-size: 0.26rem;color: #6e6d6d;
+}
+.guize_2{
+	font-size: 0.26rem;color: #6e6d6d;text-align: right;padding-right: 0.05rem;
+}
+.guize_3 img{
+	width: 0.11rem;
+}
+.xiantian_3{
+	width: 100%;height: 0.04rem;background: #efefef;
+}
+
+.shangjia{
+	width: 7.5rem;height: 2.04rem;
+}
+.shangjialogo img{
+	width: 1.65rem;padding-left: 0.3rem;padding-top: 0.3rem;
+}
+.xinxi_1{
+	font-size: 0.28rem;color: #6e6d6d;padding-top: 0.36rem;
+}
+.xinxi_2_12 img{
+	width: 0.16rem;margin-left: 1.7rem;padding-top: 0.4rem;
+}
+.xinxi_2_13{
+	font-size: 0.26rem;color: #6e6d6d;padding-top: 0.36rem;text-align: right;padding-right: 0.4rem;
+}
+.qian_1{
+	font-size: 0.26rem;color: #6e6d6d;padding-top: 0.2rem;
+}
+.qian_2{
+	font-size: 0.26rem;color: #6e6d6d;padding-top: 0.2rem;
+}
+.guize_1{
+	font-size: 0.26rem;color: #6e6d6d;
+}
+.guize_2{
+	font-size: 0.26rem;color: #6e6d6d;text-align: right;padding-right: 0.05rem;
+}
+.guize_3 img{
+	width: 0.11rem;
+}
+.xiantian_3{
+	width: 100%;height: 0.04rem;background: #efefef;
+}
+
+
+.dibu img{
+	width: 6.04rem;position: absolute;bottom: 0.2rem;left: 0.8rem;
+}
+
+
+body{
+	font-family:'SourceHanSansSCLight';
+}
+@font-face {
+	font-family:'SourceHanSansSCLight';
+	src: url('../fonts/SourceHanSansSCLight.otf');
+}
+@font-face {
+	font-family:'SourceHanSansCN-Regular_2';
+	src: url('../fonts/SourceHanSansCN-Regular_2.otf');
+}
+@font-face {
+	font-family:'SourceHanSansCN-Light_1';
+	src: url('../fonts/SourceHanSansCN-Light_1.otf');
+}
+
+/*生活圈详情页*/
+.logobeijing{
+	width: 7.5rem;height: 3.97rem;
+}
+.logobeijing_1 img{
+	width: 7.5rem;height: 3.97rem;
+}
+.beijingwenzi_1{
+	font-size: 0.24rem;color: #fff;padding-top: 3.1rem;
+}
+.shijian-1{
+	font-size: 0.24rem;color: #fff;
+}
+.juli_1 img{
+	width: 0.16rem;margin-left: 0.35rem;
+}
+.juli_2{
+	font-size: 0.24rem;color: #fff;
+}
+.logo1{
+	width: 1.76rem;height: 1.76rem;margin-left: 2.89rem;border-style: solid;border-color: #ffca03;position: absolute;top: 3.15rem;border-width: 1px
+}
+.shangjiamingzi{
+	font-size: 0.3rem;color: #000000;margin-top: 1.2rem;text-align: center;
+}
+.lianxifangshi{
+	padding-top: 0.25rem;
+}
+.dianhua_1{
+	font-size: 0.24rem;color: #646464;padding-left: 0.32rem;
+}
+.dianhua_2 img{
+	width: 0.3rem;
+}
+.dizhi_1{
+	font-size: 0.24rem;color: #646464;padding-left: 0.32rem;
+}
+.dizhi_2 img{
+	width: 0.3rem;
+}
+.xiantiandibu{
+	width: 7rem;height: 1px;background: #848484;margin-left: 0.32rem;
+}
+.xiantiandibu_1{
+	font-size: 0.24rem;color: #000;font-family: SourceHanSansCN-Regular_2;margin-top: 0.3rem;
+}
+
+.xiantiandibu_2{
+	font-size: 0.2rem;color: #636363;width:0.9rem;height:0.36rem;border:1px solid #ffc900;text-align: center;
+}
+.xiantiandibu_3{
+	font-size: 0.2rem;color: #636363;margin-left: 0.2rem;width:0.9rem;height:0.36rem;border:1px solid #ffc900;text-align: center;
+}

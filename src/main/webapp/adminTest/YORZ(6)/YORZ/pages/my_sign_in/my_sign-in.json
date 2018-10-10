@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的每日签到",
+  "usingComponents": {
+    "search-bar": "/components/searchBar/index"
+  }
+}

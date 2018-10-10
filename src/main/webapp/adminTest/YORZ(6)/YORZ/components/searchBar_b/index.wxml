@@ -1,0 +1,40 @@
+<!--components/searchBar/index.wxml-->
+<view class="search_view_box">
+    <view class="search_view">
+      <!-- <image class="nav_location" src="../../images/nav_location.png"></image> -->
+      <view bindtap='toProBtn'  class='to_pro'></view>
+      <text class="place">重庆</text>
+      <view class="search_input_view">
+        <view class="search_img_view"> <image class="search" src="../../images/search.png"></image></view>
+        <input  class='input' placeholder='YORZ' placeholder-style='color:#fff;' bindinput='watchInput'></input>
+        <scroll-view  scroll-y="true" class="search_intro" bindscrolltolower="bindDownLoad" hidden='{{!show_mask}}'>
+          <view class="history" >
+          <block wx:for="{{search_list}}" >
+              <view data-id="{{item.pubId}}" data-mark="{{item.mark}}" class="history_list" bindtap='toDetailPage'  >
+                <view class="history_item" >
+                  <view class="kong"></view>
+                  <view data-pubId="{{item.pubId}}" class="his_title">{{item.pubName}}</view>
+                  <view class="his_desc"><text class="his_desc_text">{{item.pubIntro}}</text></view>
+                </view>
+              </view>
+          </block>
+            
+          </view> 
+       
+        </scroll-view>
+        
+      </view>
+    </view>
+</view>
+
+ <!-- <view bindtap='hideMask' class="mask" hidden='{{!show_mask}}'></view>  -->
+
+ <!-- <view class="history" hidden='{{!show_mask}}'>
+  <view class="history_list">
+    <view class="history_item">
+      <view class="kong"></view>
+      <view class="his_title">title</view>
+      <view class="his_desc">xxxxxxxxxxxxxx</view>
+    </view>
+  </view>
+ </view>  -->

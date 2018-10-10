@@ -1,0 +1,20 @@
+{
+  "short_name": "重卡汇",
+  "name": "重卡汇",
+  "icons": [
+    {
+      "src": "/static/img/favicon.ico",
+      "type": "image/vnd.microsoft.icon",
+      "sizes": "48*48"
+    },
+    {
+      "src": "/static/img/favicon.ico",
+      "type": "image/vnd.microsoft.icon",
+      "sizes": "192*192"
+    }
+  ],
+  "background_color": "#2196f3",
+  "theme_color": "#444",
+  "start_url": "/mall",
+  "display": "fullscreen"
+}

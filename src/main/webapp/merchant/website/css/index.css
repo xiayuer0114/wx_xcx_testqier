@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0;font-family: "微软雅黑";}
+.clear{clear: both;}
+body{}
+
+
+
+
+
+/*.nav_11bg{position: absolute;margin: 0 auto;text-align: center;width: 100%;}*/
+/*.nav_11bg img{width: 100%;}*/
+
+
+/* 顶部导航条 */
+.nav_11{
+    position: relative;
+    /*position: absolute;*/
+    margin: 0 auto;
+    width: 85%;
+    background-color: #383838;
+    box-shadow: 3px 2px 5px #888888;
+    /*z-index: 1;*/
+}
+
+.top_11{
+    position: relative;
+}
+
+
+
+.nav2_11{margin: 0 auto;width: 85%;background-color: #383838;box-shadow: 3px 2px 5px #888888;}
+
+.nav_11_01{width: 1100px;margin: 0 auto;height: 6em;}
+.nav1_11_01{float: left;padding-left: 3em;}
+.nav1_11_01 img{width: 5em;padding-top: 15px;}
+.nav1_11_02{color: #FFFFFF;text-align: center;padding-top: 17px;float: left;padding-left: 38%;}
+.nav1_11_02:hover{color: #ffd000;cursor: pointer;}
+.nav_font{font-size: 1.2em;}
+.nav_yin{font-family: "Arial Regular";padding-top: 1.2em;font-size: 0.7em;}
+.nav1_11_03{color: #FFFFFF;padding-top: 17px;float: left;text-align: center;padding-left: 10%;}
+.nav1_11_03:hover{color: #ffd000;cursor: pointer;}
+
+.nav1_11{position: relative;width: 100%;margin: 0 auto;text-align: center;}
+.nav1_11 img{width: 55%;box-shadow: 3px 2px 5px #888888;}
+
+.ad_11{width: 100%;margin: 0 auto;text-align: center;}
+.ad_11 img{width: 100%;}
+
+
+
+/* 导航条下那个图片轮播 */
+body,div,ul,li,a,img{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+#wrapper{position: relative;margin: 0px auto;height: auto;}
+#banner{position:relative;height: auto;overflow: hidden;}
+.imgList{position:relative;width:1452px;height:auto;z-index: 10;overflow: hidden;}
+.imgList li{float:left;display: inline;}
+#prev,
+#next{position: absolute;top:80px;z-index: 20;cursor: pointer;opacity: 0.2;filter:alpha(opacity=20);}
+#prev{left: 10px;}
+#next{right: 10px;}
+#prev:hover,
+#next:hover{opacity: 0.5;filter:alpha(opacity=50);}
+.bg{position: absolute;bottom: 0;width: 400px;height: 40px;z-index:20;opacity: 0.4;filter:alpha(opacity=40);background: black;}
+.infoList{position: absolute;left: 10px;bottom: 10px;z-index: 30;}
+.infoList li{display: none;}
+.infoList .infoOn{display: inline;color: white;}
+.indexList{position: absolute;right: 10px;bottom: 5px;z-index: 30;}
+.indexList li{float: left;margin-right: 5px;padding: 2px 4px;border: 2px solid black;background: grey;cursor: pointer;}
+.indexList .indexOn{background: red;font-weight: bold;color: white;}

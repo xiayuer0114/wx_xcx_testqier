@@ -1,0 +1,25 @@
+<!--components/article_list.wxml 文章列表-->
+
+<block wx:if='{{dataList.length > 0}}'>
+  <view class='article_item' wx:for='{{dataList}}' wx:key='id' wx:for-item="item" wx:for-index="index" id='id_{{item.id}}' data-id='{{item.id}}'  data-typeid='{{item.typeId}}' data-typename='{{item.typeName}}' bindtap='_handleTapItem'>
+    <image class='background' mode='widthFix' src='{{app.globalData.resourceServer + item.photo}}' />
+    <view class='contents'>
+      <!--  // 屏蔽相机
+        <view class='camera'>
+          <image mode='aspectFit' src='{{app.globalData.resourceLocal}}camera_1.png' />
+        </view>
+      -->
+      <view class='info'>
+        <view class='type' data-typeid='{{item.typeId}}' data-typename='{{item.typeName}}' catchtap='_handleTapType'>
+          <text>{{item.typeName}}</text>
+          <image class='icon' mode='aspectFit' src='{{app.globalData.resourceLocal}}topic.png'></image>
+        </view>
+        <text class='title'>{{item.title}}</text>
+      </view>
+
+    </view>
+  </view>
+</block>
+<view class='not_record' wx:else>
+  <text>{{NotFoundData}}</text>
+</view>

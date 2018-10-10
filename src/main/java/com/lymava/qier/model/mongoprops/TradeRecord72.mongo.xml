@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.model.TradeRecord72"
+		extends="com.lymava.trade.business.model.TradeRecord" >
+		 <indexs>
+            <index column="ac"  />
+        </indexs>
+		
+		<property column="aa" name="merchant_balance"  />
+		<property column="ab" name="userVoucher_id"  />
+		<property column="ac" name="cashier_id"  />
+		<property column="ad" name="state_printed"  />
+		<property column="ae" name="merchantRedEnvelope_id"  />
+		<property column="af" name="canweifei_fen_all"  />
+	</class>
+</dbObject>

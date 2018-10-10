@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+    <class class="com.lymava.qier.model.xiaoChengXuModel.CityPub"
+           extends="com.lymava.base.model.Pub" >
+
+
+        <indexs>
+            <index column="id"  />
+        </indexs>
+
+        <id name="id" />
+        <property column="cityName" name="cityName"  />
+
+        <property column="longitude" name="longitude"  />
+
+        <property column="latitude" name="latitude" />
+
+        <property column="title" name="title" />
+
+        <property column="subtitle" name="subtitle" />
+
+        <property column="useRenshu" name="useRenshu" />
+
+
+    </class>
+</dbObject>

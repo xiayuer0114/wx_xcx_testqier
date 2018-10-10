@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mongo>
+	<mapping>
+		<map>com/lymava/qier/backauto/mongoprops/BackTestUser.mongo.xml</map>
+		<map>com/lymava/qier/redenvelope/model/MerchantRedEnvelopeRecommendRule.mongo.xml</map>
+		<map>com/lymava/qier/redenvelope/model/MerchantRedEnvelopeSharingRule.mongo.xml</map>
+	</mapping>
+</mongo>

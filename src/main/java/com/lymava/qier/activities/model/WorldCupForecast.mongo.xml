@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbObject>
+	<class class="com.lymava.qier.activities.model.WorldCupForecast" collection="WorldCupForecast">
+		 <indexs>
+            <index column="openid"  />
+            <index column="type"  />
+        </indexs>
+		<id name="id"  />
+		<property column="openid" name="openid" /> 
+		<property column="type" name="type"  />
+		<property column="state" name="state" /> 
+		<property column="basicDBList" name="basicDBList"  />
+	</class>
+</dbObject>
